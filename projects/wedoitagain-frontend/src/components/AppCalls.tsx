@@ -1,10 +1,10 @@
 import { useWallet } from '@txnlab/use-wallet-react'
 import { useSnackbar } from 'notistack'
 import { useEffect, useState } from 'react'
-import {AttendanceFactory } from '../contracts/AttendanceClient'
-import { OnSchemaBreak, OnUpdate } from '@algorandfoundation/algokit-utils/types/app'
+import { TokenVestingFactory } from '../contracts/TokenVestingClient'
 import { getAlgodConfigFromViteEnvironment, getIndexerConfigFromViteEnvironment } from '../utils/network/getAlgoClientConfigs'
 import { AlgorandClient } from '@algorandfoundation/algokit-utils'
+import algosdk from 'algosdk'
 
 interface AppCallsInterface {
   openModal: boolean
@@ -12,138 +12,236 @@ interface AppCallsInterface {
 }
 
 const AppCalls = ({ openModal, setModalState }: AppCallsInterface) => {
-  const [loading, setLoading] = useState<boolean>(false)
-  const [fetching, setFetching] = useState<boolean>(false)
-  const [presentCount, setPresentCount] = useState<bigint | null>(null)
+  const [loading, setLoading] = useState(false)
+  const [fetching, setFetching] = useState(false)
+  const [vestingInfo, setVestingInfo] = useState<any | null>(null)
+  const [asaId, setAsaId] = useState<number | null>(null)
+
   const { enqueueSnackbar } = useSnackbar()
   const { transactionSigner, activeAddress } = useWallet()
 
   const algodConfig = getAlgodConfigFromViteEnvironment()
   const indexerConfig = getIndexerConfigFromViteEnvironment()
-  const algorand = AlgorandClient.fromConfig({
-    algodConfig,
-    indexerConfig,
-  })
+  const algorand = AlgorandClient.fromConfig({ algodConfig, indexerConfig })
   algorand.setDefaultSigner(transactionSigner)
 
-  const appid = 745894647
-  //
-  // 745586193
+  const appId = 745896679 // deployed vesting contract app ID
 
   const getAppClient = () => {
-    const factory = new AttendanceFactory({
+    const factory = new TokenVestingFactory({
       defaultSender: activeAddress ?? undefined,
       algorand,
     })
-    return factory.getAppClientById({ appId: BigInt(appid) })
+    return factory.getAppClientById({ appId: BigInt(appId) })
   }
 
-  const getExplorerAppUrl = (appId: string | number | bigint | undefined) => {
-    if (appId === undefined || appId === null) return undefined
-    const id = appId.toString()
-    const net = (algodConfig.network || '').toLowerCase()
-    if (net.includes('main')) return `https://algoexplorer.io/application/${id}`
-    if (net.includes('test')) return `https://lora.algokit.io/testnet/application/${id}`
-    if (net.includes('beta')) return `https://betanet.algoexplorer.io/application/${id}`
-    return undefined
+  // ----------------------------
+  // Deploy a new ASA token
+  // ----------------------------
+  const deployToken = async () => {
+    if (!activeAddress) {
+      enqueueSnackbar('Connect a wallet first', { variant: 'warning' })
+      return
+    }
+
+    setLoading(true)
+    try {
+      const params = await algorand.getSuggestedParams()
+      const txn = algosdk.makeAssetCreateTxnWithSuggestedParamsFromObject({
+        from: activeAddress,
+        total: 1_000_000, // total supply
+        decimals: 0,
+        defaultFrozen: false,
+        unitName: 'VEST',
+        assetName: 'VestingToken',
+        manager: activeAddress,
+        reserve: activeAddress,
+        freeze: activeAddress,
+        clawback: activeAddress,
+        suggestedParams: params
+      })
+
+      const signedTxn = await transactionSigner?.signTransaction(txn)
+      if (!signedTxn) throw new Error('Transaction signing failed')
+
+      const { txId } = await algorand.algod.sendRawTransaction(signedTxn).do()
+      const confirmed = await algosdk.waitForConfirmation(algorand.algod, txId, 4)
+      const newAsaId = confirmed['asset-index']
+      setAsaId(newAsaId)
+      enqueueSnackbar(`Token deployed! ASA ID: ${newAsaId}`, { variant: 'success' })
+    } catch (e) {
+      const msg = e instanceof Error ? e.message : String(e)
+      enqueueSnackbar(`Error deploying token: ${msg}`, { variant: 'error' })
+    } finally {
+      setLoading(false)
+    }
   }
 
-  const fetchPresent = async () => {
+  // ----------------------------
+  // Fetch vesting info
+  // ----------------------------
+  const fetchVestingInfo = async () => {
     if (!activeAddress) return
     setFetching(true)
     try {
       const client = getAppClient()
-      const value = await client.state.global.present()
-      setPresentCount(value ?? BigInt(0))
+      const info = await client.send.getVestingInfo()
+
+      const [
+        employerBytes,
+        employeeBytes,
+        tokenId,
+        total,
+        start,
+        cliff,
+        duration,
+        claimed,
+        vested,
+        claimable,
+      ] = info.return
+
+      const decoded = {
+        employer: algosdk.encodeAddress(new Uint8Array(employerBytes)),
+        employee: algosdk.encodeAddress(new Uint8Array(employeeBytes)),
+        tokenId: tokenId.toString(),
+        total: total.toString(),
+        start: new Date(Number(start) * 1000).toLocaleString(),
+        cliff: new Date(Number(cliff) * 1000).toLocaleString(),
+        duration: `${Number(duration)} sec`,
+        claimed: claimed.toString(),
+        vested: vested.toString(),
+        claimable: claimable.toString(),
+      }
+
+      setVestingInfo(decoded)
     } catch (e) {
-      const message = e instanceof Error ? e.message : String(e)
-      enqueueSnackbar(`Error fetching attendance: ${message}`, { variant: 'error' })
+      const msg = e instanceof Error ? e.message : String(e)
+      enqueueSnackbar(`Error fetching vesting info: ${msg}`, { variant: 'error' })
     } finally {
       setFetching(false)
     }
   }
 
-  useEffect(() => {
-    if (openModal) {
-      void fetchPresent()
-    }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [openModal, activeAddress])
-
-  const sendAppCall = async () => {
+  // ----------------------------
+  // Claim tokens
+  // ----------------------------
+  const claimTokens = async () => {
     if (!activeAddress) {
       enqueueSnackbar('Please connect a wallet first.', { variant: 'warning' })
       return
     }
 
     setLoading(true)
-
     try {
-      const appClient = getAppClient()
-      const response = await appClient.send.markPresent()
-      enqueueSnackbar(`Response from the contract: ${response.return}`, { variant: 'success' })
-      await fetchPresent()
-
-      const url = getExplorerAppUrl(appid)
-      enqueueSnackbar(
-        <span>
-          App ID: <code className="px-1 py-0.5 bg-base-200 rounded">{appid}</code>{' '}
-          {url ? (
-            <a className="link link-primary" href={url} target="_blank" rel="noreferrer">
-              View application
-            </a>
-          ) : null}
-        </span>,
-        { variant: 'info', autoHideDuration: 8000 }
-      )
+      const client = getAppClient()
+      await client.send.claim()
+      enqueueSnackbar(`Claim successful!`, { variant: 'success' })
+      await fetchVestingInfo()
     } catch (e) {
-      const message = e instanceof Error ? e.message : String(e)
-      enqueueSnackbar(`Error calling the contract: ${message}`, { variant: 'error' })
+      const msg = e instanceof Error ? e.message : String(e)
+      enqueueSnackbar(`Error claiming tokens: ${msg}`, { variant: 'error' })
     } finally {
       setLoading(false)
     }
   }
 
+  // ----------------------------
+  // Create vesting (employer only)
+  // ----------------------------
+  const createVesting = async () => {
+    if (!activeAddress) {
+      enqueueSnackbar('Connect a wallet first', { variant: 'warning' })
+      return
+    }
+
+    if (!asaId) {
+      enqueueSnackbar('Deploy a token first', { variant: 'warning' })
+      return
+    }
+
+    setLoading(true)
+    try {
+      const client = getAppClient()
+
+      // Example values
+      const employeeAddress = algosdk.decodeAddress('OA57DAFKUMATT3WK3DPJP7XZEFIXHRN7DAWR72YTOKYECVI3AOP2VYJQIE').publicKey
+      const totalTokens = BigInt(1000)
+      const startTime = BigInt(Math.floor(Date.now() / 1000))
+      const cliffTime = startTime + BigInt(60) // 1 min later
+      const duration = BigInt(3600) // 1 hour
+
+      await client.send.createVesting({
+        args: [
+          employeeAddress,
+          BigInt(asaId),
+          totalTokens,
+          startTime,
+          cliffTime,
+          duration
+        ]
+      })
+
+      enqueueSnackbar('Vesting created successfully!', { variant: 'success' })
+      await fetchVestingInfo()
+    } catch (e) {
+      const msg = e instanceof Error ? e.message : String(e)
+      enqueueSnackbar(`Error creating vesting: ${msg}`, { variant: 'error' })
+    } finally {
+      setLoading(false)
+    }
+  }
+
+  useEffect(() => {
+    if (openModal) void fetchVestingInfo()
+  }, [openModal, activeAddress])
+
   return (
-    <dialog id="appcalls_modal" className={`modal ${openModal ? 'modal-open' : ''} bg-slate-200`}>
+    <dialog id="vesting_modal" className={`modal ${openModal ? 'modal-open' : ''} bg-slate-200`}>
       <form method="dialog" className="modal-box">
-        <h3 className="font-bold text-lg">Say hello to your Algorand smart contract</h3>
+        <h3 className="font-bold text-lg">Token Vesting Contract</h3>
         <br />
 
         <div className="grid gap-4">
           <div className="card bg-base-100 shadow">
             <div className="card-body">
-              <h2 className="card-title">Attendance</h2>
-              <p className="text-sm opacity-70">Global present counter</p>
-              <div className="flex items-center gap-3 mt-2">
-                <div className="stat place-items-center p-0">
-                  <div className="stat-title">Present</div>
-                  <div className="stat-value text-primary">
-                    {presentCount !== null ? presentCount.toString() : '—'}
-                  </div>
-                </div>
-                <button type="button" className={`btn btn-ghost btn-sm ${fetching ? 'loading' : ''}`} onClick={(e) => { e.preventDefault(); void fetchPresent() }}>
-                  {fetching ? '' : 'Refresh'}
-                </button>
-              </div>
+              <h2 className="card-title">Vesting Info</h2>
+              <p className="text-sm opacity-70">Details from contract</p>
+              {vestingInfo ? (
+                <pre className="text-xs bg-gray-100 p-2 rounded whitespace-pre-wrap">
+                  {JSON.stringify(vestingInfo, null, 2)}
+                </pre>
+              ) : (
+                <p>No info loaded</p>
+              )}
+              <button
+                type="button"
+                className={`btn btn-ghost btn-sm ${fetching ? 'loading' : ''}`}
+                onClick={(e) => {
+                  e.preventDefault()
+                  void fetchVestingInfo()
+                }}
+              >
+                {fetching ? '' : 'Refresh'}
+              </button>
             </div>
           </div>
         </div>
-        
-        <div className="modal-action ">
-          <button className="btn" onClick={() => setModalState(!openModal)}>
-            Close
+
+        <div className="modal-action flex flex-col gap-2">
+          <button className="btn" onClick={() => setModalState(!openModal)}>Close</button>
+          <button className="btn btn-success" onClick={(e) => { e.preventDefault(); void deployToken() }}>
+            {loading ? <span className="loading loading-spinner" /> : 'Deploy Token'}
           </button>
-          <button className={`btn`} onClick={(e) => { e.preventDefault(); void sendAppCall(); }}>
-            {loading ? <span className="loading loading-spinner" /> : 'Mark present'}
+          <button className="btn btn-primary" onClick={(e) => { e.preventDefault(); void createVesting() }}>
+            {loading ? <span className="loading loading-spinner" /> : 'Create Vesting'}
+          </button>
+          <button className="btn btn-secondary" onClick={(e) => { e.preventDefault(); void claimTokens() }}>
+            {loading ? <span className="loading loading-spinner" /> : 'Claim Tokens'}
           </button>
         </div>
       </form>
-      <div className="modal-action">
-        
-      </div>
     </dialog>
   )
 }
 
-export default AppCalls;
+export default AppCalls
