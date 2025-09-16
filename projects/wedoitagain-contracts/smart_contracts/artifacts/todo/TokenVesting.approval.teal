@@ -1,0 +1,909 @@
+#pragma version 10
+#pragma typetrack false
+
+// @algorandfoundation/algorand-typescript/arc4/index.d.ts::Contract.approvalProgram() -> uint64:
+main:
+    intcblock 0 1 4
+    bytecblock "startTime" "duration" "totalTokens" "claimedTokens" "cliffTime" "employeeAddress" "tokenASA" 0x151f7c75 "employerAddress"
+    // smart_contracts/todo/contract.algo.ts:14
+    // export class TokenVesting extends Contract {
+    txn NumAppArgs
+    bz main_bare_routing@11
+    pushbytess 0x35ed5fca 0xf1577726 0x5ca5fcf7 0xf85d28f6 0x4bb1e6bc 0x6084e524 // method "createVesting(byte[],uint64,uint64,uint64,uint64,uint64)void", method "claim()void", method "calculateVested()uint64", method "getVestingInfo()(byte[],byte[],uint64,uint64,uint64,uint64,uint64,uint64,uint64,uint64)", method "getUserVestingStatus()(uint64,uint64,uint64,bool,bool,uint64)", method "revokeVesting()void"
+    txna ApplicationArgs 0
+    match main_createVesting_route@3 main_claim_route@4 main_calculateVested_route@5 main_getVestingInfo_route@6 main_getUserVestingStatus_route@7 main_revokeVesting_route@8
+
+main_after_if_else@15:
+    // smart_contracts/todo/contract.algo.ts:14
+    // export class TokenVesting extends Contract {
+    intc_0 // 0
+    return
+
+main_revokeVesting_route@8:
+    // smart_contracts/todo/contract.algo.ts:169
+    // revokeVesting(): void {
+    txn OnCompletion
+    !
+    assert // OnCompletion is not NoOp
+    txn ApplicationID
+    assert // can only call when not creating
+    callsub revokeVesting
+    intc_1 // 1
+    return
+
+main_getUserVestingStatus_route@7:
+    // smart_contracts/todo/contract.algo.ts:148
+    // getUserVestingStatus(): [uint64, uint64, uint64, boolean, boolean, uint64] {
+    txn OnCompletion
+    !
+    assert // OnCompletion is not NoOp
+    txn ApplicationID
+    assert // can only call when not creating
+    callsub getUserVestingStatus
+    uncover 5
+    itob
+    uncover 5
+    itob
+    uncover 5
+    itob
+    pushbytes 0x00
+    intc_0 // 0
+    uncover 7
+    setbit
+    pushbytes 0x00
+    intc_0 // 0
+    uncover 7
+    setbit
+    uncover 5
+    itob
+    uncover 5
+    uncover 5
+    concat
+    uncover 4
+    concat
+    uncover 3
+    concat
+    uncover 2
+    intc_0 // 0
+    getbit
+    pushint 193 // 193
+    swap
+    setbit
+    swap
+    concat
+    bytec 7 // 0x151f7c75
+    swap
+    concat
+    log
+    intc_1 // 1
+    return
+
+main_getVestingInfo_route@6:
+    // smart_contracts/todo/contract.algo.ts:123
+    // getVestingInfo(): [bytes, bytes, uint64, uint64, uint64, uint64, uint64, uint64, uint64, uint64] {
+    txn OnCompletion
+    !
+    assert // OnCompletion is not NoOp
+    txn ApplicationID
+    assert // can only call when not creating
+    callsub getVestingInfo
+    dig 9
+    len
+    itob
+    extract 6 2
+    uncover 10
+    concat
+    dig 9
+    len
+    itob
+    extract 6 2
+    uncover 10
+    concat
+    uncover 9
+    itob
+    uncover 9
+    itob
+    uncover 9
+    itob
+    uncover 9
+    itob
+    uncover 9
+    itob
+    uncover 9
+    itob
+    uncover 9
+    itob
+    uncover 9
+    itob
+    dig 9
+    len
+    pushint 68 // 68
+    +
+    itob
+    extract 6 2
+    pushbytes 0x0044
+    swap
+    concat
+    uncover 8
+    concat
+    uncover 7
+    concat
+    uncover 6
+    concat
+    uncover 5
+    concat
+    uncover 4
+    concat
+    uncover 3
+    concat
+    uncover 2
+    concat
+    swap
+    concat
+    uncover 2
+    concat
+    swap
+    concat
+    bytec 7 // 0x151f7c75
+    swap
+    concat
+    log
+    intc_1 // 1
+    return
+
+main_calculateVested_route@5:
+    // smart_contracts/todo/contract.algo.ts:101
+    // calculateVested(): uint64 {
+    txn OnCompletion
+    !
+    assert // OnCompletion is not NoOp
+    txn ApplicationID
+    assert // can only call when not creating
+    callsub calculateVested
+    itob
+    bytec 7 // 0x151f7c75
+    swap
+    concat
+    log
+    intc_1 // 1
+    return
+
+main_claim_route@4:
+    // smart_contracts/todo/contract.algo.ts:61
+    // claim(): void {
+    txn OnCompletion
+    !
+    assert // OnCompletion is not NoOp
+    txn ApplicationID
+    assert // can only call when not creating
+    callsub claim
+    intc_1 // 1
+    return
+
+main_createVesting_route@3:
+    // smart_contracts/todo/contract.algo.ts:30-37
+    // createVesting(
+    //   employeeAddr: bytes,
+    //   token: uint64,
+    //   total: uint64,
+    //   start: uint64,
+    //   cliff: uint64,
+    //   vestingDuration: uint64
+    // ): void {
+    txn OnCompletion
+    !
+    assert // OnCompletion is not NoOp
+    txn ApplicationID
+    assert // can only call when not creating
+    // smart_contracts/todo/contract.algo.ts:14
+    // export class TokenVesting extends Contract {
+    txna ApplicationArgs 1
+    extract 2 0
+    txna ApplicationArgs 2
+    btoi
+    txna ApplicationArgs 3
+    btoi
+    txna ApplicationArgs 4
+    btoi
+    txna ApplicationArgs 5
+    btoi
+    txna ApplicationArgs 6
+    btoi
+    // smart_contracts/todo/contract.algo.ts:30-37
+    // createVesting(
+    //   employeeAddr: bytes,
+    //   token: uint64,
+    //   total: uint64,
+    //   start: uint64,
+    //   cliff: uint64,
+    //   vestingDuration: uint64
+    // ): void {
+    callsub createVesting
+    intc_1 // 1
+    return
+
+main_bare_routing@11:
+    // smart_contracts/todo/contract.algo.ts:14
+    // export class TokenVesting extends Contract {
+    txn OnCompletion
+    bnz main_after_if_else@15
+    txn ApplicationID
+    !
+    assert // can only call when creating
+    intc_1 // 1
+    return
+
+
+// smart_contracts/todo/contract.algo.ts::TokenVesting.createVesting(employeeAddr: bytes, token: uint64, total: uint64, start: uint64, cliff: uint64, vestingDuration: uint64) -> void:
+createVesting:
+    // smart_contracts/todo/contract.algo.ts:30-37
+    // createVesting(
+    //   employeeAddr: bytes,
+    //   token: uint64,
+    //   total: uint64,
+    //   start: uint64,
+    //   cliff: uint64,
+    //   vestingDuration: uint64
+    // ): void {
+    proto 6 0
+    // smart_contracts/todo/contract.algo.ts:39
+    // assert(Txn.sender === Global.creatorAddress, 'Only creator can setup vesting');
+    txn Sender
+    global CreatorAddress
+    ==
+    assert // Only creator can setup vesting
+    // smart_contracts/todo/contract.algo.ts:42
+    // assert(total > 0, 'Must vest some tokens');
+    frame_dig -4
+    assert // Must vest some tokens
+    // smart_contracts/todo/contract.algo.ts:43
+    // assert(vestingDuration > 0, 'Duration must be greater than 0');
+    frame_dig -1
+    assert // Duration must be greater than 0
+    // smart_contracts/todo/contract.algo.ts:44
+    // assert(cliff >= start, 'Cliff must be after or at start');
+    frame_dig -2
+    frame_dig -3
+    >=
+    assert // Cliff must be after or at start
+    // smart_contracts/todo/contract.algo.ts:45
+    // assert(token > 0, 'Invalid token ASA ID');
+    frame_dig -5
+    assert // Invalid token ASA ID
+    // smart_contracts/todo/contract.algo.ts:18
+    // employerAddress = GlobalState<bytes>()   // employer address as bytes
+    bytec 8 // "employerAddress"
+    // smart_contracts/todo/contract.algo.ts:48
+    // this.employerAddress.value = Global.creatorAddress.bytes;
+    global CreatorAddress
+    app_global_put
+    // smart_contracts/todo/contract.algo.ts:19
+    // employeeAddress = GlobalState<bytes>()   // employee address as bytes
+    bytec 5 // "employeeAddress"
+    // smart_contracts/todo/contract.algo.ts:49
+    // this.employeeAddress.value = employeeAddr;
+    frame_dig -6
+    app_global_put
+    // smart_contracts/todo/contract.algo.ts:20
+    // tokenASA = GlobalState<uint64>()         // ASA ID of vested token
+    bytec 6 // "tokenASA"
+    // smart_contracts/todo/contract.algo.ts:50
+    // this.tokenASA.value = token;
+    frame_dig -5
+    app_global_put
+    // smart_contracts/todo/contract.algo.ts:21
+    // totalTokens = GlobalState<uint64>()      // total tokens locked for employee
+    bytec_2 // "totalTokens"
+    // smart_contracts/todo/contract.algo.ts:51
+    // this.totalTokens.value = total;
+    frame_dig -4
+    app_global_put
+    // smart_contracts/todo/contract.algo.ts:22
+    // startTime = GlobalState<uint64>()        // vesting start timestamp
+    bytec_0 // "startTime"
+    // smart_contracts/todo/contract.algo.ts:52
+    // this.startTime.value = start;
+    frame_dig -3
+    app_global_put
+    // smart_contracts/todo/contract.algo.ts:23
+    // cliffTime = GlobalState<uint64>()        // cliff timestamp
+    bytec 4 // "cliffTime"
+    // smart_contracts/todo/contract.algo.ts:53
+    // this.cliffTime.value = cliff;
+    frame_dig -2
+    app_global_put
+    // smart_contracts/todo/contract.algo.ts:24
+    // duration = GlobalState<uint64>()         // total vesting duration (sec)
+    bytec_1 // "duration"
+    // smart_contracts/todo/contract.algo.ts:54
+    // this.duration.value = vestingDuration;
+    frame_dig -1
+    app_global_put
+    // smart_contracts/todo/contract.algo.ts:25
+    // claimedTokens = GlobalState<uint64>()    // how many tokens claimed so far
+    bytec_3 // "claimedTokens"
+    // smart_contracts/todo/contract.algo.ts:55
+    // this.claimedTokens.value = 0;
+    intc_0 // 0
+    app_global_put
+    retsub
+
+
+// smart_contracts/todo/contract.algo.ts::TokenVesting.claim() -> void:
+claim:
+    // smart_contracts/todo/contract.algo.ts:61
+    // claim(): void {
+    proto 0 0
+    // smart_contracts/todo/contract.algo.ts:63
+    // assert(Txn.sender.bytes === this.employeeAddress.value, 'Only employee can claim');
+    txn Sender
+    // smart_contracts/todo/contract.algo.ts:19
+    // employeeAddress = GlobalState<bytes>()   // employee address as bytes
+    intc_0 // 0
+    bytec 5 // "employeeAddress"
+    app_global_get_ex
+    assert // check GlobalState exists
+    // smart_contracts/todo/contract.algo.ts:63
+    // assert(Txn.sender.bytes === this.employeeAddress.value, 'Only employee can claim');
+    ==
+    assert // Only employee can claim
+    // smart_contracts/todo/contract.algo.ts:65
+    // const now = Global.latestTimestamp;
+    global LatestTimestamp
+    dup
+    // smart_contracts/todo/contract.algo.ts:23
+    // cliffTime = GlobalState<uint64>()        // cliff timestamp
+    intc_0 // 0
+    bytec 4 // "cliffTime"
+    app_global_get_ex
+    assert // check GlobalState exists
+    // smart_contracts/todo/contract.algo.ts:68
+    // assert(now >= this.cliffTime.value, 'Cliff period not reached yet');
+    dig 1
+    <=
+    assert // Cliff period not reached yet
+    // smart_contracts/todo/contract.algo.ts:22
+    // startTime = GlobalState<uint64>()        // vesting start timestamp
+    intc_0 // 0
+    bytec_0 // "startTime"
+    app_global_get_ex
+    assert // check GlobalState exists
+    // smart_contracts/todo/contract.algo.ts:24
+    // duration = GlobalState<uint64>()         // total vesting duration (sec)
+    intc_0 // 0
+    bytec_1 // "duration"
+    app_global_get_ex
+    assert // check GlobalState exists
+    // smart_contracts/todo/contract.algo.ts:72
+    // const endTime: uint64 = Uint64(this.startTime.value + this.duration.value);
+    +
+    // smart_contracts/todo/contract.algo.ts:74
+    // if (now >= endTime) {
+    >=
+    bz claim_else_body@2
+    // smart_contracts/todo/contract.algo.ts:21
+    // totalTokens = GlobalState<uint64>()      // total tokens locked for employee
+    intc_0 // 0
+    bytec_2 // "totalTokens"
+    app_global_get_ex
+    assert // check GlobalState exists
+
+claim_after_if_else@3:
+    // smart_contracts/todo/contract.algo.ts:25
+    // claimedTokens = GlobalState<uint64>()    // how many tokens claimed so far
+    intc_0 // 0
+    bytec_3 // "claimedTokens"
+    app_global_get_ex
+    assert // check GlobalState exists
+    // smart_contracts/todo/contract.algo.ts:84
+    // const claimable = Uint64(vested - this.claimedTokens.value);
+    -
+    // smart_contracts/todo/contract.algo.ts:85
+    // assert(claimable > 0, 'No tokens available to claim');
+    dup
+    assert // No tokens available to claim
+    // smart_contracts/todo/contract.algo.ts:25
+    // claimedTokens = GlobalState<uint64>()    // how many tokens claimed so far
+    intc_0 // 0
+    bytec_3 // "claimedTokens"
+    app_global_get_ex
+    assert // check GlobalState exists
+    // smart_contracts/todo/contract.algo.ts:88
+    // this.claimedTokens.value += claimable;
+    dig 1
+    +
+    // smart_contracts/todo/contract.algo.ts:25
+    // claimedTokens = GlobalState<uint64>()    // how many tokens claimed so far
+    bytec_3 // "claimedTokens"
+    // smart_contracts/todo/contract.algo.ts:88
+    // this.claimedTokens.value += claimable;
+    swap
+    app_global_put
+    // smart_contracts/todo/contract.algo.ts:91-95
+    // itxn.assetTransfer({
+    //   assetReceiver: Txn.sender,
+    //   xferAsset: Asset(this.tokenASA.value),
+    //   assetAmount: claimable
+    // }).submit();
+    itxn_begin
+    // smart_contracts/todo/contract.algo.ts:92
+    // assetReceiver: Txn.sender,
+    txn Sender
+    // smart_contracts/todo/contract.algo.ts:20
+    // tokenASA = GlobalState<uint64>()         // ASA ID of vested token
+    intc_0 // 0
+    bytec 6 // "tokenASA"
+    app_global_get_ex
+    assert // check GlobalState exists
+    uncover 2
+    itxn_field AssetAmount
+    itxn_field XferAsset
+    itxn_field AssetReceiver
+    // smart_contracts/todo/contract.algo.ts:91-95
+    // itxn.assetTransfer({
+    //   assetReceiver: Txn.sender,
+    //   xferAsset: Asset(this.tokenASA.value),
+    //   assetAmount: claimable
+    // }).submit();
+    intc_2 // 4
+    itxn_field TypeEnum
+    intc_0 // 0
+    itxn_field Fee
+    itxn_submit
+    retsub
+
+claim_else_body@2:
+    // smart_contracts/todo/contract.algo.ts:22
+    // startTime = GlobalState<uint64>()        // vesting start timestamp
+    intc_0 // 0
+    bytec_0 // "startTime"
+    app_global_get_ex
+    assert // check GlobalState exists
+    // smart_contracts/todo/contract.algo.ts:79
+    // const elapsed = Uint64(now - this.startTime.value);
+    frame_dig 0
+    swap
+    -
+    // smart_contracts/todo/contract.algo.ts:21
+    // totalTokens = GlobalState<uint64>()      // total tokens locked for employee
+    intc_0 // 0
+    bytec_2 // "totalTokens"
+    app_global_get_ex
+    assert // check GlobalState exists
+    // smart_contracts/todo/contract.algo.ts:80
+    // vested = Uint64((this.totalTokens.value * elapsed) / this.duration.value);
+    *
+    // smart_contracts/todo/contract.algo.ts:24
+    // duration = GlobalState<uint64>()         // total vesting duration (sec)
+    intc_0 // 0
+    bytec_1 // "duration"
+    app_global_get_ex
+    assert // check GlobalState exists
+    // smart_contracts/todo/contract.algo.ts:80
+    // vested = Uint64((this.totalTokens.value * elapsed) / this.duration.value);
+    /
+    b claim_after_if_else@3
+
+
+// smart_contracts/todo/contract.algo.ts::TokenVesting.calculateVested() -> uint64:
+calculateVested:
+    // smart_contracts/todo/contract.algo.ts:101
+    // calculateVested(): uint64 {
+    proto 0 1
+    // smart_contracts/todo/contract.algo.ts:102
+    // const now = Global.latestTimestamp;
+    global LatestTimestamp
+    dup
+    // smart_contracts/todo/contract.algo.ts:23
+    // cliffTime = GlobalState<uint64>()        // cliff timestamp
+    intc_0 // 0
+    bytec 4 // "cliffTime"
+    app_global_get_ex
+    assert // check GlobalState exists
+    // smart_contracts/todo/contract.algo.ts:105
+    // if (now < this.cliffTime.value) {
+    <
+    bz calculateVested_after_if_else@2
+    // smart_contracts/todo/contract.algo.ts:106
+    // return 0;
+    intc_0 // 0
+    swap
+    retsub
+
+calculateVested_after_if_else@2:
+    // smart_contracts/todo/contract.algo.ts:22
+    // startTime = GlobalState<uint64>()        // vesting start timestamp
+    intc_0 // 0
+    bytec_0 // "startTime"
+    app_global_get_ex
+    assert // check GlobalState exists
+    // smart_contracts/todo/contract.algo.ts:24
+    // duration = GlobalState<uint64>()         // total vesting duration (sec)
+    intc_0 // 0
+    bytec_1 // "duration"
+    app_global_get_ex
+    assert // check GlobalState exists
+    // smart_contracts/todo/contract.algo.ts:110
+    // const endTime: uint64 = Uint64(this.startTime.value + this.duration.value);
+    +
+    // smart_contracts/todo/contract.algo.ts:111
+    // if (now >= endTime) {
+    frame_dig 0
+    <=
+    bz calculateVested_after_if_else@4
+    // smart_contracts/todo/contract.algo.ts:21
+    // totalTokens = GlobalState<uint64>()      // total tokens locked for employee
+    intc_0 // 0
+    bytec_2 // "totalTokens"
+    app_global_get_ex
+    assert // check GlobalState exists
+    // smart_contracts/todo/contract.algo.ts:112
+    // return this.totalTokens.value;
+    swap
+    retsub
+
+calculateVested_after_if_else@4:
+    // smart_contracts/todo/contract.algo.ts:22
+    // startTime = GlobalState<uint64>()        // vesting start timestamp
+    intc_0 // 0
+    bytec_0 // "startTime"
+    app_global_get_ex
+    assert // check GlobalState exists
+    // smart_contracts/todo/contract.algo.ts:116
+    // const elapsed = Uint64(now - this.startTime.value);
+    frame_dig 0
+    swap
+    -
+    // smart_contracts/todo/contract.algo.ts:21
+    // totalTokens = GlobalState<uint64>()      // total tokens locked for employee
+    intc_0 // 0
+    bytec_2 // "totalTokens"
+    app_global_get_ex
+    assert // check GlobalState exists
+    // smart_contracts/todo/contract.algo.ts:117
+    // return Uint64((this.totalTokens.value * elapsed) / this.duration.value);
+    *
+    // smart_contracts/todo/contract.algo.ts:24
+    // duration = GlobalState<uint64>()         // total vesting duration (sec)
+    intc_0 // 0
+    bytec_1 // "duration"
+    app_global_get_ex
+    assert // check GlobalState exists
+    // smart_contracts/todo/contract.algo.ts:117
+    // return Uint64((this.totalTokens.value * elapsed) / this.duration.value);
+    /
+    swap
+    retsub
+
+
+// smart_contracts/todo/contract.algo.ts::TokenVesting.getVestingInfo() -> bytes, bytes, uint64, uint64, uint64, uint64, uint64, uint64, uint64, uint64:
+getVestingInfo:
+    // smart_contracts/todo/contract.algo.ts:123
+    // getVestingInfo(): [bytes, bytes, uint64, uint64, uint64, uint64, uint64, uint64, uint64, uint64] {
+    proto 0 10
+    // smart_contracts/todo/contract.algo.ts:124
+    // const now = Global.latestTimestamp;
+    global LatestTimestamp
+    // smart_contracts/todo/contract.algo.ts:125
+    // const vested = this.calculateVested();
+    callsub calculateVested
+    dup
+    cover 2
+    // smart_contracts/todo/contract.algo.ts:25
+    // claimedTokens = GlobalState<uint64>()    // how many tokens claimed so far
+    intc_0 // 0
+    bytec_3 // "claimedTokens"
+    app_global_get_ex
+    assert // check GlobalState exists
+    // smart_contracts/todo/contract.algo.ts:126
+    // const claimable = Uint64(vested - this.claimedTokens.value);
+    -
+    swap
+    // smart_contracts/todo/contract.algo.ts:22
+    // startTime = GlobalState<uint64>()        // vesting start timestamp
+    intc_0 // 0
+    bytec_0 // "startTime"
+    app_global_get_ex
+    assert // check GlobalState exists
+    // smart_contracts/todo/contract.algo.ts:24
+    // duration = GlobalState<uint64>()         // total vesting duration (sec)
+    intc_0 // 0
+    bytec_1 // "duration"
+    app_global_get_ex
+    assert // check GlobalState exists
+    // smart_contracts/todo/contract.algo.ts:127
+    // const timeRemaining = Uint64(now < this.startTime.value + this.duration.value
+    +
+    <
+    // smart_contracts/todo/contract.algo.ts:127-129
+    // const timeRemaining = Uint64(now < this.startTime.value + this.duration.value
+    //   ? (this.startTime.value + this.duration.value) - now
+    //   : 0);
+    bz getVestingInfo_ternary_merge@3
+    // smart_contracts/todo/contract.algo.ts:22
+    // startTime = GlobalState<uint64>()        // vesting start timestamp
+    intc_0 // 0
+    bytec_0 // "startTime"
+    app_global_get_ex
+    bury 1
+    assert // check GlobalState exists
+    // smart_contracts/todo/contract.algo.ts:24
+    // duration = GlobalState<uint64>()         // total vesting duration (sec)
+    intc_0 // 0
+    bytec_1 // "duration"
+    app_global_get_ex
+    bury 1
+    assert // check GlobalState exists
+
+getVestingInfo_ternary_merge@3:
+    // smart_contracts/todo/contract.algo.ts:18
+    // employerAddress = GlobalState<bytes>()   // employer address as bytes
+    intc_0 // 0
+    bytec 8 // "employerAddress"
+    app_global_get_ex
+    assert // check GlobalState exists
+    // smart_contracts/todo/contract.algo.ts:19
+    // employeeAddress = GlobalState<bytes>()   // employee address as bytes
+    intc_0 // 0
+    bytec 5 // "employeeAddress"
+    app_global_get_ex
+    assert // check GlobalState exists
+    // smart_contracts/todo/contract.algo.ts:20
+    // tokenASA = GlobalState<uint64>()         // ASA ID of vested token
+    intc_0 // 0
+    bytec 6 // "tokenASA"
+    app_global_get_ex
+    assert // check GlobalState exists
+    // smart_contracts/todo/contract.algo.ts:21
+    // totalTokens = GlobalState<uint64>()      // total tokens locked for employee
+    intc_0 // 0
+    bytec_2 // "totalTokens"
+    app_global_get_ex
+    assert // check GlobalState exists
+    // smart_contracts/todo/contract.algo.ts:22
+    // startTime = GlobalState<uint64>()        // vesting start timestamp
+    intc_0 // 0
+    bytec_0 // "startTime"
+    app_global_get_ex
+    assert // check GlobalState exists
+    // smart_contracts/todo/contract.algo.ts:23
+    // cliffTime = GlobalState<uint64>()        // cliff timestamp
+    intc_0 // 0
+    bytec 4 // "cliffTime"
+    app_global_get_ex
+    assert // check GlobalState exists
+    // smart_contracts/todo/contract.algo.ts:24
+    // duration = GlobalState<uint64>()         // total vesting duration (sec)
+    intc_0 // 0
+    bytec_1 // "duration"
+    app_global_get_ex
+    assert // check GlobalState exists
+    // smart_contracts/todo/contract.algo.ts:25
+    // claimedTokens = GlobalState<uint64>()    // how many tokens claimed so far
+    intc_0 // 0
+    bytec_3 // "claimedTokens"
+    app_global_get_ex
+    assert // check GlobalState exists
+    // smart_contracts/todo/contract.algo.ts:131-142
+    // return [
+    //   this.employerAddress.value,    // employer address bytes
+    //   this.employeeAddress.value,    // employee address bytes
+    //   this.tokenASA.value,          // token ASA ID
+    //   this.totalTokens.value,       // total tokens in vesting
+    //   this.startTime.value,         // start timestamp
+    //   this.cliffTime.value,         // cliff timestamp
+    //   this.duration.value,          // total vesting duration
+    //   this.claimedTokens.value,     // tokens already claimed
+    //   vested,                       // currently vested tokens
+    //   claimable                     // tokens available to claim now
+    // ];
+    frame_dig 0
+    frame_dig 1
+    uncover 11
+    uncover 11
+    retsub
+
+
+// smart_contracts/todo/contract.algo.ts::TokenVesting.getUserVestingStatus() -> uint64, uint64, uint64, uint64, uint64, uint64:
+getUserVestingStatus:
+    // smart_contracts/todo/contract.algo.ts:148
+    // getUserVestingStatus(): [uint64, uint64, uint64, boolean, boolean, uint64] {
+    proto 0 6
+    // smart_contracts/todo/contract.algo.ts:149
+    // const now = Global.latestTimestamp;
+    global LatestTimestamp
+    dup
+    // smart_contracts/todo/contract.algo.ts:150
+    // const vested = this.calculateVested();
+    callsub calculateVested
+    dup
+    cover 2
+    // smart_contracts/todo/contract.algo.ts:25
+    // claimedTokens = GlobalState<uint64>()    // how many tokens claimed so far
+    intc_0 // 0
+    bytec_3 // "claimedTokens"
+    app_global_get_ex
+    assert // check GlobalState exists
+    // smart_contracts/todo/contract.algo.ts:151
+    // const claimable = Uint64(vested - this.claimedTokens.value);
+    -
+    swap
+    // smart_contracts/todo/contract.algo.ts:152
+    // const isEmployee = Txn.sender.bytes === this.employeeAddress.value;
+    txn Sender
+    // smart_contracts/todo/contract.algo.ts:19
+    // employeeAddress = GlobalState<bytes>()   // employee address as bytes
+    intc_0 // 0
+    bytec 5 // "employeeAddress"
+    app_global_get_ex
+    assert // check GlobalState exists
+    // smart_contracts/todo/contract.algo.ts:152
+    // const isEmployee = Txn.sender.bytes === this.employeeAddress.value;
+    ==
+    swap
+    // smart_contracts/todo/contract.algo.ts:23
+    // cliffTime = GlobalState<uint64>()        // cliff timestamp
+    intc_0 // 0
+    bytec 4 // "cliffTime"
+    app_global_get_ex
+    assert // check GlobalState exists
+    // smart_contracts/todo/contract.algo.ts:153
+    // const cliffReached = now >= this.cliffTime.value;
+    dig 1
+    <=
+    swap
+    // smart_contracts/todo/contract.algo.ts:22
+    // startTime = GlobalState<uint64>()        // vesting start timestamp
+    intc_0 // 0
+    bytec_0 // "startTime"
+    app_global_get_ex
+    assert // check GlobalState exists
+    // smart_contracts/todo/contract.algo.ts:24
+    // duration = GlobalState<uint64>()         // total vesting duration (sec)
+    intc_0 // 0
+    bytec_1 // "duration"
+    app_global_get_ex
+    assert // check GlobalState exists
+    // smart_contracts/todo/contract.algo.ts:154
+    // const fullyVested = now >= this.startTime.value + this.duration.value;
+    +
+    >=
+    // smart_contracts/todo/contract.algo.ts:25
+    // claimedTokens = GlobalState<uint64>()    // how many tokens claimed so far
+    intc_0 // 0
+    bytec_3 // "claimedTokens"
+    app_global_get_ex
+    swap
+    cover 2
+    assert // check GlobalState exists
+    // smart_contracts/todo/contract.algo.ts:162
+    // fullyVested ? 0 : ((this.startTime.value + this.duration.value) - now) // time remaining
+    bz getUserVestingStatus_ternary_false@2
+    intc_0 // 0
+
+getUserVestingStatus_ternary_merge@3:
+    // smart_contracts/todo/contract.algo.ts:156-163
+    // return [
+    //   vested,                       // currently vested tokens
+    //   claimable,                    // tokens available to claim
+    //   this.claimedTokens.value,     // tokens already claimed
+    //   isEmployee,                   // is caller the employee
+    //   cliffReached,                 // has cliff period passed
+    //   fullyVested ? 0 : ((this.startTime.value + this.duration.value) - now) // time remaining
+    // ];
+    frame_dig 1
+    frame_dig 2
+    frame_dig 5
+    frame_dig 3
+    frame_dig 4
+    uncover 5
+    uncover 11
+    uncover 11
+    uncover 11
+    uncover 11
+    uncover 11
+    uncover 11
+    retsub
+
+getUserVestingStatus_ternary_false@2:
+    // smart_contracts/todo/contract.algo.ts:22
+    // startTime = GlobalState<uint64>()        // vesting start timestamp
+    intc_0 // 0
+    bytec_0 // "startTime"
+    app_global_get_ex
+    assert // check GlobalState exists
+    // smart_contracts/todo/contract.algo.ts:24
+    // duration = GlobalState<uint64>()         // total vesting duration (sec)
+    intc_0 // 0
+    bytec_1 // "duration"
+    app_global_get_ex
+    assert // check GlobalState exists
+    // smart_contracts/todo/contract.algo.ts:162
+    // fullyVested ? 0 : ((this.startTime.value + this.duration.value) - now) // time remaining
+    +
+    frame_dig 0
+    -
+    b getUserVestingStatus_ternary_merge@3
+
+
+// smart_contracts/todo/contract.algo.ts::TokenVesting.revokeVesting() -> void:
+revokeVesting:
+    // smart_contracts/todo/contract.algo.ts:169
+    // revokeVesting(): void {
+    proto 0 0
+    // smart_contracts/todo/contract.algo.ts:171
+    // assert(Txn.sender.bytes === this.employerAddress.value, 'Only employer can revoke vesting');
+    txn Sender
+    // smart_contracts/todo/contract.algo.ts:18
+    // employerAddress = GlobalState<bytes>()   // employer address as bytes
+    intc_0 // 0
+    bytec 8 // "employerAddress"
+    app_global_get_ex
+    assert // check GlobalState exists
+    // smart_contracts/todo/contract.algo.ts:171
+    // assert(Txn.sender.bytes === this.employerAddress.value, 'Only employer can revoke vesting');
+    ==
+    assert // Only employer can revoke vesting
+    // smart_contracts/todo/contract.algo.ts:174
+    // const vested = this.calculateVested();
+    callsub calculateVested
+    // smart_contracts/todo/contract.algo.ts:21
+    // totalTokens = GlobalState<uint64>()      // total tokens locked for employee
+    intc_0 // 0
+    bytec_2 // "totalTokens"
+    app_global_get_ex
+    assert // check GlobalState exists
+    // smart_contracts/todo/contract.algo.ts:175
+    // const unvestedTokens = Uint64(this.totalTokens.value - vested);
+    dig 1
+    -
+    dup
+    cover 2
+    // smart_contracts/todo/contract.algo.ts:177
+    // assert(unvestedTokens > 0, 'No unvested tokens to revoke');
+    dup
+    assert // No unvested tokens to revoke
+    // smart_contracts/todo/contract.algo.ts:21
+    // totalTokens = GlobalState<uint64>()      // total tokens locked for employee
+    bytec_2 // "totalTokens"
+    // smart_contracts/todo/contract.algo.ts:180
+    // this.totalTokens.value = vested;
+    uncover 2
+    app_global_put
+    // smart_contracts/todo/contract.algo.ts:183
+    // if (unvestedTokens > 0) {
+    bz revokeVesting_after_if_else@3
+    // smart_contracts/todo/contract.algo.ts:184-188
+    // itxn.assetTransfer({
+    //   assetReceiver: Global.creatorAddress,
+    //   xferAsset: Asset(this.tokenASA.value),
+    //   assetAmount: unvestedTokens
+    // }).submit();
+    itxn_begin
+    // smart_contracts/todo/contract.algo.ts:185
+    // assetReceiver: Global.creatorAddress,
+    global CreatorAddress
+    // smart_contracts/todo/contract.algo.ts:20
+    // tokenASA = GlobalState<uint64>()         // ASA ID of vested token
+    intc_0 // 0
+    bytec 6 // "tokenASA"
+    app_global_get_ex
+    assert // check GlobalState exists
+    frame_dig 0
+    itxn_field AssetAmount
+    itxn_field XferAsset
+    itxn_field AssetReceiver
+    // smart_contracts/todo/contract.algo.ts:184-188
+    // itxn.assetTransfer({
+    //   assetReceiver: Global.creatorAddress,
+    //   xferAsset: Asset(this.tokenASA.value),
+    //   assetAmount: unvestedTokens
+    // }).submit();
+    intc_2 // 4
+    itxn_field TypeEnum
+    intc_0 // 0
+    itxn_field Fee
+    itxn_submit
+
+revokeVesting_after_if_else@3:
+    retsub

@@ -1,14 +1,14 @@
 import { AlgorandClient } from '@algorandfoundation/algokit-utils'
-import { AttendanceFactory } from '../artifacts/todo/AttendanceClient'
+import { TokenVestingFactory } from '../artifacts/todo/TokenVestingClient'
 
 // Below is a showcase of various deployment options you can use in TypeScript Client
 export async function deploy() {
-  console.log('=== Deploying Todo ===')
+  console.log('=== Deploying Vesting  ===')
 
   const algorand = AlgorandClient.fromEnvironment()
   const deployer = await algorand.account.fromEnvironment('DEPLOYER')
 
-  const factory = algorand.client.getTypedAppFactory(AttendanceFactory, {
+  const factory = algorand.client.getTypedAppFactory(TokenVestingFactory, {
     defaultSender: deployer.addr,
   })
 
@@ -23,9 +23,9 @@ export async function deploy() {
     })
   }
 
-  const method = 'hello'  
-  const response = await appClient.send.markPresent()
-  console.log(
-    `Called ${method} on ${appClient.appClient.appName} (${appClient.appClient.appId}) with name = world, received: ${response.return}`,
-  )
+  // const method = 'hello'  
+  // const response = await appClient.send.markPresent()
+  // console.log(
+  //   `Called ${method} on ${appClient.appClient.appName} (${appClient.appClient.appId}) with name = world, received: ${response.return}`,
+  // )
 }

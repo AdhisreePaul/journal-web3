@@ -1,0 +1,6328 @@
+{
+  "version": 3,
+  "sources": [
+    "/mnt/windows_c/Users/manov/Desktop/code/blahabkad/projects/wedoitagain-contracts/smart_contracts/todo/contract.algo.ts"
+  ],
+  "mappings": ";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAaA;;AAAA;;;AAAA;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAAA;;;AAAA;;;;;;;;;;;;;;AAAA;;AA2JE;;AAAA;AAAA;AAAA;;AAAA;AAAA;;;AAAA;;AArBA;;AAAA;AAAA;AAAA;;AAAA;AAAA;;;AAAA;;AAAA;AAAA;;AAAA;AAAA;;AAAA;AAAA;;;AAAA;AAAA;;AAAA;AAAA;;;AAAA;AAAA;;AAAA;AAAA;;AAAA;AAAA;;AAAA;;AAAA;AAAA;;AAAA;AAAA;;AAAA;AAAA;;AAAA;AAAA;AAAA;;;AAAA;AAAA;AAAA;AAAA;AAAA;;AAAA;AAAA;AAAA;AAAA;;AAzBA;;AAAA;AAAA;AAAA;;AAAA;AAAA;;;AAAA;;AAAA;AAAA;AAAA;;;AAAA;;AAAA;AAAA;;AAAA;AAAA;AAAA;;;AAAA;;AAAA;AAAA;;AAAA;AAAA;;AAAA;AAAA;;AAAA;AAAA;;AAAA;AAAA;;AAAA;AAAA;;AAAA;AAAA;;AAAA;AAAA;;AAAA;AAAA;;AAAA;AAAA;;AAAA;AAAA;AAAA;;;AAAA;;;;AAAA;AAAA;AAAA;;AAAA;AAAA;;AAAA;AAAA;;AAAA;AAAA;;AAAA;AAAA;;AAAA;AAAA;;AAAA;AAAA;;AAAA;AAAA;AAAA;AAAA;;AAAA;AAAA;AAAA;AAAA;;AAAA;AAAA;AAAA;AAAA;;AAtBA;;AAAA;AAAA;AAAA;;AAAA;AAAA;;;AAAA;AAAA;;AAAA;AAAA;AAAA;AAAA;;AAxCA;;AAAA;AAAA;AAAA;;AAAA;AAAA;;;AAAA;;AA/BA;;AAAA;AAAA;AAAA;;AAAA;AAhBF;;;AAAA;;;AAAA;;;AAAA;AAAA;;;AAAA;AAAA;;;AAAA;AAAA;;;AAAA;AAAA;;;AAAA;AAgBE;;;AAAA;;AAhBF;;AAAA;;;AAAA;;AAAA;AAAA;AAAA;;AAgBE;;;AASa;;AAAkB;;AAAtB;AAAP;AAGA;;AAAA;AACA;;AAAA;AACO;;AAAA;;AAAA;AAAP;AACA;;AAAA;AA3BF;;AA8BsC;;AAApC;AA7BF;;AA8BE;;AAAA;AA7BF;;AA8BE;;AAAA;AA7BF;AA8BE;;AAAA;AA7BF;AA8BE;;AAAA;AA7BF;;AA8BE;;AAAA;AA7BF;AA8BE;;AAAA;AA7BF;AA8B6B;AAA3B;;AAMF;;;AAEa;;AA5Cb;AAAA;;AAAA;AAAA;AA4CS;AAAP;AAEmB;;AAAb;AA1CR;AAAA;;AAAA;AAAA;AA6CS;;AAAA;AAAP;AA9CF;AAAA;AAAA;AAAA;AAEA;AAAA;AAAA;AAAA;AAgDiC;AAE3B;AAAJ;;;AArDF;AAAA;AAAA;AAAA;AAIA;AAAA;AAAA;AAAA;AA2D2B;AACzB;AAAA;AA5DF;AAAA;AAAA;AAAA;AA+DE;;AAAA;AA/DF;AA+DE;AAAA;AAGA;AACqB;;AAxEvB;AAAA;;AAAA;AAAA;;;;;;;;;AAuEE;;;AAAA;;;AAAA;;AArEF;AAAA;AAAA;AAAA;AAyDU;;AAAA;AAAiB;AA1D3B;AAAA;AAAA;AAAA;AA2DqB;AAxDrB;AAAA;AAAA;AAAA;AAwDoB;;;;AAqBpB;;;AACqB;;AAAb;AA/ER;AAAA;;AAAA;AAAA;AAkFM;AAAJ;;;AACS;AAAP;AAAA;AApFJ;AAAA;AAAA;AAAA;AAEA;AAAA;AAAA;AAAA;AAsFiC;AAC3B;;AAAA;AAAJ;;;AA1FF;AAAA;AAAA;AAAA;AA2FI;AAAA;AA1FJ;AAAA;AAAA;AAAA;AA8FQ;;AAAA;AAAiB;AA/FzB;AAAA;AAAA;AAAA;AAgGiB;AA7FjB;AAAA;AAAA;AAAA;AA6FgB;AAAd;AAAA;AAMF;;;AACqB;;AACJ;;;AAAT;AAAA;;AApGR;AAAA;AAAA;AAAA;AAqG2B;AAAnB;AAxGR;AAAA;AAAA;AAAA;AAEA;AAAA;AAAA;AAAA;AAuGqC;AAAN;AAAA;;;AAzG/B;AAAA;AAAA;AAAA;;AAAA;AAEA;AAAA;AAAA;AAAA;;AAAA;AANA;AAAA;;AAAA;AAAA;AACA;AAAA;;AAAA;AAAA;AACA;AAAA;;AAAA;AAAA;AACA;AAAA;AAAA;AAAA;AACA;AAAA;AAAA;AAAA;AACA;AAAA;;AAAA;AAAA;AACA;AAAA;AAAA;AAAA;AACA;AAAA;AAAA;AAAA;AA0GE;;AAAA;;AAAA;;AAAA;;AAAA;AAiBF;;;AACqB;;AAAb;AACS;;;AAAT;AAAA;;AA7HR;AAAA;AAAA;AAAA;AA8H2B;AAAnB;AACiB;;AArIzB;AAAA;;AAAA;AAAA;AAqIqB;AAAb;AAjIR;AAAA;;AAAA;AAAA;AAkIQ;;AAAe;AAAf;AAnIR;AAAA;AAAA;AAAA;AAEA;AAAA;AAAA;AAAA;AAkI6B;AAAP;AAjItB;AAAA;AAAA;AAAA;AAAA;;AAAA;AAyII;;;AAAc;AANhB;;AAAA;;AAAA;;AAAA;;AAAA;;AAAA;;AAAA;;AAAA;;AAAA;;AAAA;;AAAA;;AAAA;;AAAA;AAtIF;AAAA;AAAA;AAAA;AAEA;AAAA;AAAA;AAAA;AA0IwB;AAAD;;AAAA;;;;AAOvB;;;AAEa;;AAzJb;AAAA;;AAAA;AAAA;AAyJS;AAAP;AAGe;;;AAzJjB;AAAA;AAAA;AAAA;AA0JQ;;AAAwB;AAAxB;AAAA;;AAEN;AAAA;AA5JF;AA+JE;;AAAA;AAGA;;;AACE;AACwB;;AArK5B;AAAA;;AAAA;AAAA;;;;;;;;;AAoKI;;;AAAA;;;AAAA;",
+  "op_pc_offset": 0,
+  "pc_events": {
+    "1": {
+      "subroutine": "@algorandfoundation/algorand-typescript/arc4/index.d.ts::Contract.approvalProgram",
+      "params": {},
+      "block": "main",
+      "stack_in": [],
+      "op": "intcblock 0 1 4"
+    },
+    "6": {
+      "op": "bytecblock \"startTime\" \"duration\" \"totalTokens\" \"claimedTokens\" \"cliffTime\" \"employeeAddress\" \"tokenASA\" 0x151f7c75 \"employerAddress\""
+    },
+    "109": {
+      "op": "txn NumAppArgs",
+      "defined_out": [
+        "tmp%0#1"
+      ],
+      "stack_out": [
+        "tmp%0#1"
+      ]
+    },
+    "111": {
+      "op": "bz main_bare_routing@11",
+      "stack_out": []
+    },
+    "114": {
+      "op": "pushbytess 0x35ed5fca 0xf1577726 0x5ca5fcf7 0xf85d28f6 0x4bb1e6bc 0x6084e524 // method \"createVesting(byte[],uint64,uint64,uint64,uint64,uint64)void\", method \"claim()void\", method \"calculateVested()uint64\", method \"getVestingInfo()(byte[],byte[],uint64,uint64,uint64,uint64,uint64,uint64,uint64,uint64)\", method \"getUserVestingStatus()(uint64,uint64,uint64,bool,bool,uint64)\", method \"revokeVesting()void\"",
+      "defined_out": [
+        "Method(calculateVested()uint64)",
+        "Method(claim()void)",
+        "Method(createVesting(byte[],uint64,uint64,uint64,uint64,uint64)void)",
+        "Method(getUserVestingStatus()(uint64,uint64,uint64,bool,bool,uint64))",
+        "Method(getVestingInfo()(byte[],byte[],uint64,uint64,uint64,uint64,uint64,uint64,uint64,uint64))",
+        "Method(revokeVesting()void)"
+      ],
+      "stack_out": [
+        "Method(createVesting(byte[],uint64,uint64,uint64,uint64,uint64)void)",
+        "Method(claim()void)",
+        "Method(calculateVested()uint64)",
+        "Method(getVestingInfo()(byte[],byte[],uint64,uint64,uint64,uint64,uint64,uint64,uint64,uint64))",
+        "Method(getUserVestingStatus()(uint64,uint64,uint64,bool,bool,uint64))",
+        "Method(revokeVesting()void)"
+      ]
+    },
+    "146": {
+      "op": "txna ApplicationArgs 0",
+      "defined_out": [
+        "Method(calculateVested()uint64)",
+        "Method(claim()void)",
+        "Method(createVesting(byte[],uint64,uint64,uint64,uint64,uint64)void)",
+        "Method(getUserVestingStatus()(uint64,uint64,uint64,bool,bool,uint64))",
+        "Method(getVestingInfo()(byte[],byte[],uint64,uint64,uint64,uint64,uint64,uint64,uint64,uint64))",
+        "Method(revokeVesting()void)",
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "Method(createVesting(byte[],uint64,uint64,uint64,uint64,uint64)void)",
+        "Method(claim()void)",
+        "Method(calculateVested()uint64)",
+        "Method(getVestingInfo()(byte[],byte[],uint64,uint64,uint64,uint64,uint64,uint64,uint64,uint64))",
+        "Method(getUserVestingStatus()(uint64,uint64,uint64,bool,bool,uint64))",
+        "Method(revokeVesting()void)",
+        "tmp%2#0"
+      ]
+    },
+    "149": {
+      "op": "match main_createVesting_route@3 main_claim_route@4 main_calculateVested_route@5 main_getVestingInfo_route@6 main_getUserVestingStatus_route@7 main_revokeVesting_route@8",
+      "stack_out": []
+    },
+    "163": {
+      "block": "main_after_if_else@15",
+      "stack_in": [],
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "164": {
+      "op": "return",
+      "stack_out": []
+    },
+    "165": {
+      "block": "main_revokeVesting_route@8",
+      "stack_in": [],
+      "op": "txn OnCompletion",
+      "defined_out": [
+        "tmp%33#0"
+      ],
+      "stack_out": [
+        "tmp%33#0"
+      ]
+    },
+    "167": {
+      "op": "!",
+      "defined_out": [
+        "tmp%34#0"
+      ],
+      "stack_out": [
+        "tmp%34#0"
+      ]
+    },
+    "168": {
+      "error": "OnCompletion is not NoOp",
+      "op": "assert // OnCompletion is not NoOp",
+      "stack_out": []
+    },
+    "169": {
+      "op": "txn ApplicationID",
+      "defined_out": [
+        "tmp%35#0"
+      ],
+      "stack_out": [
+        "tmp%35#0"
+      ]
+    },
+    "171": {
+      "error": "can only call when not creating",
+      "op": "assert // can only call when not creating",
+      "stack_out": []
+    },
+    "172": {
+      "callsub": "smart_contracts/todo/contract.algo.ts::TokenVesting.revokeVesting",
+      "op": "callsub revokeVesting"
+    },
+    "175": {
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "176": {
+      "op": "return",
+      "stack_out": []
+    },
+    "177": {
+      "block": "main_getUserVestingStatus_route@7",
+      "stack_in": [],
+      "op": "txn OnCompletion",
+      "defined_out": [
+        "tmp%28#0"
+      ],
+      "stack_out": [
+        "tmp%28#0"
+      ]
+    },
+    "179": {
+      "op": "!",
+      "defined_out": [
+        "tmp%29#0"
+      ],
+      "stack_out": [
+        "tmp%29#0"
+      ]
+    },
+    "180": {
+      "error": "OnCompletion is not NoOp",
+      "op": "assert // OnCompletion is not NoOp",
+      "stack_out": []
+    },
+    "181": {
+      "op": "txn ApplicationID",
+      "defined_out": [
+        "tmp%30#0"
+      ],
+      "stack_out": [
+        "tmp%30#0"
+      ]
+    },
+    "183": {
+      "error": "can only call when not creating",
+      "op": "assert // can only call when not creating",
+      "stack_out": []
+    },
+    "184": {
+      "callsub": "smart_contracts/todo/contract.algo.ts::TokenVesting.getUserVestingStatus",
+      "op": "callsub getUserVestingStatus",
+      "defined_out": [
+        "elements_to_encode%10#0",
+        "elements_to_encode%11#0",
+        "elements_to_encode%12#0",
+        "elements_to_encode%13#0",
+        "elements_to_encode%14#0",
+        "elements_to_encode%15#0"
+      ],
+      "stack_out": [
+        "elements_to_encode%10#0",
+        "elements_to_encode%11#0",
+        "elements_to_encode%12#0",
+        "elements_to_encode%13#0",
+        "elements_to_encode%14#0",
+        "elements_to_encode%15#0"
+      ]
+    },
+    "187": {
+      "op": "uncover 5",
+      "stack_out": [
+        "elements_to_encode%11#0",
+        "elements_to_encode%12#0",
+        "elements_to_encode%13#0",
+        "elements_to_encode%14#0",
+        "elements_to_encode%15#0",
+        "elements_to_encode%10#0"
+      ]
+    },
+    "189": {
+      "op": "itob",
+      "defined_out": [
+        "elements_to_encode%11#0",
+        "elements_to_encode%12#0",
+        "elements_to_encode%13#0",
+        "elements_to_encode%14#0",
+        "elements_to_encode%15#0",
+        "val_as_bytes%9#0"
+      ],
+      "stack_out": [
+        "elements_to_encode%11#0",
+        "elements_to_encode%12#0",
+        "elements_to_encode%13#0",
+        "elements_to_encode%14#0",
+        "elements_to_encode%15#0",
+        "val_as_bytes%9#0"
+      ]
+    },
+    "190": {
+      "op": "uncover 5",
+      "stack_out": [
+        "elements_to_encode%12#0",
+        "elements_to_encode%13#0",
+        "elements_to_encode%14#0",
+        "elements_to_encode%15#0",
+        "val_as_bytes%9#0",
+        "elements_to_encode%11#0"
+      ]
+    },
+    "192": {
+      "op": "itob",
+      "defined_out": [
+        "elements_to_encode%12#0",
+        "elements_to_encode%13#0",
+        "elements_to_encode%14#0",
+        "elements_to_encode%15#0",
+        "val_as_bytes%10#0",
+        "val_as_bytes%9#0"
+      ],
+      "stack_out": [
+        "elements_to_encode%12#0",
+        "elements_to_encode%13#0",
+        "elements_to_encode%14#0",
+        "elements_to_encode%15#0",
+        "val_as_bytes%9#0",
+        "val_as_bytes%10#0"
+      ]
+    },
+    "193": {
+      "op": "uncover 5",
+      "stack_out": [
+        "elements_to_encode%13#0",
+        "elements_to_encode%14#0",
+        "elements_to_encode%15#0",
+        "val_as_bytes%9#0",
+        "val_as_bytes%10#0",
+        "elements_to_encode%12#0"
+      ]
+    },
+    "195": {
+      "op": "itob",
+      "defined_out": [
+        "elements_to_encode%13#0",
+        "elements_to_encode%14#0",
+        "elements_to_encode%15#0",
+        "val_as_bytes%10#0",
+        "val_as_bytes%11#0",
+        "val_as_bytes%9#0"
+      ],
+      "stack_out": [
+        "elements_to_encode%13#0",
+        "elements_to_encode%14#0",
+        "elements_to_encode%15#0",
+        "val_as_bytes%9#0",
+        "val_as_bytes%10#0",
+        "val_as_bytes%11#0"
+      ]
+    },
+    "196": {
+      "op": "pushbytes 0x00",
+      "defined_out": [
+        "0x00",
+        "elements_to_encode%13#0",
+        "elements_to_encode%14#0",
+        "elements_to_encode%15#0",
+        "val_as_bytes%10#0",
+        "val_as_bytes%11#0",
+        "val_as_bytes%9#0"
+      ],
+      "stack_out": [
+        "elements_to_encode%13#0",
+        "elements_to_encode%14#0",
+        "elements_to_encode%15#0",
+        "val_as_bytes%9#0",
+        "val_as_bytes%10#0",
+        "val_as_bytes%11#0",
+        "0x00"
+      ]
+    },
+    "199": {
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "0",
+        "0x00",
+        "elements_to_encode%13#0",
+        "elements_to_encode%14#0",
+        "elements_to_encode%15#0",
+        "val_as_bytes%10#0",
+        "val_as_bytes%11#0",
+        "val_as_bytes%9#0"
+      ],
+      "stack_out": [
+        "elements_to_encode%13#0",
+        "elements_to_encode%14#0",
+        "elements_to_encode%15#0",
+        "val_as_bytes%9#0",
+        "val_as_bytes%10#0",
+        "val_as_bytes%11#0",
+        "0x00",
+        "0"
+      ]
+    },
+    "200": {
+      "op": "uncover 7",
+      "stack_out": [
+        "elements_to_encode%14#0",
+        "elements_to_encode%15#0",
+        "val_as_bytes%9#0",
+        "val_as_bytes%10#0",
+        "val_as_bytes%11#0",
+        "0x00",
+        "0",
+        "elements_to_encode%13#0"
+      ]
+    },
+    "202": {
+      "op": "setbit",
+      "defined_out": [
+        "elements_to_encode%14#0",
+        "elements_to_encode%15#0",
+        "encoded_bool%0#0",
+        "val_as_bytes%10#0",
+        "val_as_bytes%11#0",
+        "val_as_bytes%9#0"
+      ],
+      "stack_out": [
+        "elements_to_encode%14#0",
+        "elements_to_encode%15#0",
+        "val_as_bytes%9#0",
+        "val_as_bytes%10#0",
+        "val_as_bytes%11#0",
+        "encoded_bool%0#0"
+      ]
+    },
+    "203": {
+      "op": "pushbytes 0x00",
+      "stack_out": [
+        "elements_to_encode%14#0",
+        "elements_to_encode%15#0",
+        "val_as_bytes%9#0",
+        "val_as_bytes%10#0",
+        "val_as_bytes%11#0",
+        "encoded_bool%0#0",
+        "0x00"
+      ]
+    },
+    "206": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "elements_to_encode%14#0",
+        "elements_to_encode%15#0",
+        "val_as_bytes%9#0",
+        "val_as_bytes%10#0",
+        "val_as_bytes%11#0",
+        "encoded_bool%0#0",
+        "0x00",
+        "0"
+      ]
+    },
+    "207": {
+      "op": "uncover 7",
+      "stack_out": [
+        "elements_to_encode%15#0",
+        "val_as_bytes%9#0",
+        "val_as_bytes%10#0",
+        "val_as_bytes%11#0",
+        "encoded_bool%0#0",
+        "0x00",
+        "0",
+        "elements_to_encode%14#0"
+      ]
+    },
+    "209": {
+      "op": "setbit",
+      "defined_out": [
+        "elements_to_encode%15#0",
+        "encoded_bool%0#0",
+        "encoded_bool%1#0",
+        "val_as_bytes%10#0",
+        "val_as_bytes%11#0",
+        "val_as_bytes%9#0"
+      ],
+      "stack_out": [
+        "elements_to_encode%15#0",
+        "val_as_bytes%9#0",
+        "val_as_bytes%10#0",
+        "val_as_bytes%11#0",
+        "encoded_bool%0#0",
+        "encoded_bool%1#0"
+      ]
+    },
+    "210": {
+      "op": "uncover 5",
+      "stack_out": [
+        "val_as_bytes%9#0",
+        "val_as_bytes%10#0",
+        "val_as_bytes%11#0",
+        "encoded_bool%0#0",
+        "encoded_bool%1#0",
+        "elements_to_encode%15#0"
+      ]
+    },
+    "212": {
+      "op": "itob",
+      "defined_out": [
+        "encoded_bool%0#0",
+        "encoded_bool%1#0",
+        "val_as_bytes%10#0",
+        "val_as_bytes%11#0",
+        "val_as_bytes%12#0",
+        "val_as_bytes%9#0"
+      ],
+      "stack_out": [
+        "val_as_bytes%9#0",
+        "val_as_bytes%10#0",
+        "val_as_bytes%11#0",
+        "encoded_bool%0#0",
+        "encoded_bool%1#0",
+        "val_as_bytes%12#0"
+      ]
+    },
+    "213": {
+      "op": "uncover 5",
+      "stack_out": [
+        "val_as_bytes%10#0",
+        "val_as_bytes%11#0",
+        "encoded_bool%0#0",
+        "encoded_bool%1#0",
+        "val_as_bytes%12#0",
+        "val_as_bytes%9#0"
+      ]
+    },
+    "215": {
+      "op": "uncover 5",
+      "stack_out": [
+        "val_as_bytes%11#0",
+        "encoded_bool%0#0",
+        "encoded_bool%1#0",
+        "val_as_bytes%12#0",
+        "val_as_bytes%9#0",
+        "val_as_bytes%10#0"
+      ]
+    },
+    "217": {
+      "op": "concat",
+      "defined_out": [
+        "encoded_bool%0#0",
+        "encoded_bool%1#0",
+        "encoded_tuple_buffer%15#0",
+        "val_as_bytes%11#0",
+        "val_as_bytes%12#0"
+      ],
+      "stack_out": [
+        "val_as_bytes%11#0",
+        "encoded_bool%0#0",
+        "encoded_bool%1#0",
+        "val_as_bytes%12#0",
+        "encoded_tuple_buffer%15#0"
+      ]
+    },
+    "218": {
+      "op": "uncover 4",
+      "stack_out": [
+        "encoded_bool%0#0",
+        "encoded_bool%1#0",
+        "val_as_bytes%12#0",
+        "encoded_tuple_buffer%15#0",
+        "val_as_bytes%11#0"
+      ]
+    },
+    "220": {
+      "op": "concat",
+      "defined_out": [
+        "encoded_bool%0#0",
+        "encoded_bool%1#0",
+        "encoded_tuple_buffer%16#0",
+        "val_as_bytes%12#0"
+      ],
+      "stack_out": [
+        "encoded_bool%0#0",
+        "encoded_bool%1#0",
+        "val_as_bytes%12#0",
+        "encoded_tuple_buffer%16#0"
+      ]
+    },
+    "221": {
+      "op": "uncover 3",
+      "stack_out": [
+        "encoded_bool%1#0",
+        "val_as_bytes%12#0",
+        "encoded_tuple_buffer%16#0",
+        "encoded_bool%0#0"
+      ]
+    },
+    "223": {
+      "op": "concat",
+      "defined_out": [
+        "encoded_bool%1#0",
+        "encoded_tuple_buffer%17#0",
+        "val_as_bytes%12#0"
+      ],
+      "stack_out": [
+        "encoded_bool%1#0",
+        "val_as_bytes%12#0",
+        "encoded_tuple_buffer%17#0"
+      ]
+    },
+    "224": {
+      "op": "uncover 2",
+      "stack_out": [
+        "val_as_bytes%12#0",
+        "encoded_tuple_buffer%17#0",
+        "encoded_bool%1#0"
+      ]
+    },
+    "226": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "val_as_bytes%12#0",
+        "encoded_tuple_buffer%17#0",
+        "encoded_bool%1#0",
+        "0"
+      ]
+    },
+    "227": {
+      "op": "getbit",
+      "defined_out": [
+        "encoded_tuple_buffer%17#0",
+        "is_true%0#0",
+        "val_as_bytes%12#0"
+      ],
+      "stack_out": [
+        "val_as_bytes%12#0",
+        "encoded_tuple_buffer%17#0",
+        "is_true%0#0"
+      ]
+    },
+    "228": {
+      "op": "pushint 193 // 193"
+    },
+    "231": {
+      "op": "swap",
+      "defined_out": [
+        "193",
+        "encoded_tuple_buffer%17#0",
+        "is_true%0#0",
+        "val_as_bytes%12#0"
+      ],
+      "stack_out": [
+        "val_as_bytes%12#0",
+        "encoded_tuple_buffer%17#0",
+        "193",
+        "is_true%0#0"
+      ]
+    },
+    "232": {
+      "op": "setbit",
+      "defined_out": [
+        "encoded_tuple_buffer%18#0",
+        "val_as_bytes%12#0"
+      ],
+      "stack_out": [
+        "val_as_bytes%12#0",
+        "encoded_tuple_buffer%18#0"
+      ]
+    },
+    "233": {
+      "op": "swap",
+      "stack_out": [
+        "encoded_tuple_buffer%18#0",
+        "val_as_bytes%12#0"
+      ]
+    },
+    "234": {
+      "op": "concat",
+      "defined_out": [
+        "encoded_tuple_buffer%19#0"
+      ],
+      "stack_out": [
+        "encoded_tuple_buffer%19#0"
+      ]
+    },
+    "235": {
+      "op": "bytec 7 // 0x151f7c75",
+      "defined_out": [
+        "0x151f7c75",
+        "encoded_tuple_buffer%19#0"
+      ],
+      "stack_out": [
+        "encoded_tuple_buffer%19#0",
+        "0x151f7c75"
+      ]
+    },
+    "237": {
+      "op": "swap",
+      "stack_out": [
+        "0x151f7c75",
+        "encoded_tuple_buffer%19#0"
+      ]
+    },
+    "238": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%32#0"
+      ],
+      "stack_out": [
+        "tmp%32#0"
+      ]
+    },
+    "239": {
+      "op": "log",
+      "stack_out": []
+    },
+    "240": {
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "241": {
+      "op": "return",
+      "stack_out": []
+    },
+    "242": {
+      "block": "main_getVestingInfo_route@6",
+      "stack_in": [],
+      "op": "txn OnCompletion",
+      "defined_out": [
+        "tmp%23#0"
+      ],
+      "stack_out": [
+        "tmp%23#0"
+      ]
+    },
+    "244": {
+      "op": "!",
+      "defined_out": [
+        "tmp%24#0"
+      ],
+      "stack_out": [
+        "tmp%24#0"
+      ]
+    },
+    "245": {
+      "error": "OnCompletion is not NoOp",
+      "op": "assert // OnCompletion is not NoOp",
+      "stack_out": []
+    },
+    "246": {
+      "op": "txn ApplicationID",
+      "defined_out": [
+        "tmp%25#0"
+      ],
+      "stack_out": [
+        "tmp%25#0"
+      ]
+    },
+    "248": {
+      "error": "can only call when not creating",
+      "op": "assert // can only call when not creating",
+      "stack_out": []
+    },
+    "249": {
+      "callsub": "smart_contracts/todo/contract.algo.ts::TokenVesting.getVestingInfo",
+      "op": "callsub getVestingInfo",
+      "defined_out": [
+        "elements_to_encode%0#0",
+        "elements_to_encode%1#0",
+        "elements_to_encode%2#0",
+        "elements_to_encode%3#0",
+        "elements_to_encode%4#0",
+        "elements_to_encode%5#0",
+        "elements_to_encode%6#0",
+        "elements_to_encode%7#0",
+        "elements_to_encode%8#0",
+        "elements_to_encode%9#0"
+      ],
+      "stack_out": [
+        "elements_to_encode%0#0",
+        "elements_to_encode%1#0",
+        "elements_to_encode%2#0",
+        "elements_to_encode%3#0",
+        "elements_to_encode%4#0",
+        "elements_to_encode%5#0",
+        "elements_to_encode%6#0",
+        "elements_to_encode%7#0",
+        "elements_to_encode%8#0",
+        "elements_to_encode%9#0"
+      ]
+    },
+    "252": {
+      "op": "dig 9",
+      "defined_out": [
+        "elements_to_encode%0#0",
+        "elements_to_encode%0#0 (copy)",
+        "elements_to_encode%1#0",
+        "elements_to_encode%2#0",
+        "elements_to_encode%3#0",
+        "elements_to_encode%4#0",
+        "elements_to_encode%5#0",
+        "elements_to_encode%6#0",
+        "elements_to_encode%7#0",
+        "elements_to_encode%8#0",
+        "elements_to_encode%9#0"
+      ],
+      "stack_out": [
+        "elements_to_encode%0#0",
+        "elements_to_encode%1#0",
+        "elements_to_encode%2#0",
+        "elements_to_encode%3#0",
+        "elements_to_encode%4#0",
+        "elements_to_encode%5#0",
+        "elements_to_encode%6#0",
+        "elements_to_encode%7#0",
+        "elements_to_encode%8#0",
+        "elements_to_encode%9#0",
+        "elements_to_encode%0#0 (copy)"
+      ]
+    },
+    "254": {
+      "op": "len",
+      "defined_out": [
+        "elements_to_encode%0#0",
+        "elements_to_encode%1#0",
+        "elements_to_encode%2#0",
+        "elements_to_encode%3#0",
+        "elements_to_encode%4#0",
+        "elements_to_encode%5#0",
+        "elements_to_encode%6#0",
+        "elements_to_encode%7#0",
+        "elements_to_encode%8#0",
+        "elements_to_encode%9#0",
+        "length%0#0"
+      ],
+      "stack_out": [
+        "elements_to_encode%0#0",
+        "elements_to_encode%1#0",
+        "elements_to_encode%2#0",
+        "elements_to_encode%3#0",
+        "elements_to_encode%4#0",
+        "elements_to_encode%5#0",
+        "elements_to_encode%6#0",
+        "elements_to_encode%7#0",
+        "elements_to_encode%8#0",
+        "elements_to_encode%9#0",
+        "length%0#0"
+      ]
+    },
+    "255": {
+      "op": "itob",
+      "defined_out": [
+        "as_bytes%0#0",
+        "elements_to_encode%0#0",
+        "elements_to_encode%1#0",
+        "elements_to_encode%2#0",
+        "elements_to_encode%3#0",
+        "elements_to_encode%4#0",
+        "elements_to_encode%5#0",
+        "elements_to_encode%6#0",
+        "elements_to_encode%7#0",
+        "elements_to_encode%8#0",
+        "elements_to_encode%9#0"
+      ],
+      "stack_out": [
+        "elements_to_encode%0#0",
+        "elements_to_encode%1#0",
+        "elements_to_encode%2#0",
+        "elements_to_encode%3#0",
+        "elements_to_encode%4#0",
+        "elements_to_encode%5#0",
+        "elements_to_encode%6#0",
+        "elements_to_encode%7#0",
+        "elements_to_encode%8#0",
+        "elements_to_encode%9#0",
+        "as_bytes%0#0"
+      ]
+    },
+    "256": {
+      "op": "extract 6 2",
+      "defined_out": [
+        "elements_to_encode%0#0",
+        "elements_to_encode%1#0",
+        "elements_to_encode%2#0",
+        "elements_to_encode%3#0",
+        "elements_to_encode%4#0",
+        "elements_to_encode%5#0",
+        "elements_to_encode%6#0",
+        "elements_to_encode%7#0",
+        "elements_to_encode%8#0",
+        "elements_to_encode%9#0",
+        "length_uint16%0#0"
+      ],
+      "stack_out": [
+        "elements_to_encode%0#0",
+        "elements_to_encode%1#0",
+        "elements_to_encode%2#0",
+        "elements_to_encode%3#0",
+        "elements_to_encode%4#0",
+        "elements_to_encode%5#0",
+        "elements_to_encode%6#0",
+        "elements_to_encode%7#0",
+        "elements_to_encode%8#0",
+        "elements_to_encode%9#0",
+        "length_uint16%0#0"
+      ]
+    },
+    "259": {
+      "op": "uncover 10",
+      "stack_out": [
+        "elements_to_encode%1#0",
+        "elements_to_encode%2#0",
+        "elements_to_encode%3#0",
+        "elements_to_encode%4#0",
+        "elements_to_encode%5#0",
+        "elements_to_encode%6#0",
+        "elements_to_encode%7#0",
+        "elements_to_encode%8#0",
+        "elements_to_encode%9#0",
+        "length_uint16%0#0",
+        "elements_to_encode%0#0"
+      ]
+    },
+    "261": {
+      "op": "concat",
+      "defined_out": [
+        "elements_to_encode%1#0",
+        "elements_to_encode%2#0",
+        "elements_to_encode%3#0",
+        "elements_to_encode%4#0",
+        "elements_to_encode%5#0",
+        "elements_to_encode%6#0",
+        "elements_to_encode%7#0",
+        "elements_to_encode%8#0",
+        "elements_to_encode%9#0",
+        "encoded_value%0#0"
+      ],
+      "stack_out": [
+        "elements_to_encode%1#0",
+        "elements_to_encode%2#0",
+        "elements_to_encode%3#0",
+        "elements_to_encode%4#0",
+        "elements_to_encode%5#0",
+        "elements_to_encode%6#0",
+        "elements_to_encode%7#0",
+        "elements_to_encode%8#0",
+        "elements_to_encode%9#0",
+        "encoded_value%0#0"
+      ]
+    },
+    "262": {
+      "op": "dig 9",
+      "defined_out": [
+        "elements_to_encode%1#0",
+        "elements_to_encode%1#0 (copy)",
+        "elements_to_encode%2#0",
+        "elements_to_encode%3#0",
+        "elements_to_encode%4#0",
+        "elements_to_encode%5#0",
+        "elements_to_encode%6#0",
+        "elements_to_encode%7#0",
+        "elements_to_encode%8#0",
+        "elements_to_encode%9#0",
+        "encoded_value%0#0"
+      ],
+      "stack_out": [
+        "elements_to_encode%1#0",
+        "elements_to_encode%2#0",
+        "elements_to_encode%3#0",
+        "elements_to_encode%4#0",
+        "elements_to_encode%5#0",
+        "elements_to_encode%6#0",
+        "elements_to_encode%7#0",
+        "elements_to_encode%8#0",
+        "elements_to_encode%9#0",
+        "encoded_value%0#0",
+        "elements_to_encode%1#0 (copy)"
+      ]
+    },
+    "264": {
+      "op": "len",
+      "defined_out": [
+        "elements_to_encode%1#0",
+        "elements_to_encode%2#0",
+        "elements_to_encode%3#0",
+        "elements_to_encode%4#0",
+        "elements_to_encode%5#0",
+        "elements_to_encode%6#0",
+        "elements_to_encode%7#0",
+        "elements_to_encode%8#0",
+        "elements_to_encode%9#0",
+        "encoded_value%0#0",
+        "length%1#0"
+      ],
+      "stack_out": [
+        "elements_to_encode%1#0",
+        "elements_to_encode%2#0",
+        "elements_to_encode%3#0",
+        "elements_to_encode%4#0",
+        "elements_to_encode%5#0",
+        "elements_to_encode%6#0",
+        "elements_to_encode%7#0",
+        "elements_to_encode%8#0",
+        "elements_to_encode%9#0",
+        "encoded_value%0#0",
+        "length%1#0"
+      ]
+    },
+    "265": {
+      "op": "itob",
+      "defined_out": [
+        "as_bytes%1#0",
+        "elements_to_encode%1#0",
+        "elements_to_encode%2#0",
+        "elements_to_encode%3#0",
+        "elements_to_encode%4#0",
+        "elements_to_encode%5#0",
+        "elements_to_encode%6#0",
+        "elements_to_encode%7#0",
+        "elements_to_encode%8#0",
+        "elements_to_encode%9#0",
+        "encoded_value%0#0"
+      ],
+      "stack_out": [
+        "elements_to_encode%1#0",
+        "elements_to_encode%2#0",
+        "elements_to_encode%3#0",
+        "elements_to_encode%4#0",
+        "elements_to_encode%5#0",
+        "elements_to_encode%6#0",
+        "elements_to_encode%7#0",
+        "elements_to_encode%8#0",
+        "elements_to_encode%9#0",
+        "encoded_value%0#0",
+        "as_bytes%1#0"
+      ]
+    },
+    "266": {
+      "op": "extract 6 2",
+      "defined_out": [
+        "elements_to_encode%1#0",
+        "elements_to_encode%2#0",
+        "elements_to_encode%3#0",
+        "elements_to_encode%4#0",
+        "elements_to_encode%5#0",
+        "elements_to_encode%6#0",
+        "elements_to_encode%7#0",
+        "elements_to_encode%8#0",
+        "elements_to_encode%9#0",
+        "encoded_value%0#0",
+        "length_uint16%1#0"
+      ],
+      "stack_out": [
+        "elements_to_encode%1#0",
+        "elements_to_encode%2#0",
+        "elements_to_encode%3#0",
+        "elements_to_encode%4#0",
+        "elements_to_encode%5#0",
+        "elements_to_encode%6#0",
+        "elements_to_encode%7#0",
+        "elements_to_encode%8#0",
+        "elements_to_encode%9#0",
+        "encoded_value%0#0",
+        "length_uint16%1#0"
+      ]
+    },
+    "269": {
+      "op": "uncover 10",
+      "stack_out": [
+        "elements_to_encode%2#0",
+        "elements_to_encode%3#0",
+        "elements_to_encode%4#0",
+        "elements_to_encode%5#0",
+        "elements_to_encode%6#0",
+        "elements_to_encode%7#0",
+        "elements_to_encode%8#0",
+        "elements_to_encode%9#0",
+        "encoded_value%0#0",
+        "length_uint16%1#0",
+        "elements_to_encode%1#0"
+      ]
+    },
+    "271": {
+      "op": "concat",
+      "defined_out": [
+        "elements_to_encode%2#0",
+        "elements_to_encode%3#0",
+        "elements_to_encode%4#0",
+        "elements_to_encode%5#0",
+        "elements_to_encode%6#0",
+        "elements_to_encode%7#0",
+        "elements_to_encode%8#0",
+        "elements_to_encode%9#0",
+        "encoded_value%0#0",
+        "encoded_value%1#0"
+      ],
+      "stack_out": [
+        "elements_to_encode%2#0",
+        "elements_to_encode%3#0",
+        "elements_to_encode%4#0",
+        "elements_to_encode%5#0",
+        "elements_to_encode%6#0",
+        "elements_to_encode%7#0",
+        "elements_to_encode%8#0",
+        "elements_to_encode%9#0",
+        "encoded_value%0#0",
+        "encoded_value%1#0"
+      ]
+    },
+    "272": {
+      "op": "uncover 9",
+      "stack_out": [
+        "elements_to_encode%3#0",
+        "elements_to_encode%4#0",
+        "elements_to_encode%5#0",
+        "elements_to_encode%6#0",
+        "elements_to_encode%7#0",
+        "elements_to_encode%8#0",
+        "elements_to_encode%9#0",
+        "encoded_value%0#0",
+        "encoded_value%1#0",
+        "elements_to_encode%2#0"
+      ]
+    },
+    "274": {
+      "op": "itob",
+      "defined_out": [
+        "elements_to_encode%3#0",
+        "elements_to_encode%4#0",
+        "elements_to_encode%5#0",
+        "elements_to_encode%6#0",
+        "elements_to_encode%7#0",
+        "elements_to_encode%8#0",
+        "elements_to_encode%9#0",
+        "encoded_value%0#0",
+        "encoded_value%1#0",
+        "val_as_bytes%1#0"
+      ],
+      "stack_out": [
+        "elements_to_encode%3#0",
+        "elements_to_encode%4#0",
+        "elements_to_encode%5#0",
+        "elements_to_encode%6#0",
+        "elements_to_encode%7#0",
+        "elements_to_encode%8#0",
+        "elements_to_encode%9#0",
+        "encoded_value%0#0",
+        "encoded_value%1#0",
+        "val_as_bytes%1#0"
+      ]
+    },
+    "275": {
+      "op": "uncover 9",
+      "stack_out": [
+        "elements_to_encode%4#0",
+        "elements_to_encode%5#0",
+        "elements_to_encode%6#0",
+        "elements_to_encode%7#0",
+        "elements_to_encode%8#0",
+        "elements_to_encode%9#0",
+        "encoded_value%0#0",
+        "encoded_value%1#0",
+        "val_as_bytes%1#0",
+        "elements_to_encode%3#0"
+      ]
+    },
+    "277": {
+      "op": "itob",
+      "defined_out": [
+        "elements_to_encode%4#0",
+        "elements_to_encode%5#0",
+        "elements_to_encode%6#0",
+        "elements_to_encode%7#0",
+        "elements_to_encode%8#0",
+        "elements_to_encode%9#0",
+        "encoded_value%0#0",
+        "encoded_value%1#0",
+        "val_as_bytes%1#0",
+        "val_as_bytes%2#0"
+      ],
+      "stack_out": [
+        "elements_to_encode%4#0",
+        "elements_to_encode%5#0",
+        "elements_to_encode%6#0",
+        "elements_to_encode%7#0",
+        "elements_to_encode%8#0",
+        "elements_to_encode%9#0",
+        "encoded_value%0#0",
+        "encoded_value%1#0",
+        "val_as_bytes%1#0",
+        "val_as_bytes%2#0"
+      ]
+    },
+    "278": {
+      "op": "uncover 9",
+      "stack_out": [
+        "elements_to_encode%5#0",
+        "elements_to_encode%6#0",
+        "elements_to_encode%7#0",
+        "elements_to_encode%8#0",
+        "elements_to_encode%9#0",
+        "encoded_value%0#0",
+        "encoded_value%1#0",
+        "val_as_bytes%1#0",
+        "val_as_bytes%2#0",
+        "elements_to_encode%4#0"
+      ]
+    },
+    "280": {
+      "op": "itob",
+      "defined_out": [
+        "elements_to_encode%5#0",
+        "elements_to_encode%6#0",
+        "elements_to_encode%7#0",
+        "elements_to_encode%8#0",
+        "elements_to_encode%9#0",
+        "encoded_value%0#0",
+        "encoded_value%1#0",
+        "val_as_bytes%1#0",
+        "val_as_bytes%2#0",
+        "val_as_bytes%3#0"
+      ],
+      "stack_out": [
+        "elements_to_encode%5#0",
+        "elements_to_encode%6#0",
+        "elements_to_encode%7#0",
+        "elements_to_encode%8#0",
+        "elements_to_encode%9#0",
+        "encoded_value%0#0",
+        "encoded_value%1#0",
+        "val_as_bytes%1#0",
+        "val_as_bytes%2#0",
+        "val_as_bytes%3#0"
+      ]
+    },
+    "281": {
+      "op": "uncover 9",
+      "stack_out": [
+        "elements_to_encode%6#0",
+        "elements_to_encode%7#0",
+        "elements_to_encode%8#0",
+        "elements_to_encode%9#0",
+        "encoded_value%0#0",
+        "encoded_value%1#0",
+        "val_as_bytes%1#0",
+        "val_as_bytes%2#0",
+        "val_as_bytes%3#0",
+        "elements_to_encode%5#0"
+      ]
+    },
+    "283": {
+      "op": "itob",
+      "defined_out": [
+        "elements_to_encode%6#0",
+        "elements_to_encode%7#0",
+        "elements_to_encode%8#0",
+        "elements_to_encode%9#0",
+        "encoded_value%0#0",
+        "encoded_value%1#0",
+        "val_as_bytes%1#0",
+        "val_as_bytes%2#0",
+        "val_as_bytes%3#0",
+        "val_as_bytes%4#0"
+      ],
+      "stack_out": [
+        "elements_to_encode%6#0",
+        "elements_to_encode%7#0",
+        "elements_to_encode%8#0",
+        "elements_to_encode%9#0",
+        "encoded_value%0#0",
+        "encoded_value%1#0",
+        "val_as_bytes%1#0",
+        "val_as_bytes%2#0",
+        "val_as_bytes%3#0",
+        "val_as_bytes%4#0"
+      ]
+    },
+    "284": {
+      "op": "uncover 9",
+      "stack_out": [
+        "elements_to_encode%7#0",
+        "elements_to_encode%8#0",
+        "elements_to_encode%9#0",
+        "encoded_value%0#0",
+        "encoded_value%1#0",
+        "val_as_bytes%1#0",
+        "val_as_bytes%2#0",
+        "val_as_bytes%3#0",
+        "val_as_bytes%4#0",
+        "elements_to_encode%6#0"
+      ]
+    },
+    "286": {
+      "op": "itob",
+      "defined_out": [
+        "elements_to_encode%7#0",
+        "elements_to_encode%8#0",
+        "elements_to_encode%9#0",
+        "encoded_value%0#0",
+        "encoded_value%1#0",
+        "val_as_bytes%1#0",
+        "val_as_bytes%2#0",
+        "val_as_bytes%3#0",
+        "val_as_bytes%4#0",
+        "val_as_bytes%5#0"
+      ],
+      "stack_out": [
+        "elements_to_encode%7#0",
+        "elements_to_encode%8#0",
+        "elements_to_encode%9#0",
+        "encoded_value%0#0",
+        "encoded_value%1#0",
+        "val_as_bytes%1#0",
+        "val_as_bytes%2#0",
+        "val_as_bytes%3#0",
+        "val_as_bytes%4#0",
+        "val_as_bytes%5#0"
+      ]
+    },
+    "287": {
+      "op": "uncover 9",
+      "stack_out": [
+        "elements_to_encode%8#0",
+        "elements_to_encode%9#0",
+        "encoded_value%0#0",
+        "encoded_value%1#0",
+        "val_as_bytes%1#0",
+        "val_as_bytes%2#0",
+        "val_as_bytes%3#0",
+        "val_as_bytes%4#0",
+        "val_as_bytes%5#0",
+        "elements_to_encode%7#0"
+      ]
+    },
+    "289": {
+      "op": "itob",
+      "defined_out": [
+        "elements_to_encode%8#0",
+        "elements_to_encode%9#0",
+        "encoded_value%0#0",
+        "encoded_value%1#0",
+        "val_as_bytes%1#0",
+        "val_as_bytes%2#0",
+        "val_as_bytes%3#0",
+        "val_as_bytes%4#0",
+        "val_as_bytes%5#0",
+        "val_as_bytes%6#0"
+      ],
+      "stack_out": [
+        "elements_to_encode%8#0",
+        "elements_to_encode%9#0",
+        "encoded_value%0#0",
+        "encoded_value%1#0",
+        "val_as_bytes%1#0",
+        "val_as_bytes%2#0",
+        "val_as_bytes%3#0",
+        "val_as_bytes%4#0",
+        "val_as_bytes%5#0",
+        "val_as_bytes%6#0"
+      ]
+    },
+    "290": {
+      "op": "uncover 9",
+      "stack_out": [
+        "elements_to_encode%9#0",
+        "encoded_value%0#0",
+        "encoded_value%1#0",
+        "val_as_bytes%1#0",
+        "val_as_bytes%2#0",
+        "val_as_bytes%3#0",
+        "val_as_bytes%4#0",
+        "val_as_bytes%5#0",
+        "val_as_bytes%6#0",
+        "elements_to_encode%8#0"
+      ]
+    },
+    "292": {
+      "op": "itob",
+      "defined_out": [
+        "elements_to_encode%9#0",
+        "encoded_value%0#0",
+        "encoded_value%1#0",
+        "val_as_bytes%1#0",
+        "val_as_bytes%2#0",
+        "val_as_bytes%3#0",
+        "val_as_bytes%4#0",
+        "val_as_bytes%5#0",
+        "val_as_bytes%6#0",
+        "val_as_bytes%7#0"
+      ],
+      "stack_out": [
+        "elements_to_encode%9#0",
+        "encoded_value%0#0",
+        "encoded_value%1#0",
+        "val_as_bytes%1#0",
+        "val_as_bytes%2#0",
+        "val_as_bytes%3#0",
+        "val_as_bytes%4#0",
+        "val_as_bytes%5#0",
+        "val_as_bytes%6#0",
+        "val_as_bytes%7#0"
+      ]
+    },
+    "293": {
+      "op": "uncover 9",
+      "stack_out": [
+        "encoded_value%0#0",
+        "encoded_value%1#0",
+        "val_as_bytes%1#0",
+        "val_as_bytes%2#0",
+        "val_as_bytes%3#0",
+        "val_as_bytes%4#0",
+        "val_as_bytes%5#0",
+        "val_as_bytes%6#0",
+        "val_as_bytes%7#0",
+        "elements_to_encode%9#0"
+      ]
+    },
+    "295": {
+      "op": "itob",
+      "defined_out": [
+        "encoded_value%0#0",
+        "encoded_value%1#0",
+        "val_as_bytes%1#0",
+        "val_as_bytes%2#0",
+        "val_as_bytes%3#0",
+        "val_as_bytes%4#0",
+        "val_as_bytes%5#0",
+        "val_as_bytes%6#0",
+        "val_as_bytes%7#0",
+        "val_as_bytes%8#0"
+      ],
+      "stack_out": [
+        "encoded_value%0#0",
+        "encoded_value%1#0",
+        "val_as_bytes%1#0",
+        "val_as_bytes%2#0",
+        "val_as_bytes%3#0",
+        "val_as_bytes%4#0",
+        "val_as_bytes%5#0",
+        "val_as_bytes%6#0",
+        "val_as_bytes%7#0",
+        "val_as_bytes%8#0"
+      ]
+    },
+    "296": {
+      "op": "dig 9",
+      "defined_out": [
+        "encoded_value%0#0",
+        "encoded_value%0#0 (copy)",
+        "encoded_value%1#0",
+        "val_as_bytes%1#0",
+        "val_as_bytes%2#0",
+        "val_as_bytes%3#0",
+        "val_as_bytes%4#0",
+        "val_as_bytes%5#0",
+        "val_as_bytes%6#0",
+        "val_as_bytes%7#0",
+        "val_as_bytes%8#0"
+      ],
+      "stack_out": [
+        "encoded_value%0#0",
+        "encoded_value%1#0",
+        "val_as_bytes%1#0",
+        "val_as_bytes%2#0",
+        "val_as_bytes%3#0",
+        "val_as_bytes%4#0",
+        "val_as_bytes%5#0",
+        "val_as_bytes%6#0",
+        "val_as_bytes%7#0",
+        "val_as_bytes%8#0",
+        "encoded_value%0#0 (copy)"
+      ]
+    },
+    "298": {
+      "op": "len",
+      "defined_out": [
+        "data_length%0#0",
+        "encoded_value%0#0",
+        "encoded_value%1#0",
+        "val_as_bytes%1#0",
+        "val_as_bytes%2#0",
+        "val_as_bytes%3#0",
+        "val_as_bytes%4#0",
+        "val_as_bytes%5#0",
+        "val_as_bytes%6#0",
+        "val_as_bytes%7#0",
+        "val_as_bytes%8#0"
+      ],
+      "stack_out": [
+        "encoded_value%0#0",
+        "encoded_value%1#0",
+        "val_as_bytes%1#0",
+        "val_as_bytes%2#0",
+        "val_as_bytes%3#0",
+        "val_as_bytes%4#0",
+        "val_as_bytes%5#0",
+        "val_as_bytes%6#0",
+        "val_as_bytes%7#0",
+        "val_as_bytes%8#0",
+        "data_length%0#0"
+      ]
+    },
+    "299": {
+      "op": "pushint 68 // 68",
+      "defined_out": [
+        "68",
+        "data_length%0#0",
+        "encoded_value%0#0",
+        "encoded_value%1#0",
+        "val_as_bytes%1#0",
+        "val_as_bytes%2#0",
+        "val_as_bytes%3#0",
+        "val_as_bytes%4#0",
+        "val_as_bytes%5#0",
+        "val_as_bytes%6#0",
+        "val_as_bytes%7#0",
+        "val_as_bytes%8#0"
+      ],
+      "stack_out": [
+        "encoded_value%0#0",
+        "encoded_value%1#0",
+        "val_as_bytes%1#0",
+        "val_as_bytes%2#0",
+        "val_as_bytes%3#0",
+        "val_as_bytes%4#0",
+        "val_as_bytes%5#0",
+        "val_as_bytes%6#0",
+        "val_as_bytes%7#0",
+        "val_as_bytes%8#0",
+        "data_length%0#0",
+        "68"
+      ]
+    },
+    "301": {
+      "op": "+",
+      "defined_out": [
+        "current_tail_offset%1#0",
+        "encoded_value%0#0",
+        "encoded_value%1#0",
+        "val_as_bytes%1#0",
+        "val_as_bytes%2#0",
+        "val_as_bytes%3#0",
+        "val_as_bytes%4#0",
+        "val_as_bytes%5#0",
+        "val_as_bytes%6#0",
+        "val_as_bytes%7#0",
+        "val_as_bytes%8#0"
+      ],
+      "stack_out": [
+        "encoded_value%0#0",
+        "encoded_value%1#0",
+        "val_as_bytes%1#0",
+        "val_as_bytes%2#0",
+        "val_as_bytes%3#0",
+        "val_as_bytes%4#0",
+        "val_as_bytes%5#0",
+        "val_as_bytes%6#0",
+        "val_as_bytes%7#0",
+        "val_as_bytes%8#0",
+        "current_tail_offset%1#0"
+      ]
+    },
+    "302": {
+      "op": "itob",
+      "defined_out": [
+        "as_bytes%3#0",
+        "encoded_value%0#0",
+        "encoded_value%1#0",
+        "val_as_bytes%1#0",
+        "val_as_bytes%2#0",
+        "val_as_bytes%3#0",
+        "val_as_bytes%4#0",
+        "val_as_bytes%5#0",
+        "val_as_bytes%6#0",
+        "val_as_bytes%7#0",
+        "val_as_bytes%8#0"
+      ],
+      "stack_out": [
+        "encoded_value%0#0",
+        "encoded_value%1#0",
+        "val_as_bytes%1#0",
+        "val_as_bytes%2#0",
+        "val_as_bytes%3#0",
+        "val_as_bytes%4#0",
+        "val_as_bytes%5#0",
+        "val_as_bytes%6#0",
+        "val_as_bytes%7#0",
+        "val_as_bytes%8#0",
+        "as_bytes%3#0"
+      ]
+    },
+    "303": {
+      "op": "extract 6 2",
+      "defined_out": [
+        "encoded_value%0#0",
+        "encoded_value%1#0",
+        "offset_as_uint16%1#0",
+        "val_as_bytes%1#0",
+        "val_as_bytes%2#0",
+        "val_as_bytes%3#0",
+        "val_as_bytes%4#0",
+        "val_as_bytes%5#0",
+        "val_as_bytes%6#0",
+        "val_as_bytes%7#0",
+        "val_as_bytes%8#0"
+      ],
+      "stack_out": [
+        "encoded_value%0#0",
+        "encoded_value%1#0",
+        "val_as_bytes%1#0",
+        "val_as_bytes%2#0",
+        "val_as_bytes%3#0",
+        "val_as_bytes%4#0",
+        "val_as_bytes%5#0",
+        "val_as_bytes%6#0",
+        "val_as_bytes%7#0",
+        "val_as_bytes%8#0",
+        "offset_as_uint16%1#0"
+      ]
+    },
+    "306": {
+      "op": "pushbytes 0x0044",
+      "defined_out": [
+        "0x0044",
+        "encoded_value%0#0",
+        "encoded_value%1#0",
+        "offset_as_uint16%1#0",
+        "val_as_bytes%1#0",
+        "val_as_bytes%2#0",
+        "val_as_bytes%3#0",
+        "val_as_bytes%4#0",
+        "val_as_bytes%5#0",
+        "val_as_bytes%6#0",
+        "val_as_bytes%7#0",
+        "val_as_bytes%8#0"
+      ],
+      "stack_out": [
+        "encoded_value%0#0",
+        "encoded_value%1#0",
+        "val_as_bytes%1#0",
+        "val_as_bytes%2#0",
+        "val_as_bytes%3#0",
+        "val_as_bytes%4#0",
+        "val_as_bytes%5#0",
+        "val_as_bytes%6#0",
+        "val_as_bytes%7#0",
+        "val_as_bytes%8#0",
+        "offset_as_uint16%1#0",
+        "0x0044"
+      ]
+    },
+    "310": {
+      "op": "swap",
+      "stack_out": [
+        "encoded_value%0#0",
+        "encoded_value%1#0",
+        "val_as_bytes%1#0",
+        "val_as_bytes%2#0",
+        "val_as_bytes%3#0",
+        "val_as_bytes%4#0",
+        "val_as_bytes%5#0",
+        "val_as_bytes%6#0",
+        "val_as_bytes%7#0",
+        "val_as_bytes%8#0",
+        "0x0044",
+        "offset_as_uint16%1#0"
+      ]
+    },
+    "311": {
+      "op": "concat",
+      "defined_out": [
+        "encoded_tuple_buffer%2#0",
+        "encoded_value%0#0",
+        "encoded_value%1#0",
+        "val_as_bytes%1#0",
+        "val_as_bytes%2#0",
+        "val_as_bytes%3#0",
+        "val_as_bytes%4#0",
+        "val_as_bytes%5#0",
+        "val_as_bytes%6#0",
+        "val_as_bytes%7#0",
+        "val_as_bytes%8#0"
+      ],
+      "stack_out": [
+        "encoded_value%0#0",
+        "encoded_value%1#0",
+        "val_as_bytes%1#0",
+        "val_as_bytes%2#0",
+        "val_as_bytes%3#0",
+        "val_as_bytes%4#0",
+        "val_as_bytes%5#0",
+        "val_as_bytes%6#0",
+        "val_as_bytes%7#0",
+        "val_as_bytes%8#0",
+        "encoded_tuple_buffer%2#0"
+      ]
+    },
+    "312": {
+      "op": "uncover 8",
+      "stack_out": [
+        "encoded_value%0#0",
+        "encoded_value%1#0",
+        "val_as_bytes%2#0",
+        "val_as_bytes%3#0",
+        "val_as_bytes%4#0",
+        "val_as_bytes%5#0",
+        "val_as_bytes%6#0",
+        "val_as_bytes%7#0",
+        "val_as_bytes%8#0",
+        "encoded_tuple_buffer%2#0",
+        "val_as_bytes%1#0"
+      ]
+    },
+    "314": {
+      "op": "concat",
+      "defined_out": [
+        "encoded_tuple_buffer%3#0",
+        "encoded_value%0#0",
+        "encoded_value%1#0",
+        "val_as_bytes%2#0",
+        "val_as_bytes%3#0",
+        "val_as_bytes%4#0",
+        "val_as_bytes%5#0",
+        "val_as_bytes%6#0",
+        "val_as_bytes%7#0",
+        "val_as_bytes%8#0"
+      ],
+      "stack_out": [
+        "encoded_value%0#0",
+        "encoded_value%1#0",
+        "val_as_bytes%2#0",
+        "val_as_bytes%3#0",
+        "val_as_bytes%4#0",
+        "val_as_bytes%5#0",
+        "val_as_bytes%6#0",
+        "val_as_bytes%7#0",
+        "val_as_bytes%8#0",
+        "encoded_tuple_buffer%3#0"
+      ]
+    },
+    "315": {
+      "op": "uncover 7",
+      "stack_out": [
+        "encoded_value%0#0",
+        "encoded_value%1#0",
+        "val_as_bytes%3#0",
+        "val_as_bytes%4#0",
+        "val_as_bytes%5#0",
+        "val_as_bytes%6#0",
+        "val_as_bytes%7#0",
+        "val_as_bytes%8#0",
+        "encoded_tuple_buffer%3#0",
+        "val_as_bytes%2#0"
+      ]
+    },
+    "317": {
+      "op": "concat",
+      "defined_out": [
+        "encoded_tuple_buffer%4#0",
+        "encoded_value%0#0",
+        "encoded_value%1#0",
+        "val_as_bytes%3#0",
+        "val_as_bytes%4#0",
+        "val_as_bytes%5#0",
+        "val_as_bytes%6#0",
+        "val_as_bytes%7#0",
+        "val_as_bytes%8#0"
+      ],
+      "stack_out": [
+        "encoded_value%0#0",
+        "encoded_value%1#0",
+        "val_as_bytes%3#0",
+        "val_as_bytes%4#0",
+        "val_as_bytes%5#0",
+        "val_as_bytes%6#0",
+        "val_as_bytes%7#0",
+        "val_as_bytes%8#0",
+        "encoded_tuple_buffer%4#0"
+      ]
+    },
+    "318": {
+      "op": "uncover 6",
+      "stack_out": [
+        "encoded_value%0#0",
+        "encoded_value%1#0",
+        "val_as_bytes%4#0",
+        "val_as_bytes%5#0",
+        "val_as_bytes%6#0",
+        "val_as_bytes%7#0",
+        "val_as_bytes%8#0",
+        "encoded_tuple_buffer%4#0",
+        "val_as_bytes%3#0"
+      ]
+    },
+    "320": {
+      "op": "concat",
+      "defined_out": [
+        "encoded_tuple_buffer%5#0",
+        "encoded_value%0#0",
+        "encoded_value%1#0",
+        "val_as_bytes%4#0",
+        "val_as_bytes%5#0",
+        "val_as_bytes%6#0",
+        "val_as_bytes%7#0",
+        "val_as_bytes%8#0"
+      ],
+      "stack_out": [
+        "encoded_value%0#0",
+        "encoded_value%1#0",
+        "val_as_bytes%4#0",
+        "val_as_bytes%5#0",
+        "val_as_bytes%6#0",
+        "val_as_bytes%7#0",
+        "val_as_bytes%8#0",
+        "encoded_tuple_buffer%5#0"
+      ]
+    },
+    "321": {
+      "op": "uncover 5",
+      "stack_out": [
+        "encoded_value%0#0",
+        "encoded_value%1#0",
+        "val_as_bytes%5#0",
+        "val_as_bytes%6#0",
+        "val_as_bytes%7#0",
+        "val_as_bytes%8#0",
+        "encoded_tuple_buffer%5#0",
+        "val_as_bytes%4#0"
+      ]
+    },
+    "323": {
+      "op": "concat",
+      "defined_out": [
+        "encoded_tuple_buffer%6#0",
+        "encoded_value%0#0",
+        "encoded_value%1#0",
+        "val_as_bytes%5#0",
+        "val_as_bytes%6#0",
+        "val_as_bytes%7#0",
+        "val_as_bytes%8#0"
+      ],
+      "stack_out": [
+        "encoded_value%0#0",
+        "encoded_value%1#0",
+        "val_as_bytes%5#0",
+        "val_as_bytes%6#0",
+        "val_as_bytes%7#0",
+        "val_as_bytes%8#0",
+        "encoded_tuple_buffer%6#0"
+      ]
+    },
+    "324": {
+      "op": "uncover 4",
+      "stack_out": [
+        "encoded_value%0#0",
+        "encoded_value%1#0",
+        "val_as_bytes%6#0",
+        "val_as_bytes%7#0",
+        "val_as_bytes%8#0",
+        "encoded_tuple_buffer%6#0",
+        "val_as_bytes%5#0"
+      ]
+    },
+    "326": {
+      "op": "concat",
+      "defined_out": [
+        "encoded_tuple_buffer%7#0",
+        "encoded_value%0#0",
+        "encoded_value%1#0",
+        "val_as_bytes%6#0",
+        "val_as_bytes%7#0",
+        "val_as_bytes%8#0"
+      ],
+      "stack_out": [
+        "encoded_value%0#0",
+        "encoded_value%1#0",
+        "val_as_bytes%6#0",
+        "val_as_bytes%7#0",
+        "val_as_bytes%8#0",
+        "encoded_tuple_buffer%7#0"
+      ]
+    },
+    "327": {
+      "op": "uncover 3",
+      "stack_out": [
+        "encoded_value%0#0",
+        "encoded_value%1#0",
+        "val_as_bytes%7#0",
+        "val_as_bytes%8#0",
+        "encoded_tuple_buffer%7#0",
+        "val_as_bytes%6#0"
+      ]
+    },
+    "329": {
+      "op": "concat",
+      "defined_out": [
+        "encoded_tuple_buffer%8#0",
+        "encoded_value%0#0",
+        "encoded_value%1#0",
+        "val_as_bytes%7#0",
+        "val_as_bytes%8#0"
+      ],
+      "stack_out": [
+        "encoded_value%0#0",
+        "encoded_value%1#0",
+        "val_as_bytes%7#0",
+        "val_as_bytes%8#0",
+        "encoded_tuple_buffer%8#0"
+      ]
+    },
+    "330": {
+      "op": "uncover 2",
+      "stack_out": [
+        "encoded_value%0#0",
+        "encoded_value%1#0",
+        "val_as_bytes%8#0",
+        "encoded_tuple_buffer%8#0",
+        "val_as_bytes%7#0"
+      ]
+    },
+    "332": {
+      "op": "concat",
+      "defined_out": [
+        "encoded_tuple_buffer%9#0",
+        "encoded_value%0#0",
+        "encoded_value%1#0",
+        "val_as_bytes%8#0"
+      ],
+      "stack_out": [
+        "encoded_value%0#0",
+        "encoded_value%1#0",
+        "val_as_bytes%8#0",
+        "encoded_tuple_buffer%9#0"
+      ]
+    },
+    "333": {
+      "op": "swap",
+      "stack_out": [
+        "encoded_value%0#0",
+        "encoded_value%1#0",
+        "encoded_tuple_buffer%9#0",
+        "val_as_bytes%8#0"
+      ]
+    },
+    "334": {
+      "op": "concat",
+      "defined_out": [
+        "encoded_tuple_buffer%10#0",
+        "encoded_value%0#0",
+        "encoded_value%1#0"
+      ],
+      "stack_out": [
+        "encoded_value%0#0",
+        "encoded_value%1#0",
+        "encoded_tuple_buffer%10#0"
+      ]
+    },
+    "335": {
+      "op": "uncover 2",
+      "stack_out": [
+        "encoded_value%1#0",
+        "encoded_tuple_buffer%10#0",
+        "encoded_value%0#0"
+      ]
+    },
+    "337": {
+      "op": "concat",
+      "defined_out": [
+        "encoded_tuple_buffer%11#0",
+        "encoded_value%1#0"
+      ],
+      "stack_out": [
+        "encoded_value%1#0",
+        "encoded_tuple_buffer%11#0"
+      ]
+    },
+    "338": {
+      "op": "swap",
+      "stack_out": [
+        "encoded_tuple_buffer%11#0",
+        "encoded_value%1#0"
+      ]
+    },
+    "339": {
+      "op": "concat",
+      "defined_out": [
+        "encoded_tuple_buffer%12#0"
+      ],
+      "stack_out": [
+        "encoded_tuple_buffer%12#0"
+      ]
+    },
+    "340": {
+      "op": "bytec 7 // 0x151f7c75",
+      "defined_out": [
+        "0x151f7c75",
+        "encoded_tuple_buffer%12#0"
+      ],
+      "stack_out": [
+        "encoded_tuple_buffer%12#0",
+        "0x151f7c75"
+      ]
+    },
+    "342": {
+      "op": "swap",
+      "stack_out": [
+        "0x151f7c75",
+        "encoded_tuple_buffer%12#0"
+      ]
+    },
+    "343": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%27#0"
+      ],
+      "stack_out": [
+        "tmp%27#0"
+      ]
+    },
+    "344": {
+      "op": "log",
+      "stack_out": []
+    },
+    "345": {
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "346": {
+      "op": "return",
+      "stack_out": []
+    },
+    "347": {
+      "block": "main_calculateVested_route@5",
+      "stack_in": [],
+      "op": "txn OnCompletion",
+      "defined_out": [
+        "tmp%18#0"
+      ],
+      "stack_out": [
+        "tmp%18#0"
+      ]
+    },
+    "349": {
+      "op": "!",
+      "defined_out": [
+        "tmp%19#0"
+      ],
+      "stack_out": [
+        "tmp%19#0"
+      ]
+    },
+    "350": {
+      "error": "OnCompletion is not NoOp",
+      "op": "assert // OnCompletion is not NoOp",
+      "stack_out": []
+    },
+    "351": {
+      "op": "txn ApplicationID",
+      "defined_out": [
+        "tmp%20#0"
+      ],
+      "stack_out": [
+        "tmp%20#0"
+      ]
+    },
+    "353": {
+      "error": "can only call when not creating",
+      "op": "assert // can only call when not creating",
+      "stack_out": []
+    },
+    "354": {
+      "callsub": "smart_contracts/todo/contract.algo.ts::TokenVesting.calculateVested",
+      "op": "callsub calculateVested",
+      "defined_out": [
+        "to_encode%0#0"
+      ],
+      "stack_out": [
+        "to_encode%0#0"
+      ]
+    },
+    "357": {
+      "op": "itob",
+      "defined_out": [
+        "val_as_bytes%0#0"
+      ],
+      "stack_out": [
+        "val_as_bytes%0#0"
+      ]
+    },
+    "358": {
+      "op": "bytec 7 // 0x151f7c75",
+      "defined_out": [
+        "0x151f7c75",
+        "val_as_bytes%0#0"
+      ],
+      "stack_out": [
+        "val_as_bytes%0#0",
+        "0x151f7c75"
+      ]
+    },
+    "360": {
+      "op": "swap",
+      "stack_out": [
+        "0x151f7c75",
+        "val_as_bytes%0#0"
+      ]
+    },
+    "361": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%22#0"
+      ],
+      "stack_out": [
+        "tmp%22#0"
+      ]
+    },
+    "362": {
+      "op": "log",
+      "stack_out": []
+    },
+    "363": {
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "364": {
+      "op": "return",
+      "stack_out": []
+    },
+    "365": {
+      "block": "main_claim_route@4",
+      "stack_in": [],
+      "op": "txn OnCompletion",
+      "defined_out": [
+        "tmp%14#0"
+      ],
+      "stack_out": [
+        "tmp%14#0"
+      ]
+    },
+    "367": {
+      "op": "!",
+      "defined_out": [
+        "tmp%15#0"
+      ],
+      "stack_out": [
+        "tmp%15#0"
+      ]
+    },
+    "368": {
+      "error": "OnCompletion is not NoOp",
+      "op": "assert // OnCompletion is not NoOp",
+      "stack_out": []
+    },
+    "369": {
+      "op": "txn ApplicationID",
+      "defined_out": [
+        "tmp%16#0"
+      ],
+      "stack_out": [
+        "tmp%16#0"
+      ]
+    },
+    "371": {
+      "error": "can only call when not creating",
+      "op": "assert // can only call when not creating",
+      "stack_out": []
+    },
+    "372": {
+      "callsub": "smart_contracts/todo/contract.algo.ts::TokenVesting.claim",
+      "op": "callsub claim"
+    },
+    "375": {
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "376": {
+      "op": "return",
+      "stack_out": []
+    },
+    "377": {
+      "block": "main_createVesting_route@3",
+      "stack_in": [],
+      "op": "txn OnCompletion",
+      "defined_out": [
+        "tmp%3#0"
+      ],
+      "stack_out": [
+        "tmp%3#0"
+      ]
+    },
+    "379": {
+      "op": "!",
+      "defined_out": [
+        "tmp%4#0"
+      ],
+      "stack_out": [
+        "tmp%4#0"
+      ]
+    },
+    "380": {
+      "error": "OnCompletion is not NoOp",
+      "op": "assert // OnCompletion is not NoOp",
+      "stack_out": []
+    },
+    "381": {
+      "op": "txn ApplicationID",
+      "defined_out": [
+        "tmp%5#0"
+      ],
+      "stack_out": [
+        "tmp%5#0"
+      ]
+    },
+    "383": {
+      "error": "can only call when not creating",
+      "op": "assert // can only call when not creating",
+      "stack_out": []
+    },
+    "384": {
+      "op": "txna ApplicationArgs 1",
+      "defined_out": [
+        "tmp%7#0"
+      ],
+      "stack_out": [
+        "tmp%7#0"
+      ]
+    },
+    "387": {
+      "op": "extract 2 0",
+      "defined_out": [
+        "tmp%8#0"
+      ],
+      "stack_out": [
+        "tmp%8#0"
+      ]
+    },
+    "390": {
+      "op": "txna ApplicationArgs 2",
+      "defined_out": [
+        "reinterpret_bytes[8]%0#0",
+        "tmp%8#0"
+      ],
+      "stack_out": [
+        "tmp%8#0",
+        "reinterpret_bytes[8]%0#0"
+      ]
+    },
+    "393": {
+      "op": "btoi",
+      "defined_out": [
+        "tmp%8#0",
+        "tmp%9#0"
+      ],
+      "stack_out": [
+        "tmp%8#0",
+        "tmp%9#0"
+      ]
+    },
+    "394": {
+      "op": "txna ApplicationArgs 3",
+      "defined_out": [
+        "reinterpret_bytes[8]%1#0",
+        "tmp%8#0",
+        "tmp%9#0"
+      ],
+      "stack_out": [
+        "tmp%8#0",
+        "tmp%9#0",
+        "reinterpret_bytes[8]%1#0"
+      ]
+    },
+    "397": {
+      "op": "btoi",
+      "defined_out": [
+        "tmp%10#0",
+        "tmp%8#0",
+        "tmp%9#0"
+      ],
+      "stack_out": [
+        "tmp%8#0",
+        "tmp%9#0",
+        "tmp%10#0"
+      ]
+    },
+    "398": {
+      "op": "txna ApplicationArgs 4",
+      "defined_out": [
+        "reinterpret_bytes[8]%2#0",
+        "tmp%10#0",
+        "tmp%8#0",
+        "tmp%9#0"
+      ],
+      "stack_out": [
+        "tmp%8#0",
+        "tmp%9#0",
+        "tmp%10#0",
+        "reinterpret_bytes[8]%2#0"
+      ]
+    },
+    "401": {
+      "op": "btoi",
+      "defined_out": [
+        "tmp%10#0",
+        "tmp%11#0",
+        "tmp%8#0",
+        "tmp%9#0"
+      ],
+      "stack_out": [
+        "tmp%8#0",
+        "tmp%9#0",
+        "tmp%10#0",
+        "tmp%11#0"
+      ]
+    },
+    "402": {
+      "op": "txna ApplicationArgs 5",
+      "defined_out": [
+        "reinterpret_bytes[8]%3#0",
+        "tmp%10#0",
+        "tmp%11#0",
+        "tmp%8#0",
+        "tmp%9#0"
+      ],
+      "stack_out": [
+        "tmp%8#0",
+        "tmp%9#0",
+        "tmp%10#0",
+        "tmp%11#0",
+        "reinterpret_bytes[8]%3#0"
+      ]
+    },
+    "405": {
+      "op": "btoi",
+      "defined_out": [
+        "tmp%10#0",
+        "tmp%11#0",
+        "tmp%12#0",
+        "tmp%8#0",
+        "tmp%9#0"
+      ],
+      "stack_out": [
+        "tmp%8#0",
+        "tmp%9#0",
+        "tmp%10#0",
+        "tmp%11#0",
+        "tmp%12#0"
+      ]
+    },
+    "406": {
+      "op": "txna ApplicationArgs 6",
+      "defined_out": [
+        "reinterpret_bytes[8]%4#0",
+        "tmp%10#0",
+        "tmp%11#0",
+        "tmp%12#0",
+        "tmp%8#0",
+        "tmp%9#0"
+      ],
+      "stack_out": [
+        "tmp%8#0",
+        "tmp%9#0",
+        "tmp%10#0",
+        "tmp%11#0",
+        "tmp%12#0",
+        "reinterpret_bytes[8]%4#0"
+      ]
+    },
+    "409": {
+      "op": "btoi",
+      "defined_out": [
+        "tmp%10#0",
+        "tmp%11#0",
+        "tmp%12#0",
+        "tmp%13#0",
+        "tmp%8#0",
+        "tmp%9#0"
+      ],
+      "stack_out": [
+        "tmp%8#0",
+        "tmp%9#0",
+        "tmp%10#0",
+        "tmp%11#0",
+        "tmp%12#0",
+        "tmp%13#0"
+      ]
+    },
+    "410": {
+      "callsub": "smart_contracts/todo/contract.algo.ts::TokenVesting.createVesting",
+      "op": "callsub createVesting",
+      "stack_out": []
+    },
+    "413": {
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "414": {
+      "op": "return",
+      "stack_out": []
+    },
+    "415": {
+      "block": "main_bare_routing@11",
+      "stack_in": [],
+      "op": "txn OnCompletion",
+      "defined_out": [
+        "tmp%37#0"
+      ],
+      "stack_out": [
+        "tmp%37#0"
+      ]
+    },
+    "417": {
+      "op": "bnz main_after_if_else@15",
+      "stack_out": []
+    },
+    "420": {
+      "op": "txn ApplicationID",
+      "defined_out": [
+        "tmp%38#0"
+      ],
+      "stack_out": [
+        "tmp%38#0"
+      ]
+    },
+    "422": {
+      "op": "!",
+      "defined_out": [
+        "tmp%39#0"
+      ],
+      "stack_out": [
+        "tmp%39#0"
+      ]
+    },
+    "423": {
+      "error": "can only call when creating",
+      "op": "assert // can only call when creating",
+      "stack_out": []
+    },
+    "424": {
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "425": {
+      "op": "return",
+      "stack_out": []
+    },
+    "426": {
+      "subroutine": "smart_contracts/todo/contract.algo.ts::TokenVesting.createVesting",
+      "params": {
+        "employeeAddr#0": "bytes",
+        "token#0": "uint64",
+        "total#0": "uint64",
+        "start#0": "uint64",
+        "cliff#0": "uint64",
+        "vestingDuration#0": "uint64"
+      },
+      "block": "createVesting",
+      "stack_in": [],
+      "op": "proto 6 0"
+    },
+    "429": {
+      "op": "txn Sender",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "431": {
+      "op": "global CreatorAddress",
+      "defined_out": [
+        "tmp%0#0",
+        "tmp%1#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "tmp%1#0"
+      ]
+    },
+    "433": {
+      "op": "==",
+      "defined_out": [
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "tmp%2#0"
+      ]
+    },
+    "434": {
+      "error": "Only creator can setup vesting",
+      "op": "assert // Only creator can setup vesting",
+      "stack_out": []
+    },
+    "435": {
+      "op": "frame_dig -4",
+      "defined_out": [
+        "total#0 (copy)"
+      ],
+      "stack_out": [
+        "total#0 (copy)"
+      ]
+    },
+    "437": {
+      "error": "Must vest some tokens",
+      "op": "assert // Must vest some tokens",
+      "stack_out": []
+    },
+    "438": {
+      "op": "frame_dig -1",
+      "defined_out": [
+        "vestingDuration#0 (copy)"
+      ],
+      "stack_out": [
+        "vestingDuration#0 (copy)"
+      ]
+    },
+    "440": {
+      "error": "Duration must be greater than 0",
+      "op": "assert // Duration must be greater than 0",
+      "stack_out": []
+    },
+    "441": {
+      "op": "frame_dig -2",
+      "defined_out": [
+        "cliff#0 (copy)"
+      ],
+      "stack_out": [
+        "cliff#0 (copy)"
+      ]
+    },
+    "443": {
+      "op": "frame_dig -3",
+      "defined_out": [
+        "cliff#0 (copy)",
+        "start#0 (copy)"
+      ],
+      "stack_out": [
+        "cliff#0 (copy)",
+        "start#0 (copy)"
+      ]
+    },
+    "445": {
+      "op": ">=",
+      "defined_out": [
+        "tmp%5#0"
+      ],
+      "stack_out": [
+        "tmp%5#0"
+      ]
+    },
+    "446": {
+      "error": "Cliff must be after or at start",
+      "op": "assert // Cliff must be after or at start",
+      "stack_out": []
+    },
+    "447": {
+      "op": "frame_dig -5",
+      "defined_out": [
+        "token#0 (copy)"
+      ],
+      "stack_out": [
+        "token#0 (copy)"
+      ]
+    },
+    "449": {
+      "error": "Invalid token ASA ID",
+      "op": "assert // Invalid token ASA ID",
+      "stack_out": []
+    },
+    "450": {
+      "op": "bytec 8 // \"employerAddress\"",
+      "defined_out": [
+        "\"employerAddress\""
+      ],
+      "stack_out": [
+        "\"employerAddress\""
+      ]
+    },
+    "452": {
+      "op": "global CreatorAddress",
+      "defined_out": [
+        "\"employerAddress\"",
+        "new_state_value%0#0"
+      ],
+      "stack_out": [
+        "\"employerAddress\"",
+        "new_state_value%0#0"
+      ]
+    },
+    "454": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "455": {
+      "op": "bytec 5 // \"employeeAddress\"",
+      "defined_out": [
+        "\"employeeAddress\""
+      ],
+      "stack_out": [
+        "\"employeeAddress\""
+      ]
+    },
+    "457": {
+      "op": "frame_dig -6",
+      "defined_out": [
+        "\"employeeAddress\"",
+        "employeeAddr#0 (copy)"
+      ],
+      "stack_out": [
+        "\"employeeAddress\"",
+        "employeeAddr#0 (copy)"
+      ]
+    },
+    "459": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "460": {
+      "op": "bytec 6 // \"tokenASA\"",
+      "defined_out": [
+        "\"tokenASA\""
+      ],
+      "stack_out": [
+        "\"tokenASA\""
+      ]
+    },
+    "462": {
+      "op": "frame_dig -5",
+      "stack_out": [
+        "\"tokenASA\"",
+        "token#0 (copy)"
+      ]
+    },
+    "464": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "465": {
+      "op": "bytec_2 // \"totalTokens\"",
+      "defined_out": [
+        "\"totalTokens\""
+      ],
+      "stack_out": [
+        "\"totalTokens\""
+      ]
+    },
+    "466": {
+      "op": "frame_dig -4",
+      "stack_out": [
+        "\"totalTokens\"",
+        "total#0 (copy)"
+      ]
+    },
+    "468": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "469": {
+      "op": "bytec_0 // \"startTime\"",
+      "defined_out": [
+        "\"startTime\""
+      ],
+      "stack_out": [
+        "\"startTime\""
+      ]
+    },
+    "470": {
+      "op": "frame_dig -3",
+      "stack_out": [
+        "\"startTime\"",
+        "start#0 (copy)"
+      ]
+    },
+    "472": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "473": {
+      "op": "bytec 4 // \"cliffTime\"",
+      "defined_out": [
+        "\"cliffTime\""
+      ],
+      "stack_out": [
+        "\"cliffTime\""
+      ]
+    },
+    "475": {
+      "op": "frame_dig -2",
+      "stack_out": [
+        "\"cliffTime\"",
+        "cliff#0 (copy)"
+      ]
+    },
+    "477": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "478": {
+      "op": "bytec_1 // \"duration\"",
+      "defined_out": [
+        "\"duration\""
+      ],
+      "stack_out": [
+        "\"duration\""
+      ]
+    },
+    "479": {
+      "op": "frame_dig -1",
+      "stack_out": [
+        "\"duration\"",
+        "vestingDuration#0 (copy)"
+      ]
+    },
+    "481": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "482": {
+      "op": "bytec_3 // \"claimedTokens\"",
+      "defined_out": [
+        "\"claimedTokens\""
+      ],
+      "stack_out": [
+        "\"claimedTokens\""
+      ]
+    },
+    "483": {
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "\"claimedTokens\"",
+        "0"
+      ],
+      "stack_out": [
+        "\"claimedTokens\"",
+        "0"
+      ]
+    },
+    "484": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "485": {
+      "retsub": true,
+      "op": "retsub"
+    },
+    "486": {
+      "subroutine": "smart_contracts/todo/contract.algo.ts::TokenVesting.claim",
+      "params": {},
+      "block": "claim",
+      "stack_in": [],
+      "op": "proto 0 0"
+    },
+    "489": {
+      "op": "txn Sender",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "491": {
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "0",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "0"
+      ]
+    },
+    "492": {
+      "op": "bytec 5 // \"employeeAddress\"",
+      "defined_out": [
+        "\"employeeAddress\"",
+        "0",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "0",
+        "\"employeeAddress\""
+      ]
+    },
+    "494": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%0#0",
+        "maybe_value%0#0",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "maybe_value%0#0",
+        "maybe_exists%0#0"
+      ]
+    },
+    "495": {
+      "error": "check GlobalState exists",
+      "op": "assert // check GlobalState exists",
+      "stack_out": [
+        "tmp%0#0",
+        "maybe_value%0#0"
+      ]
+    },
+    "496": {
+      "op": "==",
+      "defined_out": [
+        "tmp%1#0"
+      ],
+      "stack_out": [
+        "tmp%1#0"
+      ]
+    },
+    "497": {
+      "error": "Only employee can claim",
+      "op": "assert // Only employee can claim",
+      "stack_out": []
+    },
+    "498": {
+      "op": "global LatestTimestamp"
+    },
+    "500": {
+      "op": "dup"
+    },
+    "501": {
+      "op": "intc_0 // 0"
+    },
+    "502": {
+      "op": "bytec 4 // \"cliffTime\"",
+      "defined_out": [
+        "\"cliffTime\"",
+        "0",
+        "now#0"
+      ],
+      "stack_out": [
+        "now#0",
+        "now#0",
+        "0",
+        "\"cliffTime\""
+      ]
+    },
+    "504": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%1#0",
+        "maybe_value%1#0",
+        "now#0"
+      ],
+      "stack_out": [
+        "now#0",
+        "now#0",
+        "maybe_value%1#0",
+        "maybe_exists%1#0"
+      ]
+    },
+    "505": {
+      "error": "check GlobalState exists",
+      "op": "assert // check GlobalState exists",
+      "stack_out": [
+        "now#0",
+        "now#0",
+        "maybe_value%1#0"
+      ]
+    },
+    "506": {
+      "op": "dig 1",
+      "defined_out": [
+        "maybe_value%1#0",
+        "now#0",
+        "now#0 (copy)"
+      ],
+      "stack_out": [
+        "now#0",
+        "now#0",
+        "maybe_value%1#0",
+        "now#0 (copy)"
+      ]
+    },
+    "508": {
+      "op": "<=",
+      "defined_out": [
+        "now#0",
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "now#0",
+        "now#0",
+        "tmp%2#0"
+      ]
+    },
+    "509": {
+      "error": "Cliff period not reached yet",
+      "op": "assert // Cliff period not reached yet",
+      "stack_out": [
+        "now#0",
+        "now#0"
+      ]
+    },
+    "510": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "now#0",
+        "now#0",
+        "0"
+      ]
+    },
+    "511": {
+      "op": "bytec_0 // \"startTime\"",
+      "defined_out": [
+        "\"startTime\"",
+        "0",
+        "now#0"
+      ],
+      "stack_out": [
+        "now#0",
+        "now#0",
+        "0",
+        "\"startTime\""
+      ]
+    },
+    "512": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%2#0",
+        "maybe_value%2#0",
+        "now#0"
+      ],
+      "stack_out": [
+        "now#0",
+        "now#0",
+        "maybe_value%2#0",
+        "maybe_exists%2#0"
+      ]
+    },
+    "513": {
+      "error": "check GlobalState exists",
+      "op": "assert // check GlobalState exists",
+      "stack_out": [
+        "now#0",
+        "now#0",
+        "maybe_value%2#0"
+      ]
+    },
+    "514": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "now#0",
+        "now#0",
+        "maybe_value%2#0",
+        "0"
+      ]
+    },
+    "515": {
+      "op": "bytec_1 // \"duration\"",
+      "defined_out": [
+        "\"duration\"",
+        "0",
+        "maybe_value%2#0",
+        "now#0"
+      ],
+      "stack_out": [
+        "now#0",
+        "now#0",
+        "maybe_value%2#0",
+        "0",
+        "\"duration\""
+      ]
+    },
+    "516": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%3#0",
+        "maybe_value%2#0",
+        "maybe_value%3#0",
+        "now#0"
+      ],
+      "stack_out": [
+        "now#0",
+        "now#0",
+        "maybe_value%2#0",
+        "maybe_value%3#0",
+        "maybe_exists%3#0"
+      ]
+    },
+    "517": {
+      "error": "check GlobalState exists",
+      "op": "assert // check GlobalState exists",
+      "stack_out": [
+        "now#0",
+        "now#0",
+        "maybe_value%2#0",
+        "maybe_value%3#0"
+      ]
+    },
+    "518": {
+      "op": "+",
+      "defined_out": [
+        "endTime#0",
+        "now#0"
+      ],
+      "stack_out": [
+        "now#0",
+        "now#0",
+        "endTime#0"
+      ]
+    },
+    "519": {
+      "op": ">=",
+      "defined_out": [
+        "now#0",
+        "tmp%3#0"
+      ],
+      "stack_out": [
+        "now#0",
+        "tmp%3#0"
+      ]
+    },
+    "520": {
+      "op": "bz claim_else_body@2",
+      "stack_out": [
+        "now#0"
+      ]
+    },
+    "523": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "now#0",
+        "0"
+      ]
+    },
+    "524": {
+      "op": "bytec_2 // \"totalTokens\"",
+      "defined_out": [
+        "\"totalTokens\"",
+        "0",
+        "now#0"
+      ],
+      "stack_out": [
+        "now#0",
+        "0",
+        "\"totalTokens\""
+      ]
+    },
+    "525": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%4#0",
+        "now#0",
+        "vested#0"
+      ],
+      "stack_out": [
+        "now#0",
+        "vested#0",
+        "maybe_exists%4#0"
+      ]
+    },
+    "526": {
+      "error": "check GlobalState exists",
+      "op": "assert // check GlobalState exists",
+      "stack_out": [
+        "now#0",
+        "vested#0"
+      ]
+    },
+    "527": {
+      "block": "claim_after_if_else@3",
+      "stack_in": [
+        "now#0",
+        "vested#0"
+      ],
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "0"
+      ],
+      "stack_out": [
+        "now#0",
+        "vested#0",
+        "0"
+      ]
+    },
+    "528": {
+      "op": "bytec_3 // \"claimedTokens\"",
+      "defined_out": [
+        "\"claimedTokens\"",
+        "0"
+      ],
+      "stack_out": [
+        "now#0",
+        "vested#0",
+        "0",
+        "\"claimedTokens\""
+      ]
+    },
+    "529": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%8#0",
+        "maybe_value%8#0"
+      ],
+      "stack_out": [
+        "now#0",
+        "vested#0",
+        "maybe_value%8#0",
+        "maybe_exists%8#0"
+      ]
+    },
+    "530": {
+      "error": "check GlobalState exists",
+      "op": "assert // check GlobalState exists",
+      "defined_out": [
+        "maybe_value%8#0",
+        "vested#0"
+      ],
+      "stack_out": [
+        "now#0",
+        "vested#0",
+        "maybe_value%8#0"
+      ]
+    },
+    "531": {
+      "op": "-",
+      "defined_out": [
+        "claimable#0"
+      ],
+      "stack_out": [
+        "now#0",
+        "claimable#0"
+      ]
+    },
+    "532": {
+      "op": "dup",
+      "defined_out": [
+        "claimable#0",
+        "claimable#0 (copy)"
+      ],
+      "stack_out": [
+        "now#0",
+        "claimable#0",
+        "claimable#0 (copy)"
+      ]
+    },
+    "533": {
+      "error": "No tokens available to claim",
+      "op": "assert // No tokens available to claim",
+      "stack_out": [
+        "now#0",
+        "claimable#0"
+      ]
+    },
+    "534": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "now#0",
+        "claimable#0",
+        "0"
+      ]
+    },
+    "535": {
+      "op": "bytec_3 // \"claimedTokens\"",
+      "stack_out": [
+        "now#0",
+        "claimable#0",
+        "0",
+        "\"claimedTokens\""
+      ]
+    },
+    "536": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "claimable#0",
+        "maybe_exists%9#0",
+        "maybe_value%9#0"
+      ],
+      "stack_out": [
+        "now#0",
+        "claimable#0",
+        "maybe_value%9#0",
+        "maybe_exists%9#0"
+      ]
+    },
+    "537": {
+      "error": "check GlobalState exists",
+      "op": "assert // check GlobalState exists",
+      "stack_out": [
+        "now#0",
+        "claimable#0",
+        "maybe_value%9#0"
+      ]
+    },
+    "538": {
+      "op": "dig 1",
+      "stack_out": [
+        "now#0",
+        "claimable#0",
+        "maybe_value%9#0",
+        "claimable#0 (copy)"
+      ]
+    },
+    "540": {
+      "op": "+",
+      "defined_out": [
+        "claimable#0",
+        "new_state_value%0#0"
+      ],
+      "stack_out": [
+        "now#0",
+        "claimable#0",
+        "new_state_value%0#0"
+      ]
+    },
+    "541": {
+      "op": "bytec_3 // \"claimedTokens\"",
+      "stack_out": [
+        "now#0",
+        "claimable#0",
+        "new_state_value%0#0",
+        "\"claimedTokens\""
+      ]
+    },
+    "542": {
+      "op": "swap",
+      "stack_out": [
+        "now#0",
+        "claimable#0",
+        "\"claimedTokens\"",
+        "new_state_value%0#0"
+      ]
+    },
+    "543": {
+      "op": "app_global_put",
+      "stack_out": [
+        "now#0",
+        "claimable#0"
+      ]
+    },
+    "544": {
+      "op": "itxn_begin"
+    },
+    "545": {
+      "op": "txn Sender",
+      "defined_out": [
+        "claimable#0",
+        "inner_txn_params%0%%param_AssetReceiver_idx_0#0"
+      ],
+      "stack_out": [
+        "now#0",
+        "claimable#0",
+        "inner_txn_params%0%%param_AssetReceiver_idx_0#0"
+      ]
+    },
+    "547": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "now#0",
+        "claimable#0",
+        "inner_txn_params%0%%param_AssetReceiver_idx_0#0",
+        "0"
+      ]
+    },
+    "548": {
+      "op": "bytec 6 // \"tokenASA\"",
+      "defined_out": [
+        "\"tokenASA\"",
+        "0",
+        "claimable#0",
+        "inner_txn_params%0%%param_AssetReceiver_idx_0#0"
+      ],
+      "stack_out": [
+        "now#0",
+        "claimable#0",
+        "inner_txn_params%0%%param_AssetReceiver_idx_0#0",
+        "0",
+        "\"tokenASA\""
+      ]
+    },
+    "550": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "claimable#0",
+        "inner_txn_params%0%%param_AssetReceiver_idx_0#0",
+        "maybe_exists%10#0",
+        "maybe_value%10#0"
+      ],
+      "stack_out": [
+        "now#0",
+        "claimable#0",
+        "inner_txn_params%0%%param_AssetReceiver_idx_0#0",
+        "maybe_value%10#0",
+        "maybe_exists%10#0"
+      ]
+    },
+    "551": {
+      "error": "check GlobalState exists",
+      "op": "assert // check GlobalState exists",
+      "stack_out": [
+        "now#0",
+        "claimable#0",
+        "inner_txn_params%0%%param_AssetReceiver_idx_0#0",
+        "maybe_value%10#0"
+      ]
+    },
+    "552": {
+      "op": "uncover 2",
+      "stack_out": [
+        "now#0",
+        "inner_txn_params%0%%param_AssetReceiver_idx_0#0",
+        "maybe_value%10#0",
+        "claimable#0"
+      ]
+    },
+    "554": {
+      "op": "itxn_field AssetAmount",
+      "stack_out": [
+        "now#0",
+        "inner_txn_params%0%%param_AssetReceiver_idx_0#0",
+        "maybe_value%10#0"
+      ]
+    },
+    "556": {
+      "op": "itxn_field XferAsset",
+      "stack_out": [
+        "now#0",
+        "inner_txn_params%0%%param_AssetReceiver_idx_0#0"
+      ]
+    },
+    "558": {
+      "op": "itxn_field AssetReceiver",
+      "stack_out": [
+        "now#0"
+      ]
+    },
+    "560": {
+      "op": "intc_2 // 4",
+      "defined_out": [
+        "4"
+      ],
+      "stack_out": [
+        "now#0",
+        "4"
+      ]
+    },
+    "561": {
+      "op": "itxn_field TypeEnum",
+      "stack_out": [
+        "now#0"
+      ]
+    },
+    "563": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "now#0",
+        "0"
+      ]
+    },
+    "564": {
+      "op": "itxn_field Fee",
+      "stack_out": [
+        "now#0"
+      ]
+    },
+    "566": {
+      "op": "itxn_submit"
+    },
+    "567": {
+      "retsub": true,
+      "op": "retsub"
+    },
+    "568": {
+      "block": "claim_else_body@2",
+      "stack_in": [
+        "now#0"
+      ],
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "0"
+      ],
+      "stack_out": [
+        "now#0",
+        "0"
+      ]
+    },
+    "569": {
+      "op": "bytec_0 // \"startTime\"",
+      "defined_out": [
+        "\"startTime\"",
+        "0"
+      ],
+      "stack_out": [
+        "now#0",
+        "0",
+        "\"startTime\""
+      ]
+    },
+    "570": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%5#0",
+        "maybe_value%5#0"
+      ],
+      "stack_out": [
+        "now#0",
+        "maybe_value%5#0",
+        "maybe_exists%5#0"
+      ]
+    },
+    "571": {
+      "error": "check GlobalState exists",
+      "op": "assert // check GlobalState exists",
+      "stack_out": [
+        "now#0",
+        "maybe_value%5#0"
+      ]
+    },
+    "572": {
+      "op": "frame_dig 0",
+      "defined_out": [
+        "maybe_value%5#0",
+        "now#0"
+      ],
+      "stack_out": [
+        "now#0",
+        "maybe_value%5#0",
+        "now#0"
+      ]
+    },
+    "574": {
+      "op": "swap",
+      "stack_out": [
+        "now#0",
+        "now#0",
+        "maybe_value%5#0"
+      ]
+    },
+    "575": {
+      "op": "-",
+      "defined_out": [
+        "elapsed#0",
+        "now#0"
+      ],
+      "stack_out": [
+        "now#0",
+        "elapsed#0"
+      ]
+    },
+    "576": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "now#0",
+        "elapsed#0",
+        "0"
+      ]
+    },
+    "577": {
+      "op": "bytec_2 // \"totalTokens\"",
+      "defined_out": [
+        "\"totalTokens\"",
+        "0",
+        "elapsed#0",
+        "now#0"
+      ],
+      "stack_out": [
+        "now#0",
+        "elapsed#0",
+        "0",
+        "\"totalTokens\""
+      ]
+    },
+    "578": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "elapsed#0",
+        "maybe_exists%6#0",
+        "maybe_value%6#0",
+        "now#0"
+      ],
+      "stack_out": [
+        "now#0",
+        "elapsed#0",
+        "maybe_value%6#0",
+        "maybe_exists%6#0"
+      ]
+    },
+    "579": {
+      "error": "check GlobalState exists",
+      "op": "assert // check GlobalState exists",
+      "stack_out": [
+        "now#0",
+        "elapsed#0",
+        "maybe_value%6#0"
+      ]
+    },
+    "580": {
+      "op": "*",
+      "defined_out": [
+        "now#0",
+        "tmp%4#0"
+      ],
+      "stack_out": [
+        "now#0",
+        "tmp%4#0"
+      ]
+    },
+    "581": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "now#0",
+        "tmp%4#0",
+        "0"
+      ]
+    },
+    "582": {
+      "op": "bytec_1 // \"duration\"",
+      "defined_out": [
+        "\"duration\"",
+        "0",
+        "now#0",
+        "tmp%4#0"
+      ],
+      "stack_out": [
+        "now#0",
+        "tmp%4#0",
+        "0",
+        "\"duration\""
+      ]
+    },
+    "583": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%7#0",
+        "maybe_value%7#0",
+        "now#0",
+        "tmp%4#0"
+      ],
+      "stack_out": [
+        "now#0",
+        "tmp%4#0",
+        "maybe_value%7#0",
+        "maybe_exists%7#0"
+      ]
+    },
+    "584": {
+      "error": "check GlobalState exists",
+      "op": "assert // check GlobalState exists",
+      "stack_out": [
+        "now#0",
+        "tmp%4#0",
+        "maybe_value%7#0"
+      ]
+    },
+    "585": {
+      "op": "/",
+      "defined_out": [
+        "now#0",
+        "vested#0"
+      ],
+      "stack_out": [
+        "now#0",
+        "vested#0"
+      ]
+    },
+    "586": {
+      "op": "b claim_after_if_else@3"
+    },
+    "589": {
+      "subroutine": "smart_contracts/todo/contract.algo.ts::TokenVesting.calculateVested",
+      "params": {},
+      "block": "calculateVested",
+      "stack_in": [],
+      "op": "proto 0 1"
+    },
+    "592": {
+      "op": "global LatestTimestamp"
+    },
+    "594": {
+      "op": "dup"
+    },
+    "595": {
+      "op": "intc_0 // 0"
+    },
+    "596": {
+      "op": "bytec 4 // \"cliffTime\"",
+      "defined_out": [
+        "\"cliffTime\"",
+        "0",
+        "now#0"
+      ],
+      "stack_out": [
+        "now#0",
+        "now#0",
+        "0",
+        "\"cliffTime\""
+      ]
+    },
+    "598": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%0#0",
+        "maybe_value%0#0",
+        "now#0"
+      ],
+      "stack_out": [
+        "now#0",
+        "now#0",
+        "maybe_value%0#0",
+        "maybe_exists%0#0"
+      ]
+    },
+    "599": {
+      "error": "check GlobalState exists",
+      "op": "assert // check GlobalState exists",
+      "stack_out": [
+        "now#0",
+        "now#0",
+        "maybe_value%0#0"
+      ]
+    },
+    "600": {
+      "op": "<",
+      "defined_out": [
+        "now#0",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "now#0",
+        "tmp%0#0"
+      ]
+    },
+    "601": {
+      "op": "bz calculateVested_after_if_else@2",
+      "stack_out": [
+        "now#0"
+      ]
+    },
+    "604": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "now#0",
+        "0"
+      ]
+    },
+    "605": {
+      "op": "swap"
+    },
+    "606": {
+      "retsub": true,
+      "op": "retsub"
+    },
+    "607": {
+      "block": "calculateVested_after_if_else@2",
+      "stack_in": [
+        "now#0"
+      ],
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "0"
+      ],
+      "stack_out": [
+        "now#0",
+        "0"
+      ]
+    },
+    "608": {
+      "op": "bytec_0 // \"startTime\"",
+      "defined_out": [
+        "\"startTime\"",
+        "0"
+      ],
+      "stack_out": [
+        "now#0",
+        "0",
+        "\"startTime\""
+      ]
+    },
+    "609": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%1#0",
+        "maybe_value%1#0"
+      ],
+      "stack_out": [
+        "now#0",
+        "maybe_value%1#0",
+        "maybe_exists%1#0"
+      ]
+    },
+    "610": {
+      "error": "check GlobalState exists",
+      "op": "assert // check GlobalState exists",
+      "stack_out": [
+        "now#0",
+        "maybe_value%1#0"
+      ]
+    },
+    "611": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "now#0",
+        "maybe_value%1#0",
+        "0"
+      ]
+    },
+    "612": {
+      "op": "bytec_1 // \"duration\"",
+      "defined_out": [
+        "\"duration\"",
+        "0",
+        "maybe_value%1#0"
+      ],
+      "stack_out": [
+        "now#0",
+        "maybe_value%1#0",
+        "0",
+        "\"duration\""
+      ]
+    },
+    "613": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%2#0",
+        "maybe_value%1#0",
+        "maybe_value%2#0"
+      ],
+      "stack_out": [
+        "now#0",
+        "maybe_value%1#0",
+        "maybe_value%2#0",
+        "maybe_exists%2#0"
+      ]
+    },
+    "614": {
+      "error": "check GlobalState exists",
+      "op": "assert // check GlobalState exists",
+      "stack_out": [
+        "now#0",
+        "maybe_value%1#0",
+        "maybe_value%2#0"
+      ]
+    },
+    "615": {
+      "op": "+",
+      "defined_out": [
+        "endTime#0"
+      ],
+      "stack_out": [
+        "now#0",
+        "endTime#0"
+      ]
+    },
+    "616": {
+      "op": "frame_dig 0",
+      "defined_out": [
+        "endTime#0",
+        "now#0"
+      ],
+      "stack_out": [
+        "now#0",
+        "endTime#0",
+        "now#0"
+      ]
+    },
+    "618": {
+      "op": "<=",
+      "defined_out": [
+        "now#0",
+        "tmp%1#0"
+      ],
+      "stack_out": [
+        "now#0",
+        "tmp%1#0"
+      ]
+    },
+    "619": {
+      "op": "bz calculateVested_after_if_else@4",
+      "stack_out": [
+        "now#0"
+      ]
+    },
+    "622": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "now#0",
+        "0"
+      ]
+    },
+    "623": {
+      "op": "bytec_2 // \"totalTokens\"",
+      "defined_out": [
+        "\"totalTokens\"",
+        "0",
+        "now#0"
+      ],
+      "stack_out": [
+        "now#0",
+        "0",
+        "\"totalTokens\""
+      ]
+    },
+    "624": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%3#0",
+        "maybe_value%3#0",
+        "now#0"
+      ],
+      "stack_out": [
+        "now#0",
+        "maybe_value%3#0",
+        "maybe_exists%3#0"
+      ]
+    },
+    "625": {
+      "error": "check GlobalState exists",
+      "op": "assert // check GlobalState exists",
+      "stack_out": [
+        "now#0",
+        "maybe_value%3#0"
+      ]
+    },
+    "626": {
+      "op": "swap"
+    },
+    "627": {
+      "retsub": true,
+      "op": "retsub"
+    },
+    "628": {
+      "block": "calculateVested_after_if_else@4",
+      "stack_in": [
+        "now#0"
+      ],
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "0"
+      ],
+      "stack_out": [
+        "now#0",
+        "0"
+      ]
+    },
+    "629": {
+      "op": "bytec_0 // \"startTime\"",
+      "defined_out": [
+        "\"startTime\"",
+        "0"
+      ],
+      "stack_out": [
+        "now#0",
+        "0",
+        "\"startTime\""
+      ]
+    },
+    "630": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%4#0",
+        "maybe_value%4#0"
+      ],
+      "stack_out": [
+        "now#0",
+        "maybe_value%4#0",
+        "maybe_exists%4#0"
+      ]
+    },
+    "631": {
+      "error": "check GlobalState exists",
+      "op": "assert // check GlobalState exists",
+      "stack_out": [
+        "now#0",
+        "maybe_value%4#0"
+      ]
+    },
+    "632": {
+      "op": "frame_dig 0",
+      "defined_out": [
+        "maybe_value%4#0",
+        "now#0"
+      ],
+      "stack_out": [
+        "now#0",
+        "maybe_value%4#0",
+        "now#0"
+      ]
+    },
+    "634": {
+      "op": "swap",
+      "stack_out": [
+        "now#0",
+        "now#0",
+        "maybe_value%4#0"
+      ]
+    },
+    "635": {
+      "op": "-",
+      "defined_out": [
+        "elapsed#0",
+        "now#0"
+      ],
+      "stack_out": [
+        "now#0",
+        "elapsed#0"
+      ]
+    },
+    "636": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "now#0",
+        "elapsed#0",
+        "0"
+      ]
+    },
+    "637": {
+      "op": "bytec_2 // \"totalTokens\"",
+      "defined_out": [
+        "\"totalTokens\"",
+        "0",
+        "elapsed#0",
+        "now#0"
+      ],
+      "stack_out": [
+        "now#0",
+        "elapsed#0",
+        "0",
+        "\"totalTokens\""
+      ]
+    },
+    "638": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "elapsed#0",
+        "maybe_exists%5#0",
+        "maybe_value%5#0",
+        "now#0"
+      ],
+      "stack_out": [
+        "now#0",
+        "elapsed#0",
+        "maybe_value%5#0",
+        "maybe_exists%5#0"
+      ]
+    },
+    "639": {
+      "error": "check GlobalState exists",
+      "op": "assert // check GlobalState exists",
+      "stack_out": [
+        "now#0",
+        "elapsed#0",
+        "maybe_value%5#0"
+      ]
+    },
+    "640": {
+      "op": "*",
+      "defined_out": [
+        "now#0",
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "now#0",
+        "tmp%2#0"
+      ]
+    },
+    "641": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "now#0",
+        "tmp%2#0",
+        "0"
+      ]
+    },
+    "642": {
+      "op": "bytec_1 // \"duration\"",
+      "defined_out": [
+        "\"duration\"",
+        "0",
+        "now#0",
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "now#0",
+        "tmp%2#0",
+        "0",
+        "\"duration\""
+      ]
+    },
+    "643": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%6#0",
+        "maybe_value%6#0",
+        "now#0",
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "now#0",
+        "tmp%2#0",
+        "maybe_value%6#0",
+        "maybe_exists%6#0"
+      ]
+    },
+    "644": {
+      "error": "check GlobalState exists",
+      "op": "assert // check GlobalState exists",
+      "stack_out": [
+        "now#0",
+        "tmp%2#0",
+        "maybe_value%6#0"
+      ]
+    },
+    "645": {
+      "op": "/",
+      "defined_out": [
+        "now#0",
+        "tmp%3#0"
+      ],
+      "stack_out": [
+        "now#0",
+        "tmp%3#0"
+      ]
+    },
+    "646": {
+      "op": "swap"
+    },
+    "647": {
+      "retsub": true,
+      "op": "retsub"
+    },
+    "648": {
+      "subroutine": "smart_contracts/todo/contract.algo.ts::TokenVesting.getVestingInfo",
+      "params": {},
+      "block": "getVestingInfo",
+      "stack_in": [],
+      "op": "proto 0 10"
+    },
+    "651": {
+      "op": "global LatestTimestamp",
+      "defined_out": [
+        "now#0"
+      ],
+      "stack_out": [
+        "now#0"
+      ]
+    },
+    "653": {
+      "callsub": "smart_contracts/todo/contract.algo.ts::TokenVesting.calculateVested",
+      "op": "callsub calculateVested",
+      "defined_out": [
+        "now#0",
+        "vested#0"
+      ],
+      "stack_out": [
+        "now#0",
+        "vested#0"
+      ]
+    },
+    "656": {
+      "op": "dup",
+      "stack_out": [
+        "now#0",
+        "vested#0",
+        "vested#0"
+      ]
+    },
+    "657": {
+      "op": "cover 2",
+      "defined_out": [
+        "now#0",
+        "vested#0"
+      ],
+      "stack_out": [
+        "vested#0",
+        "now#0",
+        "vested#0"
+      ]
+    },
+    "659": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "vested#0",
+        "now#0",
+        "vested#0",
+        "0"
+      ]
+    },
+    "660": {
+      "op": "bytec_3 // \"claimedTokens\"",
+      "defined_out": [
+        "\"claimedTokens\"",
+        "0",
+        "now#0",
+        "vested#0"
+      ],
+      "stack_out": [
+        "vested#0",
+        "now#0",
+        "vested#0",
+        "0",
+        "\"claimedTokens\""
+      ]
+    },
+    "661": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%0#0",
+        "maybe_value%0#0",
+        "now#0",
+        "vested#0"
+      ],
+      "stack_out": [
+        "vested#0",
+        "now#0",
+        "vested#0",
+        "maybe_value%0#0",
+        "maybe_exists%0#0"
+      ]
+    },
+    "662": {
+      "error": "check GlobalState exists",
+      "op": "assert // check GlobalState exists",
+      "stack_out": [
+        "vested#0",
+        "now#0",
+        "vested#0",
+        "maybe_value%0#0"
+      ]
+    },
+    "663": {
+      "op": "-",
+      "defined_out": [
+        "claimable#0",
+        "now#0",
+        "vested#0"
+      ],
+      "stack_out": [
+        "vested#0",
+        "now#0",
+        "claimable#0"
+      ]
+    },
+    "664": {
+      "op": "swap",
+      "defined_out": [
+        "claimable#0",
+        "now#0",
+        "vested#0"
+      ],
+      "stack_out": [
+        "vested#0",
+        "claimable#0",
+        "now#0"
+      ]
+    },
+    "665": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "vested#0",
+        "claimable#0",
+        "now#0",
+        "0"
+      ]
+    },
+    "666": {
+      "op": "bytec_0 // \"startTime\"",
+      "defined_out": [
+        "\"startTime\"",
+        "0",
+        "claimable#0",
+        "now#0",
+        "vested#0"
+      ],
+      "stack_out": [
+        "vested#0",
+        "claimable#0",
+        "now#0",
+        "0",
+        "\"startTime\""
+      ]
+    },
+    "667": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "claimable#0",
+        "maybe_exists%1#0",
+        "maybe_value%1#0",
+        "now#0",
+        "vested#0"
+      ],
+      "stack_out": [
+        "vested#0",
+        "claimable#0",
+        "now#0",
+        "maybe_value%1#0",
+        "maybe_exists%1#0"
+      ]
+    },
+    "668": {
+      "error": "check GlobalState exists",
+      "op": "assert // check GlobalState exists",
+      "stack_out": [
+        "vested#0",
+        "claimable#0",
+        "now#0",
+        "maybe_value%1#0"
+      ]
+    },
+    "669": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "vested#0",
+        "claimable#0",
+        "now#0",
+        "maybe_value%1#0",
+        "0"
+      ]
+    },
+    "670": {
+      "op": "bytec_1 // \"duration\"",
+      "defined_out": [
+        "\"duration\"",
+        "0",
+        "claimable#0",
+        "maybe_value%1#0",
+        "now#0",
+        "vested#0"
+      ],
+      "stack_out": [
+        "vested#0",
+        "claimable#0",
+        "now#0",
+        "maybe_value%1#0",
+        "0",
+        "\"duration\""
+      ]
+    },
+    "671": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "claimable#0",
+        "maybe_exists%2#0",
+        "maybe_value%1#0",
+        "maybe_value%2#0",
+        "now#0",
+        "vested#0"
+      ],
+      "stack_out": [
+        "vested#0",
+        "claimable#0",
+        "now#0",
+        "maybe_value%1#0",
+        "maybe_value%2#0",
+        "maybe_exists%2#0"
+      ]
+    },
+    "672": {
+      "error": "check GlobalState exists",
+      "op": "assert // check GlobalState exists",
+      "stack_out": [
+        "vested#0",
+        "claimable#0",
+        "now#0",
+        "maybe_value%1#0",
+        "maybe_value%2#0"
+      ]
+    },
+    "673": {
+      "op": "+",
+      "defined_out": [
+        "claimable#0",
+        "now#0",
+        "tmp%0#0",
+        "vested#0"
+      ],
+      "stack_out": [
+        "vested#0",
+        "claimable#0",
+        "now#0",
+        "tmp%0#0"
+      ]
+    },
+    "674": {
+      "op": "<",
+      "defined_out": [
+        "claimable#0",
+        "tmp%1#0",
+        "vested#0"
+      ],
+      "stack_out": [
+        "vested#0",
+        "claimable#0",
+        "tmp%1#0"
+      ]
+    },
+    "675": {
+      "op": "bz getVestingInfo_ternary_merge@3",
+      "stack_out": [
+        "vested#0",
+        "claimable#0"
+      ]
+    },
+    "678": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "vested#0",
+        "claimable#0",
+        "0"
+      ]
+    },
+    "679": {
+      "op": "bytec_0 // \"startTime\"",
+      "stack_out": [
+        "vested#0",
+        "claimable#0",
+        "0",
+        "\"startTime\""
+      ]
+    },
+    "680": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "claimable#0",
+        "maybe_exists%3#0",
+        "maybe_value%3#0",
+        "vested#0"
+      ],
+      "stack_out": [
+        "vested#0",
+        "claimable#0",
+        "maybe_value%3#0",
+        "maybe_exists%3#0"
+      ]
+    },
+    "681": {
+      "op": "bury 1",
+      "stack_out": [
+        "vested#0",
+        "claimable#0",
+        "maybe_exists%3#0"
+      ]
+    },
+    "683": {
+      "error": "check GlobalState exists",
+      "op": "assert // check GlobalState exists",
+      "stack_out": [
+        "vested#0",
+        "claimable#0"
+      ]
+    },
+    "684": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "vested#0",
+        "claimable#0",
+        "0"
+      ]
+    },
+    "685": {
+      "op": "bytec_1 // \"duration\"",
+      "stack_out": [
+        "vested#0",
+        "claimable#0",
+        "0",
+        "\"duration\""
+      ]
+    },
+    "686": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "claimable#0",
+        "maybe_exists%4#0",
+        "maybe_value%4#0",
+        "vested#0"
+      ],
+      "stack_out": [
+        "vested#0",
+        "claimable#0",
+        "maybe_value%4#0",
+        "maybe_exists%4#0"
+      ]
+    },
+    "687": {
+      "op": "bury 1",
+      "stack_out": [
+        "vested#0",
+        "claimable#0",
+        "maybe_exists%4#0"
+      ]
+    },
+    "689": {
+      "error": "check GlobalState exists",
+      "op": "assert // check GlobalState exists",
+      "stack_out": [
+        "vested#0",
+        "claimable#0"
+      ]
+    },
+    "690": {
+      "block": "getVestingInfo_ternary_merge@3",
+      "stack_in": [
+        "vested#0",
+        "claimable#0"
+      ],
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "0"
+      ],
+      "stack_out": [
+        "vested#0",
+        "claimable#0",
+        "0"
+      ]
+    },
+    "691": {
+      "op": "bytec 8 // \"employerAddress\"",
+      "defined_out": [
+        "\"employerAddress\"",
+        "0"
+      ],
+      "stack_out": [
+        "vested#0",
+        "claimable#0",
+        "0",
+        "\"employerAddress\""
+      ]
+    },
+    "693": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%5#0",
+        "maybe_value%5#0"
+      ],
+      "stack_out": [
+        "vested#0",
+        "claimable#0",
+        "maybe_value%5#0",
+        "maybe_exists%5#0"
+      ]
+    },
+    "694": {
+      "error": "check GlobalState exists",
+      "op": "assert // check GlobalState exists",
+      "stack_out": [
+        "vested#0",
+        "claimable#0",
+        "maybe_value%5#0"
+      ]
+    },
+    "695": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "vested#0",
+        "claimable#0",
+        "maybe_value%5#0",
+        "0"
+      ]
+    },
+    "696": {
+      "op": "bytec 5 // \"employeeAddress\"",
+      "defined_out": [
+        "\"employeeAddress\"",
+        "0",
+        "maybe_value%5#0"
+      ],
+      "stack_out": [
+        "vested#0",
+        "claimable#0",
+        "maybe_value%5#0",
+        "0",
+        "\"employeeAddress\""
+      ]
+    },
+    "698": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%6#0",
+        "maybe_value%5#0",
+        "maybe_value%6#0"
+      ],
+      "stack_out": [
+        "vested#0",
+        "claimable#0",
+        "maybe_value%5#0",
+        "maybe_value%6#0",
+        "maybe_exists%6#0"
+      ]
+    },
+    "699": {
+      "error": "check GlobalState exists",
+      "op": "assert // check GlobalState exists",
+      "stack_out": [
+        "vested#0",
+        "claimable#0",
+        "maybe_value%5#0",
+        "maybe_value%6#0"
+      ]
+    },
+    "700": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "vested#0",
+        "claimable#0",
+        "maybe_value%5#0",
+        "maybe_value%6#0",
+        "0"
+      ]
+    },
+    "701": {
+      "op": "bytec 6 // \"tokenASA\"",
+      "defined_out": [
+        "\"tokenASA\"",
+        "0",
+        "maybe_value%5#0",
+        "maybe_value%6#0"
+      ],
+      "stack_out": [
+        "vested#0",
+        "claimable#0",
+        "maybe_value%5#0",
+        "maybe_value%6#0",
+        "0",
+        "\"tokenASA\""
+      ]
+    },
+    "703": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%7#0",
+        "maybe_value%5#0",
+        "maybe_value%6#0",
+        "maybe_value%7#0"
+      ],
+      "stack_out": [
+        "vested#0",
+        "claimable#0",
+        "maybe_value%5#0",
+        "maybe_value%6#0",
+        "maybe_value%7#0",
+        "maybe_exists%7#0"
+      ]
+    },
+    "704": {
+      "error": "check GlobalState exists",
+      "op": "assert // check GlobalState exists",
+      "stack_out": [
+        "vested#0",
+        "claimable#0",
+        "maybe_value%5#0",
+        "maybe_value%6#0",
+        "maybe_value%7#0"
+      ]
+    },
+    "705": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "vested#0",
+        "claimable#0",
+        "maybe_value%5#0",
+        "maybe_value%6#0",
+        "maybe_value%7#0",
+        "0"
+      ]
+    },
+    "706": {
+      "op": "bytec_2 // \"totalTokens\"",
+      "defined_out": [
+        "\"totalTokens\"",
+        "0",
+        "maybe_value%5#0",
+        "maybe_value%6#0",
+        "maybe_value%7#0"
+      ],
+      "stack_out": [
+        "vested#0",
+        "claimable#0",
+        "maybe_value%5#0",
+        "maybe_value%6#0",
+        "maybe_value%7#0",
+        "0",
+        "\"totalTokens\""
+      ]
+    },
+    "707": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%8#0",
+        "maybe_value%5#0",
+        "maybe_value%6#0",
+        "maybe_value%7#0",
+        "maybe_value%8#0"
+      ],
+      "stack_out": [
+        "vested#0",
+        "claimable#0",
+        "maybe_value%5#0",
+        "maybe_value%6#0",
+        "maybe_value%7#0",
+        "maybe_value%8#0",
+        "maybe_exists%8#0"
+      ]
+    },
+    "708": {
+      "error": "check GlobalState exists",
+      "op": "assert // check GlobalState exists",
+      "stack_out": [
+        "vested#0",
+        "claimable#0",
+        "maybe_value%5#0",
+        "maybe_value%6#0",
+        "maybe_value%7#0",
+        "maybe_value%8#0"
+      ]
+    },
+    "709": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "vested#0",
+        "claimable#0",
+        "maybe_value%5#0",
+        "maybe_value%6#0",
+        "maybe_value%7#0",
+        "maybe_value%8#0",
+        "0"
+      ]
+    },
+    "710": {
+      "op": "bytec_0 // \"startTime\"",
+      "defined_out": [
+        "\"startTime\"",
+        "0",
+        "maybe_value%5#0",
+        "maybe_value%6#0",
+        "maybe_value%7#0",
+        "maybe_value%8#0"
+      ],
+      "stack_out": [
+        "vested#0",
+        "claimable#0",
+        "maybe_value%5#0",
+        "maybe_value%6#0",
+        "maybe_value%7#0",
+        "maybe_value%8#0",
+        "0",
+        "\"startTime\""
+      ]
+    },
+    "711": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%9#0",
+        "maybe_value%5#0",
+        "maybe_value%6#0",
+        "maybe_value%7#0",
+        "maybe_value%8#0",
+        "maybe_value%9#0"
+      ],
+      "stack_out": [
+        "vested#0",
+        "claimable#0",
+        "maybe_value%5#0",
+        "maybe_value%6#0",
+        "maybe_value%7#0",
+        "maybe_value%8#0",
+        "maybe_value%9#0",
+        "maybe_exists%9#0"
+      ]
+    },
+    "712": {
+      "error": "check GlobalState exists",
+      "op": "assert // check GlobalState exists",
+      "stack_out": [
+        "vested#0",
+        "claimable#0",
+        "maybe_value%5#0",
+        "maybe_value%6#0",
+        "maybe_value%7#0",
+        "maybe_value%8#0",
+        "maybe_value%9#0"
+      ]
+    },
+    "713": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "vested#0",
+        "claimable#0",
+        "maybe_value%5#0",
+        "maybe_value%6#0",
+        "maybe_value%7#0",
+        "maybe_value%8#0",
+        "maybe_value%9#0",
+        "0"
+      ]
+    },
+    "714": {
+      "op": "bytec 4 // \"cliffTime\"",
+      "defined_out": [
+        "\"cliffTime\"",
+        "0",
+        "maybe_value%5#0",
+        "maybe_value%6#0",
+        "maybe_value%7#0",
+        "maybe_value%8#0",
+        "maybe_value%9#0"
+      ],
+      "stack_out": [
+        "vested#0",
+        "claimable#0",
+        "maybe_value%5#0",
+        "maybe_value%6#0",
+        "maybe_value%7#0",
+        "maybe_value%8#0",
+        "maybe_value%9#0",
+        "0",
+        "\"cliffTime\""
+      ]
+    },
+    "716": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%10#0",
+        "maybe_value%10#0",
+        "maybe_value%5#0",
+        "maybe_value%6#0",
+        "maybe_value%7#0",
+        "maybe_value%8#0",
+        "maybe_value%9#0"
+      ],
+      "stack_out": [
+        "vested#0",
+        "claimable#0",
+        "maybe_value%5#0",
+        "maybe_value%6#0",
+        "maybe_value%7#0",
+        "maybe_value%8#0",
+        "maybe_value%9#0",
+        "maybe_value%10#0",
+        "maybe_exists%10#0"
+      ]
+    },
+    "717": {
+      "error": "check GlobalState exists",
+      "op": "assert // check GlobalState exists",
+      "stack_out": [
+        "vested#0",
+        "claimable#0",
+        "maybe_value%5#0",
+        "maybe_value%6#0",
+        "maybe_value%7#0",
+        "maybe_value%8#0",
+        "maybe_value%9#0",
+        "maybe_value%10#0"
+      ]
+    },
+    "718": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "vested#0",
+        "claimable#0",
+        "maybe_value%5#0",
+        "maybe_value%6#0",
+        "maybe_value%7#0",
+        "maybe_value%8#0",
+        "maybe_value%9#0",
+        "maybe_value%10#0",
+        "0"
+      ]
+    },
+    "719": {
+      "op": "bytec_1 // \"duration\"",
+      "defined_out": [
+        "\"duration\"",
+        "0",
+        "maybe_value%10#0",
+        "maybe_value%5#0",
+        "maybe_value%6#0",
+        "maybe_value%7#0",
+        "maybe_value%8#0",
+        "maybe_value%9#0"
+      ],
+      "stack_out": [
+        "vested#0",
+        "claimable#0",
+        "maybe_value%5#0",
+        "maybe_value%6#0",
+        "maybe_value%7#0",
+        "maybe_value%8#0",
+        "maybe_value%9#0",
+        "maybe_value%10#0",
+        "0",
+        "\"duration\""
+      ]
+    },
+    "720": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%11#0",
+        "maybe_value%10#0",
+        "maybe_value%11#0",
+        "maybe_value%5#0",
+        "maybe_value%6#0",
+        "maybe_value%7#0",
+        "maybe_value%8#0",
+        "maybe_value%9#0"
+      ],
+      "stack_out": [
+        "vested#0",
+        "claimable#0",
+        "maybe_value%5#0",
+        "maybe_value%6#0",
+        "maybe_value%7#0",
+        "maybe_value%8#0",
+        "maybe_value%9#0",
+        "maybe_value%10#0",
+        "maybe_value%11#0",
+        "maybe_exists%11#0"
+      ]
+    },
+    "721": {
+      "error": "check GlobalState exists",
+      "op": "assert // check GlobalState exists",
+      "stack_out": [
+        "vested#0",
+        "claimable#0",
+        "maybe_value%5#0",
+        "maybe_value%6#0",
+        "maybe_value%7#0",
+        "maybe_value%8#0",
+        "maybe_value%9#0",
+        "maybe_value%10#0",
+        "maybe_value%11#0"
+      ]
+    },
+    "722": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "vested#0",
+        "claimable#0",
+        "maybe_value%5#0",
+        "maybe_value%6#0",
+        "maybe_value%7#0",
+        "maybe_value%8#0",
+        "maybe_value%9#0",
+        "maybe_value%10#0",
+        "maybe_value%11#0",
+        "0"
+      ]
+    },
+    "723": {
+      "op": "bytec_3 // \"claimedTokens\"",
+      "defined_out": [
+        "\"claimedTokens\"",
+        "0",
+        "maybe_value%10#0",
+        "maybe_value%11#0",
+        "maybe_value%5#0",
+        "maybe_value%6#0",
+        "maybe_value%7#0",
+        "maybe_value%8#0",
+        "maybe_value%9#0"
+      ],
+      "stack_out": [
+        "vested#0",
+        "claimable#0",
+        "maybe_value%5#0",
+        "maybe_value%6#0",
+        "maybe_value%7#0",
+        "maybe_value%8#0",
+        "maybe_value%9#0",
+        "maybe_value%10#0",
+        "maybe_value%11#0",
+        "0",
+        "\"claimedTokens\""
+      ]
+    },
+    "724": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%12#0",
+        "maybe_value%10#0",
+        "maybe_value%11#0",
+        "maybe_value%12#0",
+        "maybe_value%5#0",
+        "maybe_value%6#0",
+        "maybe_value%7#0",
+        "maybe_value%8#0",
+        "maybe_value%9#0"
+      ],
+      "stack_out": [
+        "vested#0",
+        "claimable#0",
+        "maybe_value%5#0",
+        "maybe_value%6#0",
+        "maybe_value%7#0",
+        "maybe_value%8#0",
+        "maybe_value%9#0",
+        "maybe_value%10#0",
+        "maybe_value%11#0",
+        "maybe_value%12#0",
+        "maybe_exists%12#0"
+      ]
+    },
+    "725": {
+      "error": "check GlobalState exists",
+      "op": "assert // check GlobalState exists",
+      "stack_out": [
+        "vested#0",
+        "claimable#0",
+        "maybe_value%5#0",
+        "maybe_value%6#0",
+        "maybe_value%7#0",
+        "maybe_value%8#0",
+        "maybe_value%9#0",
+        "maybe_value%10#0",
+        "maybe_value%11#0",
+        "maybe_value%12#0"
+      ]
+    },
+    "726": {
+      "op": "frame_dig 0",
+      "defined_out": [
+        "maybe_value%10#0",
+        "maybe_value%11#0",
+        "maybe_value%12#0",
+        "maybe_value%5#0",
+        "maybe_value%6#0",
+        "maybe_value%7#0",
+        "maybe_value%8#0",
+        "maybe_value%9#0",
+        "vested#0"
+      ],
+      "stack_out": [
+        "vested#0",
+        "claimable#0",
+        "maybe_value%5#0",
+        "maybe_value%6#0",
+        "maybe_value%7#0",
+        "maybe_value%8#0",
+        "maybe_value%9#0",
+        "maybe_value%10#0",
+        "maybe_value%11#0",
+        "maybe_value%12#0",
+        "vested#0"
+      ]
+    },
+    "728": {
+      "op": "frame_dig 1",
+      "defined_out": [
+        "claimable#0",
+        "maybe_value%10#0",
+        "maybe_value%11#0",
+        "maybe_value%12#0",
+        "maybe_value%5#0",
+        "maybe_value%6#0",
+        "maybe_value%7#0",
+        "maybe_value%8#0",
+        "maybe_value%9#0",
+        "vested#0"
+      ],
+      "stack_out": [
+        "vested#0",
+        "claimable#0",
+        "maybe_value%5#0",
+        "maybe_value%6#0",
+        "maybe_value%7#0",
+        "maybe_value%8#0",
+        "maybe_value%9#0",
+        "maybe_value%10#0",
+        "maybe_value%11#0",
+        "maybe_value%12#0",
+        "vested#0",
+        "claimable#0"
+      ]
+    },
+    "730": {
+      "op": "uncover 11"
+    },
+    "732": {
+      "op": "uncover 11"
+    },
+    "734": {
+      "retsub": true,
+      "op": "retsub"
+    },
+    "735": {
+      "subroutine": "smart_contracts/todo/contract.algo.ts::TokenVesting.getUserVestingStatus",
+      "params": {},
+      "block": "getUserVestingStatus",
+      "stack_in": [],
+      "op": "proto 0 6"
+    },
+    "738": {
+      "op": "global LatestTimestamp"
+    },
+    "740": {
+      "op": "dup",
+      "defined_out": [
+        "now#0"
+      ],
+      "stack_out": [
+        "now#0",
+        "now#0"
+      ]
+    },
+    "741": {
+      "callsub": "smart_contracts/todo/contract.algo.ts::TokenVesting.calculateVested",
+      "op": "callsub calculateVested",
+      "defined_out": [
+        "now#0",
+        "vested#0"
+      ],
+      "stack_out": [
+        "now#0",
+        "now#0",
+        "vested#0"
+      ]
+    },
+    "744": {
+      "op": "dup",
+      "stack_out": [
+        "now#0",
+        "now#0",
+        "vested#0",
+        "vested#0"
+      ]
+    },
+    "745": {
+      "op": "cover 2",
+      "defined_out": [
+        "now#0",
+        "vested#0"
+      ],
+      "stack_out": [
+        "now#0",
+        "vested#0",
+        "now#0",
+        "vested#0"
+      ]
+    },
+    "747": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "now#0",
+        "vested#0",
+        "now#0",
+        "vested#0",
+        "0"
+      ]
+    },
+    "748": {
+      "op": "bytec_3 // \"claimedTokens\"",
+      "defined_out": [
+        "\"claimedTokens\"",
+        "0",
+        "now#0",
+        "vested#0"
+      ],
+      "stack_out": [
+        "now#0",
+        "vested#0",
+        "now#0",
+        "vested#0",
+        "0",
+        "\"claimedTokens\""
+      ]
+    },
+    "749": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%0#0",
+        "maybe_value%0#0",
+        "now#0",
+        "vested#0"
+      ],
+      "stack_out": [
+        "now#0",
+        "vested#0",
+        "now#0",
+        "vested#0",
+        "maybe_value%0#0",
+        "maybe_exists%0#0"
+      ]
+    },
+    "750": {
+      "error": "check GlobalState exists",
+      "op": "assert // check GlobalState exists",
+      "stack_out": [
+        "now#0",
+        "vested#0",
+        "now#0",
+        "vested#0",
+        "maybe_value%0#0"
+      ]
+    },
+    "751": {
+      "op": "-",
+      "defined_out": [
+        "claimable#0",
+        "now#0",
+        "vested#0"
+      ],
+      "stack_out": [
+        "now#0",
+        "vested#0",
+        "now#0",
+        "claimable#0"
+      ]
+    },
+    "752": {
+      "op": "swap",
+      "defined_out": [
+        "claimable#0",
+        "now#0",
+        "vested#0"
+      ],
+      "stack_out": [
+        "now#0",
+        "vested#0",
+        "claimable#0",
+        "now#0"
+      ]
+    },
+    "753": {
+      "op": "txn Sender",
+      "defined_out": [
+        "claimable#0",
+        "now#0",
+        "tmp%0#0",
+        "vested#0"
+      ],
+      "stack_out": [
+        "now#0",
+        "vested#0",
+        "claimable#0",
+        "now#0",
+        "tmp%0#0"
+      ]
+    },
+    "755": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "now#0",
+        "vested#0",
+        "claimable#0",
+        "now#0",
+        "tmp%0#0",
+        "0"
+      ]
+    },
+    "756": {
+      "op": "bytec 5 // \"employeeAddress\"",
+      "defined_out": [
+        "\"employeeAddress\"",
+        "0",
+        "claimable#0",
+        "now#0",
+        "tmp%0#0",
+        "vested#0"
+      ],
+      "stack_out": [
+        "now#0",
+        "vested#0",
+        "claimable#0",
+        "now#0",
+        "tmp%0#0",
+        "0",
+        "\"employeeAddress\""
+      ]
+    },
+    "758": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "claimable#0",
+        "maybe_exists%1#0",
+        "maybe_value%1#0",
+        "now#0",
+        "tmp%0#0",
+        "vested#0"
+      ],
+      "stack_out": [
+        "now#0",
+        "vested#0",
+        "claimable#0",
+        "now#0",
+        "tmp%0#0",
+        "maybe_value%1#0",
+        "maybe_exists%1#0"
+      ]
+    },
+    "759": {
+      "error": "check GlobalState exists",
+      "op": "assert // check GlobalState exists",
+      "stack_out": [
+        "now#0",
+        "vested#0",
+        "claimable#0",
+        "now#0",
+        "tmp%0#0",
+        "maybe_value%1#0"
+      ]
+    },
+    "760": {
+      "op": "==",
+      "defined_out": [
+        "claimable#0",
+        "isEmployee#0",
+        "now#0",
+        "vested#0"
+      ],
+      "stack_out": [
+        "now#0",
+        "vested#0",
+        "claimable#0",
+        "now#0",
+        "isEmployee#0"
+      ]
+    },
+    "761": {
+      "op": "swap",
+      "defined_out": [
+        "claimable#0",
+        "isEmployee#0",
+        "now#0",
+        "vested#0"
+      ],
+      "stack_out": [
+        "now#0",
+        "vested#0",
+        "claimable#0",
+        "isEmployee#0",
+        "now#0"
+      ]
+    },
+    "762": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "now#0",
+        "vested#0",
+        "claimable#0",
+        "isEmployee#0",
+        "now#0",
+        "0"
+      ]
+    },
+    "763": {
+      "op": "bytec 4 // \"cliffTime\"",
+      "defined_out": [
+        "\"cliffTime\"",
+        "0",
+        "claimable#0",
+        "isEmployee#0",
+        "now#0",
+        "vested#0"
+      ],
+      "stack_out": [
+        "now#0",
+        "vested#0",
+        "claimable#0",
+        "isEmployee#0",
+        "now#0",
+        "0",
+        "\"cliffTime\""
+      ]
+    },
+    "765": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "claimable#0",
+        "isEmployee#0",
+        "maybe_exists%2#0",
+        "maybe_value%2#0",
+        "now#0",
+        "vested#0"
+      ],
+      "stack_out": [
+        "now#0",
+        "vested#0",
+        "claimable#0",
+        "isEmployee#0",
+        "now#0",
+        "maybe_value%2#0",
+        "maybe_exists%2#0"
+      ]
+    },
+    "766": {
+      "error": "check GlobalState exists",
+      "op": "assert // check GlobalState exists",
+      "stack_out": [
+        "now#0",
+        "vested#0",
+        "claimable#0",
+        "isEmployee#0",
+        "now#0",
+        "maybe_value%2#0"
+      ]
+    },
+    "767": {
+      "op": "dig 1",
+      "defined_out": [
+        "claimable#0",
+        "isEmployee#0",
+        "maybe_value%2#0",
+        "now#0",
+        "now#0 (copy)",
+        "vested#0"
+      ],
+      "stack_out": [
+        "now#0",
+        "vested#0",
+        "claimable#0",
+        "isEmployee#0",
+        "now#0",
+        "maybe_value%2#0",
+        "now#0 (copy)"
+      ]
+    },
+    "769": {
+      "op": "<=",
+      "defined_out": [
+        "claimable#0",
+        "cliffReached#0",
+        "isEmployee#0",
+        "now#0",
+        "vested#0"
+      ],
+      "stack_out": [
+        "now#0",
+        "vested#0",
+        "claimable#0",
+        "isEmployee#0",
+        "now#0",
+        "cliffReached#0"
+      ]
+    },
+    "770": {
+      "op": "swap",
+      "defined_out": [
+        "claimable#0",
+        "cliffReached#0",
+        "isEmployee#0",
+        "now#0",
+        "vested#0"
+      ],
+      "stack_out": [
+        "now#0",
+        "vested#0",
+        "claimable#0",
+        "isEmployee#0",
+        "cliffReached#0",
+        "now#0"
+      ]
+    },
+    "771": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "now#0",
+        "vested#0",
+        "claimable#0",
+        "isEmployee#0",
+        "cliffReached#0",
+        "now#0",
+        "0"
+      ]
+    },
+    "772": {
+      "op": "bytec_0 // \"startTime\"",
+      "defined_out": [
+        "\"startTime\"",
+        "0",
+        "claimable#0",
+        "cliffReached#0",
+        "isEmployee#0",
+        "now#0",
+        "vested#0"
+      ],
+      "stack_out": [
+        "now#0",
+        "vested#0",
+        "claimable#0",
+        "isEmployee#0",
+        "cliffReached#0",
+        "now#0",
+        "0",
+        "\"startTime\""
+      ]
+    },
+    "773": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "claimable#0",
+        "cliffReached#0",
+        "isEmployee#0",
+        "maybe_exists%3#0",
+        "maybe_value%3#0",
+        "now#0",
+        "vested#0"
+      ],
+      "stack_out": [
+        "now#0",
+        "vested#0",
+        "claimable#0",
+        "isEmployee#0",
+        "cliffReached#0",
+        "now#0",
+        "maybe_value%3#0",
+        "maybe_exists%3#0"
+      ]
+    },
+    "774": {
+      "error": "check GlobalState exists",
+      "op": "assert // check GlobalState exists",
+      "stack_out": [
+        "now#0",
+        "vested#0",
+        "claimable#0",
+        "isEmployee#0",
+        "cliffReached#0",
+        "now#0",
+        "maybe_value%3#0"
+      ]
+    },
+    "775": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "now#0",
+        "vested#0",
+        "claimable#0",
+        "isEmployee#0",
+        "cliffReached#0",
+        "now#0",
+        "maybe_value%3#0",
+        "0"
+      ]
+    },
+    "776": {
+      "op": "bytec_1 // \"duration\"",
+      "defined_out": [
+        "\"duration\"",
+        "0",
+        "claimable#0",
+        "cliffReached#0",
+        "isEmployee#0",
+        "maybe_value%3#0",
+        "now#0",
+        "vested#0"
+      ],
+      "stack_out": [
+        "now#0",
+        "vested#0",
+        "claimable#0",
+        "isEmployee#0",
+        "cliffReached#0",
+        "now#0",
+        "maybe_value%3#0",
+        "0",
+        "\"duration\""
+      ]
+    },
+    "777": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "claimable#0",
+        "cliffReached#0",
+        "isEmployee#0",
+        "maybe_exists%4#0",
+        "maybe_value%3#0",
+        "maybe_value%4#0",
+        "now#0",
+        "vested#0"
+      ],
+      "stack_out": [
+        "now#0",
+        "vested#0",
+        "claimable#0",
+        "isEmployee#0",
+        "cliffReached#0",
+        "now#0",
+        "maybe_value%3#0",
+        "maybe_value%4#0",
+        "maybe_exists%4#0"
+      ]
+    },
+    "778": {
+      "error": "check GlobalState exists",
+      "op": "assert // check GlobalState exists",
+      "stack_out": [
+        "now#0",
+        "vested#0",
+        "claimable#0",
+        "isEmployee#0",
+        "cliffReached#0",
+        "now#0",
+        "maybe_value%3#0",
+        "maybe_value%4#0"
+      ]
+    },
+    "779": {
+      "op": "+",
+      "defined_out": [
+        "claimable#0",
+        "cliffReached#0",
+        "isEmployee#0",
+        "now#0",
+        "tmp%1#0",
+        "vested#0"
+      ],
+      "stack_out": [
+        "now#0",
+        "vested#0",
+        "claimable#0",
+        "isEmployee#0",
+        "cliffReached#0",
+        "now#0",
+        "tmp%1#0"
+      ]
+    },
+    "780": {
+      "op": ">=",
+      "defined_out": [
+        "claimable#0",
+        "cliffReached#0",
+        "fullyVested#0",
+        "isEmployee#0",
+        "now#0",
+        "vested#0"
+      ],
+      "stack_out": [
+        "now#0",
+        "vested#0",
+        "claimable#0",
+        "isEmployee#0",
+        "cliffReached#0",
+        "fullyVested#0"
+      ]
+    },
+    "781": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "now#0",
+        "vested#0",
+        "claimable#0",
+        "isEmployee#0",
+        "cliffReached#0",
+        "fullyVested#0",
+        "0"
+      ]
+    },
+    "782": {
+      "op": "bytec_3 // \"claimedTokens\"",
+      "stack_out": [
+        "now#0",
+        "vested#0",
+        "claimable#0",
+        "isEmployee#0",
+        "cliffReached#0",
+        "fullyVested#0",
+        "0",
+        "\"claimedTokens\""
+      ]
+    },
+    "783": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "claimable#0",
+        "cliffReached#0",
+        "fullyVested#0",
+        "isEmployee#0",
+        "maybe_exists%5#0",
+        "maybe_value%5#0",
+        "now#0",
+        "vested#0"
+      ],
+      "stack_out": [
+        "now#0",
+        "vested#0",
+        "claimable#0",
+        "isEmployee#0",
+        "cliffReached#0",
+        "fullyVested#0",
+        "maybe_value%5#0",
+        "maybe_exists%5#0"
+      ]
+    },
+    "784": {
+      "op": "swap",
+      "stack_out": [
+        "now#0",
+        "vested#0",
+        "claimable#0",
+        "isEmployee#0",
+        "cliffReached#0",
+        "fullyVested#0",
+        "maybe_exists%5#0",
+        "maybe_value%5#0"
+      ]
+    },
+    "785": {
+      "op": "cover 2",
+      "defined_out": [
+        "claimable#0",
+        "cliffReached#0",
+        "fullyVested#0",
+        "isEmployee#0",
+        "maybe_exists%5#0",
+        "maybe_value%5#0",
+        "now#0",
+        "vested#0"
+      ],
+      "stack_out": [
+        "now#0",
+        "vested#0",
+        "claimable#0",
+        "isEmployee#0",
+        "cliffReached#0",
+        "maybe_value%5#0",
+        "fullyVested#0",
+        "maybe_exists%5#0"
+      ]
+    },
+    "787": {
+      "error": "check GlobalState exists",
+      "op": "assert // check GlobalState exists",
+      "stack_out": [
+        "now#0",
+        "vested#0",
+        "claimable#0",
+        "isEmployee#0",
+        "cliffReached#0",
+        "maybe_value%5#0",
+        "fullyVested#0"
+      ]
+    },
+    "788": {
+      "op": "bz getUserVestingStatus_ternary_false@2",
+      "stack_out": [
+        "now#0",
+        "vested#0",
+        "claimable#0",
+        "isEmployee#0",
+        "cliffReached#0",
+        "maybe_value%5#0"
+      ]
+    },
+    "791": {
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "claimable#0",
+        "cliffReached#0",
+        "isEmployee#0",
+        "maybe_value%5#0",
+        "now#0",
+        "ternary_result%0#0",
+        "vested#0"
+      ],
+      "stack_out": [
+        "now#0",
+        "vested#0",
+        "claimable#0",
+        "isEmployee#0",
+        "cliffReached#0",
+        "maybe_value%5#0",
+        "ternary_result%0#0"
+      ]
+    },
+    "792": {
+      "block": "getUserVestingStatus_ternary_merge@3",
+      "stack_in": [
+        "now#0",
+        "vested#0",
+        "claimable#0",
+        "isEmployee#0",
+        "cliffReached#0",
+        "maybe_value%5#0",
+        "ternary_result%0#0"
+      ],
+      "op": "frame_dig 1",
+      "defined_out": [
+        "vested#0"
+      ],
+      "stack_out": [
+        "now#0",
+        "vested#0",
+        "claimable#0",
+        "isEmployee#0",
+        "cliffReached#0",
+        "maybe_value%5#0",
+        "ternary_result%0#0",
+        "vested#0"
+      ]
+    },
+    "794": {
+      "op": "frame_dig 2",
+      "defined_out": [
+        "claimable#0",
+        "vested#0"
+      ],
+      "stack_out": [
+        "now#0",
+        "vested#0",
+        "claimable#0",
+        "isEmployee#0",
+        "cliffReached#0",
+        "maybe_value%5#0",
+        "ternary_result%0#0",
+        "vested#0",
+        "claimable#0"
+      ]
+    },
+    "796": {
+      "op": "frame_dig 5",
+      "defined_out": [
+        "claimable#0",
+        "maybe_value%5#0",
+        "vested#0"
+      ],
+      "stack_out": [
+        "now#0",
+        "vested#0",
+        "claimable#0",
+        "isEmployee#0",
+        "cliffReached#0",
+        "maybe_value%5#0",
+        "ternary_result%0#0",
+        "vested#0",
+        "claimable#0",
+        "maybe_value%5#0"
+      ]
+    },
+    "798": {
+      "op": "frame_dig 3",
+      "defined_out": [
+        "claimable#0",
+        "isEmployee#0",
+        "maybe_value%5#0",
+        "vested#0"
+      ],
+      "stack_out": [
+        "now#0",
+        "vested#0",
+        "claimable#0",
+        "isEmployee#0",
+        "cliffReached#0",
+        "maybe_value%5#0",
+        "ternary_result%0#0",
+        "vested#0",
+        "claimable#0",
+        "maybe_value%5#0",
+        "isEmployee#0"
+      ]
+    },
+    "800": {
+      "op": "frame_dig 4",
+      "defined_out": [
+        "claimable#0",
+        "cliffReached#0",
+        "isEmployee#0",
+        "maybe_value%5#0",
+        "vested#0"
+      ],
+      "stack_out": [
+        "now#0",
+        "vested#0",
+        "claimable#0",
+        "isEmployee#0",
+        "cliffReached#0",
+        "maybe_value%5#0",
+        "ternary_result%0#0",
+        "vested#0",
+        "claimable#0",
+        "maybe_value%5#0",
+        "isEmployee#0",
+        "cliffReached#0"
+      ]
+    },
+    "802": {
+      "op": "uncover 5",
+      "defined_out": [
+        "claimable#0",
+        "cliffReached#0",
+        "isEmployee#0",
+        "maybe_value%5#0",
+        "ternary_result%0#0",
+        "vested#0"
+      ],
+      "stack_out": [
+        "now#0",
+        "vested#0",
+        "claimable#0",
+        "isEmployee#0",
+        "cliffReached#0",
+        "maybe_value%5#0",
+        "vested#0",
+        "claimable#0",
+        "maybe_value%5#0",
+        "isEmployee#0",
+        "cliffReached#0",
+        "ternary_result%0#0"
+      ]
+    },
+    "804": {
+      "op": "uncover 11"
+    },
+    "806": {
+      "op": "uncover 11"
+    },
+    "808": {
+      "op": "uncover 11"
+    },
+    "810": {
+      "op": "uncover 11"
+    },
+    "812": {
+      "op": "uncover 11"
+    },
+    "814": {
+      "op": "uncover 11"
+    },
+    "816": {
+      "retsub": true,
+      "op": "retsub"
+    },
+    "817": {
+      "block": "getUserVestingStatus_ternary_false@2",
+      "stack_in": [
+        "now#0",
+        "vested#0",
+        "claimable#0",
+        "isEmployee#0",
+        "cliffReached#0",
+        "maybe_value%5#0"
+      ],
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "0"
+      ],
+      "stack_out": [
+        "now#0",
+        "vested#0",
+        "claimable#0",
+        "isEmployee#0",
+        "cliffReached#0",
+        "maybe_value%5#0",
+        "0"
+      ]
+    },
+    "818": {
+      "op": "bytec_0 // \"startTime\"",
+      "defined_out": [
+        "\"startTime\"",
+        "0"
+      ],
+      "stack_out": [
+        "now#0",
+        "vested#0",
+        "claimable#0",
+        "isEmployee#0",
+        "cliffReached#0",
+        "maybe_value%5#0",
+        "0",
+        "\"startTime\""
+      ]
+    },
+    "819": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%6#0",
+        "maybe_value%6#0"
+      ],
+      "stack_out": [
+        "now#0",
+        "vested#0",
+        "claimable#0",
+        "isEmployee#0",
+        "cliffReached#0",
+        "maybe_value%5#0",
+        "maybe_value%6#0",
+        "maybe_exists%6#0"
+      ]
+    },
+    "820": {
+      "error": "check GlobalState exists",
+      "op": "assert // check GlobalState exists",
+      "stack_out": [
+        "now#0",
+        "vested#0",
+        "claimable#0",
+        "isEmployee#0",
+        "cliffReached#0",
+        "maybe_value%5#0",
+        "maybe_value%6#0"
+      ]
+    },
+    "821": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "now#0",
+        "vested#0",
+        "claimable#0",
+        "isEmployee#0",
+        "cliffReached#0",
+        "maybe_value%5#0",
+        "maybe_value%6#0",
+        "0"
+      ]
+    },
+    "822": {
+      "op": "bytec_1 // \"duration\"",
+      "defined_out": [
+        "\"duration\"",
+        "0",
+        "maybe_value%6#0"
+      ],
+      "stack_out": [
+        "now#0",
+        "vested#0",
+        "claimable#0",
+        "isEmployee#0",
+        "cliffReached#0",
+        "maybe_value%5#0",
+        "maybe_value%6#0",
+        "0",
+        "\"duration\""
+      ]
+    },
+    "823": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%7#0",
+        "maybe_value%6#0",
+        "maybe_value%7#0"
+      ],
+      "stack_out": [
+        "now#0",
+        "vested#0",
+        "claimable#0",
+        "isEmployee#0",
+        "cliffReached#0",
+        "maybe_value%5#0",
+        "maybe_value%6#0",
+        "maybe_value%7#0",
+        "maybe_exists%7#0"
+      ]
+    },
+    "824": {
+      "error": "check GlobalState exists",
+      "op": "assert // check GlobalState exists",
+      "stack_out": [
+        "now#0",
+        "vested#0",
+        "claimable#0",
+        "isEmployee#0",
+        "cliffReached#0",
+        "maybe_value%5#0",
+        "maybe_value%6#0",
+        "maybe_value%7#0"
+      ]
+    },
+    "825": {
+      "op": "+",
+      "defined_out": [
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "now#0",
+        "vested#0",
+        "claimable#0",
+        "isEmployee#0",
+        "cliffReached#0",
+        "maybe_value%5#0",
+        "tmp%2#0"
+      ]
+    },
+    "826": {
+      "op": "frame_dig 0",
+      "defined_out": [
+        "now#0",
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "now#0",
+        "vested#0",
+        "claimable#0",
+        "isEmployee#0",
+        "cliffReached#0",
+        "maybe_value%5#0",
+        "tmp%2#0",
+        "now#0"
+      ]
+    },
+    "828": {
+      "op": "-",
+      "defined_out": [
+        "now#0",
+        "ternary_result%0#0"
+      ],
+      "stack_out": [
+        "now#0",
+        "vested#0",
+        "claimable#0",
+        "isEmployee#0",
+        "cliffReached#0",
+        "maybe_value%5#0",
+        "ternary_result%0#0"
+      ]
+    },
+    "829": {
+      "op": "b getUserVestingStatus_ternary_merge@3"
+    },
+    "832": {
+      "subroutine": "smart_contracts/todo/contract.algo.ts::TokenVesting.revokeVesting",
+      "params": {},
+      "block": "revokeVesting",
+      "stack_in": [],
+      "op": "proto 0 0"
+    },
+    "835": {
+      "op": "txn Sender",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "837": {
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "0",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "0"
+      ]
+    },
+    "838": {
+      "op": "bytec 8 // \"employerAddress\"",
+      "defined_out": [
+        "\"employerAddress\"",
+        "0",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "0",
+        "\"employerAddress\""
+      ]
+    },
+    "840": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%0#0",
+        "maybe_value%0#0",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "maybe_value%0#0",
+        "maybe_exists%0#0"
+      ]
+    },
+    "841": {
+      "error": "check GlobalState exists",
+      "op": "assert // check GlobalState exists",
+      "stack_out": [
+        "tmp%0#0",
+        "maybe_value%0#0"
+      ]
+    },
+    "842": {
+      "op": "==",
+      "defined_out": [
+        "tmp%1#0"
+      ],
+      "stack_out": [
+        "tmp%1#0"
+      ]
+    },
+    "843": {
+      "error": "Only employer can revoke vesting",
+      "op": "assert // Only employer can revoke vesting",
+      "stack_out": []
+    },
+    "844": {
+      "callsub": "smart_contracts/todo/contract.algo.ts::TokenVesting.calculateVested",
+      "op": "callsub calculateVested",
+      "defined_out": [
+        "vested#0"
+      ],
+      "stack_out": [
+        "vested#0"
+      ]
+    },
+    "847": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "vested#0",
+        "0"
+      ]
+    },
+    "848": {
+      "op": "bytec_2 // \"totalTokens\"",
+      "defined_out": [
+        "\"totalTokens\"",
+        "0",
+        "vested#0"
+      ],
+      "stack_out": [
+        "vested#0",
+        "0",
+        "\"totalTokens\""
+      ]
+    },
+    "849": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%1#0",
+        "maybe_value%1#0",
+        "vested#0"
+      ],
+      "stack_out": [
+        "vested#0",
+        "maybe_value%1#0",
+        "maybe_exists%1#0"
+      ]
+    },
+    "850": {
+      "error": "check GlobalState exists",
+      "op": "assert // check GlobalState exists",
+      "stack_out": [
+        "vested#0",
+        "maybe_value%1#0"
+      ]
+    },
+    "851": {
+      "op": "dig 1",
+      "defined_out": [
+        "maybe_value%1#0",
+        "vested#0",
+        "vested#0 (copy)"
+      ],
+      "stack_out": [
+        "vested#0",
+        "maybe_value%1#0",
+        "vested#0 (copy)"
+      ]
+    },
+    "853": {
+      "op": "-",
+      "defined_out": [
+        "unvestedTokens#0",
+        "vested#0"
+      ],
+      "stack_out": [
+        "vested#0",
+        "unvestedTokens#0"
+      ]
+    },
+    "854": {
+      "op": "dup",
+      "stack_out": [
+        "vested#0",
+        "unvestedTokens#0",
+        "unvestedTokens#0"
+      ]
+    },
+    "855": {
+      "op": "cover 2",
+      "defined_out": [
+        "unvestedTokens#0",
+        "vested#0"
+      ],
+      "stack_out": [
+        "unvestedTokens#0",
+        "vested#0",
+        "unvestedTokens#0"
+      ]
+    },
+    "857": {
+      "op": "dup",
+      "defined_out": [
+        "unvestedTokens#0",
+        "unvestedTokens#0 (copy)",
+        "vested#0"
+      ],
+      "stack_out": [
+        "unvestedTokens#0",
+        "vested#0",
+        "unvestedTokens#0",
+        "unvestedTokens#0 (copy)"
+      ]
+    },
+    "858": {
+      "error": "No unvested tokens to revoke",
+      "op": "assert // No unvested tokens to revoke",
+      "stack_out": [
+        "unvestedTokens#0",
+        "vested#0",
+        "unvestedTokens#0"
+      ]
+    },
+    "859": {
+      "op": "bytec_2 // \"totalTokens\"",
+      "stack_out": [
+        "unvestedTokens#0",
+        "vested#0",
+        "unvestedTokens#0",
+        "\"totalTokens\""
+      ]
+    },
+    "860": {
+      "op": "uncover 2",
+      "stack_out": [
+        "unvestedTokens#0",
+        "unvestedTokens#0",
+        "\"totalTokens\"",
+        "vested#0"
+      ]
+    },
+    "862": {
+      "op": "app_global_put",
+      "stack_out": [
+        "unvestedTokens#0",
+        "unvestedTokens#0"
+      ]
+    },
+    "863": {
+      "op": "bz revokeVesting_after_if_else@3",
+      "stack_out": [
+        "unvestedTokens#0"
+      ]
+    },
+    "866": {
+      "op": "itxn_begin"
+    },
+    "867": {
+      "op": "global CreatorAddress",
+      "defined_out": [
+        "inner_txn_params%0%%param_AssetReceiver_idx_0#0",
+        "unvestedTokens#0"
+      ],
+      "stack_out": [
+        "unvestedTokens#0",
+        "inner_txn_params%0%%param_AssetReceiver_idx_0#0"
+      ]
+    },
+    "869": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "unvestedTokens#0",
+        "inner_txn_params%0%%param_AssetReceiver_idx_0#0",
+        "0"
+      ]
+    },
+    "870": {
+      "op": "bytec 6 // \"tokenASA\"",
+      "defined_out": [
+        "\"tokenASA\"",
+        "0",
+        "inner_txn_params%0%%param_AssetReceiver_idx_0#0",
+        "unvestedTokens#0"
+      ],
+      "stack_out": [
+        "unvestedTokens#0",
+        "inner_txn_params%0%%param_AssetReceiver_idx_0#0",
+        "0",
+        "\"tokenASA\""
+      ]
+    },
+    "872": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "inner_txn_params%0%%param_AssetReceiver_idx_0#0",
+        "maybe_exists%2#0",
+        "maybe_value%2#0",
+        "unvestedTokens#0"
+      ],
+      "stack_out": [
+        "unvestedTokens#0",
+        "inner_txn_params%0%%param_AssetReceiver_idx_0#0",
+        "maybe_value%2#0",
+        "maybe_exists%2#0"
+      ]
+    },
+    "873": {
+      "error": "check GlobalState exists",
+      "op": "assert // check GlobalState exists",
+      "stack_out": [
+        "unvestedTokens#0",
+        "inner_txn_params%0%%param_AssetReceiver_idx_0#0",
+        "maybe_value%2#0"
+      ]
+    },
+    "874": {
+      "op": "frame_dig 0",
+      "stack_out": [
+        "unvestedTokens#0",
+        "inner_txn_params%0%%param_AssetReceiver_idx_0#0",
+        "maybe_value%2#0",
+        "unvestedTokens#0"
+      ]
+    },
+    "876": {
+      "op": "itxn_field AssetAmount",
+      "stack_out": [
+        "unvestedTokens#0",
+        "inner_txn_params%0%%param_AssetReceiver_idx_0#0",
+        "maybe_value%2#0"
+      ]
+    },
+    "878": {
+      "op": "itxn_field XferAsset",
+      "stack_out": [
+        "unvestedTokens#0",
+        "inner_txn_params%0%%param_AssetReceiver_idx_0#0"
+      ]
+    },
+    "880": {
+      "op": "itxn_field AssetReceiver",
+      "stack_out": [
+        "unvestedTokens#0"
+      ]
+    },
+    "882": {
+      "op": "intc_2 // 4",
+      "defined_out": [
+        "4",
+        "unvestedTokens#0"
+      ],
+      "stack_out": [
+        "unvestedTokens#0",
+        "4"
+      ]
+    },
+    "883": {
+      "op": "itxn_field TypeEnum",
+      "stack_out": [
+        "unvestedTokens#0"
+      ]
+    },
+    "885": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "unvestedTokens#0",
+        "0"
+      ]
+    },
+    "886": {
+      "op": "itxn_field Fee",
+      "stack_out": [
+        "unvestedTokens#0"
+      ]
+    },
+    "888": {
+      "op": "itxn_submit"
+    },
+    "889": {
+      "block": "revokeVesting_after_if_else@3",
+      "stack_in": [
+        "unvestedTokens#0"
+      ],
+      "retsub": true,
+      "op": "retsub"
+    }
+  }
+}
