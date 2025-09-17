@@ -131,7 +131,7 @@ Before starting, ensure you have the following installed:
 
 ## Contributors
 
-* **Adhisree Paul** – Project creator and maintainer.
+* **Adhisree Paul, Arya Bhattacharjee, Trisha Halder**
 * Contributions welcome! Please submit issues and pull requests on the [GitHub repository](https://github.com/adhisreepaul/journal-web3).
 
 ---
@@ -140,6 +140,3 @@ Before starting, ensure you have the following installed:
 
 This project is licensed under the **MIT License**. See [LICENSE](LICENSE) for details.
 
----
-
-Do you want me to also **include example workflows** (like publishing an article NFT and receiving ASA payments) in the README, or keep it focused just on setup and usage?
