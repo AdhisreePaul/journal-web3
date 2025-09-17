@@ -1,46 +1,145 @@
-# wedoitagain
+# Unchaining the Narrative: A Web3 Journalism Platform
 
-This starter full stack project has been generated using AlgoKit. See below for default getting started instructions.
+## Introduction
 
-## Setup
+**Unchaining the Narrative** is a decentralized Web3 platform designed to empower journalists with unconventional or dissenting views. By leveraging the **Algorand blockchain**, it ensures that published articles are **immutable, censorship-resistant, and permanently stored**. The platform also integrates fair and transparent compensation mechanisms for content creators through **Algorand Standard Assets (ASA)**.
 
-### Initial setup
-1. Clone this repository to your local machine.
-2. Ensure [Docker](https://www.docker.com/) is installed and operational. Then, install `AlgoKit` following this [guide](https://github.com/algorandfoundation/algokit-cli#install).
-3. Run `algokit project bootstrap all` in the project directory. This command sets up your environment by installing necessary dependencies, setting up a Python virtual environment, and preparing your `.env` file.
-4. In the case of a smart contract project, execute `algokit generate env-file -a target_network localnet` from the `wedoitagain-contracts` directory to create a `.env.localnet` file with default configuration for `localnet`.
-5. To build your project, execute `algokit project run build`. This compiles your project and prepares it for running.
-6. For project-specific instructions, refer to the READMEs of the child projects:
-   - Smart Contracts: [wedoitagain-contracts](projects/wedoitagain-contracts/README.md)
-   - Frontend Application: [wedoitagain-frontend](projects/wedoitagain-frontend/README.md)
+This project is structured as a **monorepo** containing both the **frontend application** and the **smart contracts**.
 
-> This project is structured as a monorepo, refer to the [documentation](https://github.com/algorandfoundation/algokit-cli/blob/main/docs/features/project/run.md) to learn more about custom command orchestration via `algokit project run`.
+---
 
-### Subsequently
+## Table of Contents
 
-1. If you update to the latest source code and there are new dependencies, you will need to run `algokit project bootstrap all` again.
-2. Follow step 3 above.
+1. [Features](#features)
+2. [Project Structure](#project-structure)
+3. [Prerequisites](#prerequisites)
+4. [Installation](#installation)
+5. [Usage](#usage)
+6. [Configuration](#configuration)
+7. [Documentation](#documentation)
+8. [Troubleshooting](#troubleshooting)
+9. [Contributors](#contributors)
+10. [License](#license)
 
-## Tools
+---
 
-This project makes use of Python and React to build Algorand smart contracts and to provide a base project configuration to develop frontends for your Algorand dApps and interactions with smart contracts. The following tools are in use:
+## Features
 
-- Algorand, AlgoKit, and AlgoKit Utils
-- Python dependencies including Poetry, Black, Ruff or Flake8, mypy, pytest, and pip-audit
-- React and related dependencies including AlgoKit Utils, Tailwind CSS, daisyUI, use-wallet, npm, jest, playwright, Prettier, ESLint, and Github Actions workflows for build validation
+* **Immutable Articles**
 
-### VS Code
+  * Journalists can publish articles as **NFTs** on Algorand.
+  * Content is permanent and cannot be deleted or altered.
 
-It has also been configured to have a productive dev experience out of the box in [VS Code](https://code.visualstudio.com/), see the [backend .vscode](./backend/.vscode) and [frontend .vscode](./frontend/.vscode) folders for more details.
+* **Fair Compensation**
 
-## Integrating with smart contracts and application clients
+  * Uses **Algorand Standard Assets (ASA)** to provide a transparent and efficient payment system.
 
-Refer to the [wedoitagain-contracts](projects/wedoitagain-contracts/README.md) folder for overview of working with smart contracts, [projects/wedoitagain-frontend](projects/wedoitagain-frontend/README.md) for overview of the React project and the [projects/wedoitagain-frontend/contracts](projects/wedoitagain-frontend/src/contracts/README.md) folder for README on adding new smart contracts from backend as application clients on your frontend. The templates provided in these folders will help you get started.
-When you compile and generate smart contract artifacts, your frontend component will automatically generate typescript application clients from smart contract artifacts and move them to `frontend/src/contracts` folder, see [`generate:app-clients` in package.json](projects/wedoitagain-frontend/package.json). Afterwards, you are free to import and use them in your frontend application.
+* **Decentralized Architecture**
 
-The frontend starter also provides an example of interactions with your TodoClient in [`AppCalls.tsx`](projects/wedoitagain-frontend/src/components/AppCalls.tsx) component by default.
+  * Built with **Algorand** and **AlgoKit**, ensuring scalability, security, and decentralization.
 
-## Next Steps
+---
 
-You can take this project and customize it to build your own decentralized applications on Algorand. Make sure to understand how to use AlgoKit and how to write smart contracts for Algorand before you start.
-# blahabkad
+## Project Structure
+
+```
+journal-web3/
+├── projects/
+│   ├── wedoitagain-contracts   # Smart contracts (Algorand TypeScript)
+│   └── wedoitagain-frontend    # React-based web application
+```
+
+Each sub-project contains its own README with detailed instructions.
+
+---
+
+## Prerequisites
+
+Before starting, ensure you have the following installed:
+
+* [**AlgoKit CLI**](https://github.com/algorandfoundation/algokit-cli) – Essential toolkit for Algorand development.
+* [**Docker**](https://www.docker.com/) – Runs a local Algorand network for testing.
+* [**Node.js**](https://nodejs.org/) – JavaScript runtime environment.
+
+---
+
+## Installation
+
+1. **Clone the Repository**
+
+   ```bash
+   git clone https://github.com/adhisreepaul/journal-web3.git
+   cd journal-web3
+   ```
+
+2. **Bootstrap the Project**
+
+   ```bash
+   algokit project bootstrap all
+   ```
+
+   This installs dependencies for both the frontend and smart contracts.
+
+3. **Start LocalNet**
+
+   ```bash
+   algokit localnet start
+   ```
+
+   Spins up a local Algorand blockchain network for development.
+
+---
+
+## Usage
+
+1. **Run the Frontend**
+
+   ```bash
+   cd projects/wedoitagain-frontend
+   npm run dev
+   ```
+
+   This builds and starts the frontend application. It automatically connects to your local Algorand network.
+
+2. **Deploy Smart Contracts**
+   Navigate to `projects/wedoitagain-contracts` for instructions on compiling and deploying contracts.
+
+---
+
+## Configuration
+
+* Local development is configured to connect to **AlgoKit LocalNet**.
+* Blockchain interactions (NFTs & ASAs) are handled through smart contracts located in `wedoitagain-contracts`.
+* Frontend settings (e.g., API endpoints, contract addresses) can be configured in the frontend environment variables.
+
+---
+
+## Documentation
+
+* **Frontend Documentation**: [projects/wedoitagain-frontend/README.md](projects/wedoitagain-frontend/README.md)
+* **Contracts Documentation**: [projects/wedoitagain-contracts/README.md](projects/wedoitagain-contracts/README.md)
+
+---
+
+## Troubleshooting
+
+* **Docker not running** → Ensure Docker is installed and running before starting LocalNet.
+* **AlgoKit command not found** → Verify that AlgoKit CLI is installed and added to your system PATH.
+* **Frontend connection issues** → Confirm that LocalNet is running and contracts are deployed.
+
+---
+
+## Contributors
+
+* **Adhisree Paul** – Project creator and maintainer.
+* Contributions welcome! Please submit issues and pull requests on the [GitHub repository](https://github.com/adhisreepaul/journal-web3).
+
+---
+
+## License
+
+This project is licensed under the **MIT License**. See [LICENSE](LICENSE) for details.
+
+---
+
+Do you want me to also **include example workflows** (like publishing an article NFT and receiving ASA payments) in the README, or keep it focused just on setup and usage?
