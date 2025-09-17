@@ -8,6 +8,11 @@ This project is structured as a **monorepo** containing both the **frontend appl
 
 ---
 
+### Deployed Frontend Link:
+https://journal-frontend-tan.vercel.app/
+
+---
+
 ## Table of Contents
 
 1. [Features](#features)
